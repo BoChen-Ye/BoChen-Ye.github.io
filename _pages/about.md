@@ -94,6 +94,10 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT).
 
 # 🔥 Project
+## 2024.04 - Now, Tiny LeViT Hardware Accelerator
+- Use row stationary (RS) and systolic array to accelerate the convolutional layer.
+- For attention layer,
+
 ## 2023.05 - 2023.06, Low power design and synthesis of SOC based on MIPS and AES
 - Used Verilog to design a SoC which include five-stage pipelined mMIPS processor core, AES encryption module, and AMBA bus and Used Cadence Incisive to simulation and functional verification.
 - Used Cadence Genus for logic synthesis with low power strategies which is reduce 3% power consumption under 125MHz.
