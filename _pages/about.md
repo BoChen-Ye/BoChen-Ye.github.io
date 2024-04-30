@@ -18,8 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 I am studying at TU/e for my master degree. I got my bachelor degree from Hefei University of Technology(HFUT), China.
 
-I am interested in **VLSI/ASIC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.
+I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.
 
+I am also looking for PhD position or full-time job in VLSI/SoC.
 Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
@@ -34,7 +35,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 # 📝 Skill
 - **Professional:** Verilog/SystemVerilog/VHDL · FPGA · MS Office · Linux · Cadence Tool(Virtuoso,Incisive,Genus,Innovus)
-- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
+- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
 - **Language:** Mandarian(Native), TOEFL(iBT) 92
 
 # 🏫 Educations
@@ -47,7 +48,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 ## 2018.09 - 2022.07, Hefei University of Technology, China
 - **Bachelor** in Integrated Circuit Design and Integrated Systems 
-- **GPA:** [83.1/100](https://BoChen-Ye.github.io/files/Transcript-Ye-Bochen.pdf) (TOP 22%)
+- **GPA:** [83.1/100](https://BoChen-Ye.github.io/files/transcript_bsc.pdf) (TOP 22%)
 - **Relevant Class:** Analysis and Design of Integrated Digital Circuit, Microprocessor architecture and design,
 					Introduction to SoC design, Verilog HDL and FPGA implementation and so on.
 
@@ -55,9 +56,11 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 ## 2024.03 - 2024.11, NXP Semidocutors, Nijmegen NL
 -  **Digital Design Intern**
 
-	- Define a custom digital communication protocol between two ICs
-	- Develop and verify an IP module implementing the new communication protocol using SystemVerilog
-	- Build a prototype demonstrator with FPGA(s)
+	I am working in AA-APS, this thesis project supervised by Kimmo Salo(NXP), Gustavo Naspolini(NXP), and Manil Dev Gomony(Bell Lab & TU/e).
+	My work as follow:
+	- Define a custom digital communication protocol between two ICs and modeling in **Simulink**.
+	- Develop and verify an IP module implementing the new communication protocol using SystemVerilog.
+	- Build a prototype demonstrator with FPGA(s).
 
 ## 2023.11 - 2024.06, Linear Capital, China(remote)
 - **Oversea VC Intern**
@@ -70,18 +73,20 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 ## 2023.07 - 2023.10, Intrinsic ID(Now acquired by Synopsys), Eindhoven NL
 -  **IP Modeling and Digital IC Design Intern**
 
-	I am working in Research and Security Department. My work as follow:
-	- Study on a trellis-based Reed-Muller codec. 
-	- Use Python modeling it as a digital IP module.(software)
-	- Design the architecture of codec and implementation by VHDL.(harware)
-	- Verify on Arty-z7 FPGA(zynq) with vivado and vitis.(Embeded System)
-	- Compare it with the existing Reed-Muller implementation based on traditional algorithms in terms of complexity and efficiency. This internship supervised by Manil Dev Gomony(Bell Lab & TU/e) and Rui Wang & Roel Maes(Intrinsic ID).
+	I worked in Research and Security Department(now SoC Security of Synopsys). This internship supervised by Manil Dev Gomony(Bell Lab & TU/e) and Rui Wang & Roel Maes(Intrinsic ID).
+	My work as follow:
+	- Study on a trellis-based Reed-Muller codec.(Algorithm) 
+	- Use **Python** modeling it as a digital IP module.(software)
+	- Design the architecture of codec and implementation by **VHDL**.(harware)
+	- Verify on **Arty-z7 FPGA**(zynq) with vivado and vitis.(Embeded System)
+	- Under the 50MHz condition, after several improvements, the hardware resource consumption decreased from 938 LUTs to 843 LUTs. Meanwhile, the decoding latency reduced to 6 clock cycles, and continuous decoding became possible.
 
 # 🔬 Research Experience
 ## 2023.10 - 2024.02, Neuromorphic Research Student
 - Eindhoven University of Technology, Netherlands
 
-	- Focus on Neuromorphic Hardware Accelerator and Neuromorphic NoC for CMPs.
+	- I have completed the [literature review on Neuromorphic Hardware Accelerator and Neuromorphic NoC](https://github.com/BoChen-Ye/SpkingNN-on-Chip). 
+	- I have started architectural simulation using [OpenSoC](https://github.com/BoChen-Ye/OpenSoCFabric) for the baseline NoC.
 	- Work in Eletronic System group with Prof. [Manil Dev Gomony](https://www.tue.nl/en/research/researchers/manil-dev-gomony), Prof. [Federico Corradi](https://www.tue.nl/en/research/researchers/federico-corradi), and Prof. [Henk Corporaal](https://www.tue.nl/en/research/researchers/henk-corporaal).
 
 ## 2021.10 - 2022.05, NoC Research Student 
@@ -94,36 +99,37 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT).
 
 # 🔥 Project
-## 2024.04 - Now, Tiny LeViT Hardware Accelerator
-- Use row stationary (RS) and systolic array to accelerate the convolutional layer.
-- For attention layer,
+## 2024.04 - Now, Tiny LeViT Hardware Accelerator(hobby project)
+- This is my hobby project with **System Verilog**.
+- Use row stationary (RS) and systolic array to get parallel computing. The delay is only 3 cycle from input data to first output data. Also, it has specific core to accelerate the convolutional layer when stride=2 and padding=1.
+- For attention layer, use Tanh instead of softmax and use ReLU instead of Hardswish to simplify that difficulty of hardware calculation.
 
 ## 2023.05 - 2023.06, Low power design and synthesis of SOC based on MIPS and AES
-- Used Verilog to design a SoC which include five-stage pipelined mMIPS processor core, AES encryption module, and AMBA bus and Used Cadence Incisive to simulation and functional verification.
-- Used Cadence Genus for logic synthesis with low power strategies which is reduce 3% power consumption under 125MHz.
-- Used Cadence Innovus for place and route with two power domain which is reduce 8% power consumption under 200MHz.
+- Used Verilog to design a SoC which include five-stage pipelined mMIPS processor core, AES encryption module, and AMBA bus and Used **Cadence Incisive** to simulation and functional verification.
+- Used **Cadence Genus** for logic synthesis with low power strategies which is reduce 3% power consumption under 125MHz.
+- Used **Cadence Innovus** for place and route with two power domain which is reduce 8% power consumption under 200MHz.
 
 ## 2023.02 - 2023.04, Inference acceleration of deep neural network based on TCU accelerator
-- Train [a multilayer perceptron for handwritten digit classification(MNIST)](https://github.com/BoChen-Ye/MNIST-handwritten-digit-classification) using the PyTorch framework.
+- Train [a multilayer perceptron for handwritten digit classification(MNIST)](https://github.com/BoChen-Ye/MNIST-handwritten-digit-classification) using the **PyTorch** framework.
 - Optimize a VGG5 for image classification using various quantization and pruning techniques. Explore the impact of these techniques on both accuracy and compute cost.
 - Use open source [Tensil AI](https://www.tensil.ai/) for generating tensor computing units(TCU), compiling and accelerating ResNet20 by systolic array on PYNQ . 
 
-## 2023.02 - 2023.03, [Five-stage pipelined RISC-V processor with full hazard handling](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU)
-- I have implemented a RISC-V five-stage pipeline processor with full hazard handling. The RTL level design using Verilog and simulated in Modelsim for simulation. 
+## 2023.02 - 2023.03, [Five-stage pipelined RISC-V processor with full hazard handling(hobby project)](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU)
+- I have implemented a **RISC-V five-stage pipeline processor** with full hazard handling. The RTL level design using **Verilog** and simulated in Modelsim for simulation. 
 - The processor can run the basic RV32i instructions, solves data conflicts, structure conflicts, and control conflicts, and supports stalling, flushing and forwarding.
 
 ## 2022.11 - 2023.01, Full Custom 16-bit Brent-Kung Adder Design
-- Completed CMOS circuit design and layout design for a 45nm full custom 16-bit Brent-Kung adder. Circuit design and layout design via Cadence Virtuoso, DRC and LVS verification of the layout using Calibre. The circuit design can be functionally verified by simulation at 500MHz, 90◦C with an output rise and fall time of less than 100ps, and the layout results can be functionally verified at a post-simulation of 500MHz.
+- Completed CMOS circuit design and layout design for a 45nm full custom 16-bit Brent-Kung adder. Circuit design and layout design via **Cadence Virtuoso**, DRC and LVS verification of the layout using **Calibre**. The circuit design can be functionally verified by simulation at 500MHz, 90◦C with an output rise and fall time of less than 100ps, and the layout results can be functionally verified at a post-simulation of 500MHz.
 
 ## 2022.12 - 2023.01, Implementation of image processing kernels on CUDA
-- Mapping Grayscale processing and convolution 2D kernels from C to CUDA and optimaize the loop, then running on the Nvidia GPU.
+- Mapping Grayscale processing and convolution 2D kernels from C to **CUDA** and optimaize the loop, then running on the Nvidia GPU.
 - The result is that the processing time of 13 images is accelerated from 4872ms to 27ms.
 
 ## 2021.04 - 2021.06, A single-cycle CPU compatible with Microchip PIC16F54 microprocessor	
 - The CPU is designed in modules, and each module uses Verilog HDL to design, which is implemented on the Basys3 after being verified by Modelsim pre-imitation. The complex C language load can run, and UART serial communication function controlled by softcore can be realized.
 
 ## 2020.12 - 2021.01, Design of Lightweight System Based on SystemC
-- Studying the structural design of soc, and use SystemC to write Bus and UART serial interface, function processing module, arbiter module, data receiving and sending module to form a lightweight system and verify it. Drive data enters two processing modules, and one of the results is selected by the arbiter in the bus and sent to the receiving module through UART interface and displayed.
+- Studying the structural design of soc, and use **SystemC** to write Bus and UART serial interface, function processing module, arbiter module, data receiving and sending module to form a lightweight system and verify it. Drive data enters two processing modules, and one of the results is selected by the arbiter in the bus and sent to the receiving module through UART interface and displayed.
 
 ## 2020.10 - 2020.11, VLSI Simulation and Synthesis	
 - Use VCS to verify the function of Tinycore based on RISC-V on the test platform.
