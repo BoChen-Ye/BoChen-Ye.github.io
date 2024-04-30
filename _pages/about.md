@@ -136,6 +136,18 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - Use DC compiler to synthesize four different hardware description ALUs, and analyze the comprehensive report to compare and analyze different parameters.
 
 # 📖 Self-Studying
+- **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
+	
+	- Provides the most up-to-date information on current SOCs and architectural insights for the design of future semiconductor systems
+	- Explores concepts such as parallelism, pipelining, data-driven or instruction-driven, and event-driven systems and their respective tradeoffs in SOC architectures
+	- Provides a practical approach to defining SOC architecture with real case studies
+
+- **[A Practical Approach to VLSI System on Chip (SoC) Design: A Comprehensive Guide](https://link.springer.com/book/10.1007/978-3-030-23049-4)**,Veena S. Chakravarthi.
+
+	- A comprehensive practical guide for VLSI designers
+	- Covers end-to-end VLSI SoC design flow
+	- Includes source code, case studies, and application examples
+
 - **[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)**, MIT.
 
 	- Content: Shell Tools and Scriptin, Editors (Vim), Data Wrangling, Command-line Environment, Version Control (Git). Debugging and Profiling, Metaprogramming, Security and Cryptography, Potpourri.
