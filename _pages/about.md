@@ -100,9 +100,9 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 # 🔥 Project
 ## 2024.04 - Now, Tiny LeViT Hardware Accelerator(hobby project)
-- This is my hobby project with **System Verilog**.
-- Use row stationary (RS) and systolic array to get parallel computing. The delay is only 3 cycle from input data to first output data. Also, it has specific core to accelerate the convolutional layer when stride=2 and padding=1.
-- For attention layer, use Tanh instead of softmax and use ReLU instead of Hardswish to simplify that difficulty of hardware calculation.
+- Use **System Verilog** to design hardware accelerator for accelerate LeViT Network which contain Convolutional layer, Attention layer and Average pooling layer.
+- Use row stationary (RS) and systolic array to get max parallel computing. The delay is only 3 cycle from input data to first output data. Also, it has specific core to accelerate the convolutional layer when stride=2 and padding=1.
+- Use Tanh instead of softmax and use ReLU instead of Hardswish to simplify that difficulty of hardware calculation in attention layer.
 
 ## 2023.05 - 2023.06, Low power design and synthesis of SOC based on MIPS and AES
 - Used Verilog to design a SoC which include five-stage pipelined mMIPS processor core, AES encryption module, and AMBA bus and Used **Cadence Incisive** to simulation and functional verification.
