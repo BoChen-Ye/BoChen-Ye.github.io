@@ -99,7 +99,13 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT).
 
 # 🔥 Project
-## 2024.04 - Now, Tiny LeViT Hardware Accelerator(hobby project)
+## 2024.06 - Now, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
+- Designed the SoC (System on Chip) architecture, incorporating an RISC-V core, memory, Levit accelerator, and AHB/APB buses with connected peripherals. Utilized previous project designs for the RISC-V core and Levit accelerator.
+- Developed a Python program to convert assembly code to binary, enabling rapid generation of binary instruction files to meet SoC requirements.
+- Constructed a warpper for the accelerator with input and output buffers, ensuring synchronized data input when all required data was present.
+- Implemented AHB-compatible interfaces for the CPU, memory, and accelerator using SystemVerilog.
+
+## 2024.04 - 2024.6, [Tiny LeViT Hardware Accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_LeViT_Hardware_Accelerator)
 - Use **System Verilog** to design hardware accelerator for accelerate LeViT Network which contain Convolutional layer, Attention layer and Average pooling layer.
 - Use row stationary (RS) and systolic array to get max parallel computing. The delay is only 3 cycle from input data to first output data. Also, it has specific core to accelerate the convolutional layer when stride=2 and padding=1.
 - Use Tanh instead of softmax and use ReLU instead of Hardswish to simplify that difficulty of hardware calculation in attention layer.
