@@ -34,7 +34,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - *2022.07*: &nbsp;🎉🎉 I am graduated from Hefei University of Technology with a bachelor degree, supervised by [Zhenmin Li](https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm).  
 
 # 📝 Skill
-- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · MS Office · Linux · Cadence Tool(Virtuoso,Incisive,Genus,Innovus)
+- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
 - **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
 - **Language:** Mandarian(Native), TOEFL(iBT) 92
 
@@ -51,6 +51,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - **GPA:** [83.1/100](https://BoChen-Ye.github.io/files/transcript_bsc.pdf) (TOP 22%)
 - **Relevant Class:** Analysis and Design of Integrated Digital Circuit, Microprocessor architecture and design,
 					Introduction to SoC design, Verilog HDL and FPGA implementation and so on.
+- **Thesis:** [The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip](https://BoChen-Ye.github.io/files/Bsc_thesis.pdf)
 
 # 💻 Internships
 ## 2024.03 - 2024.11, NXP Semidocutors, Nijmegen NL
@@ -58,8 +59,10 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 	I am working in AA-APS, this thesis project supervised by Kimmo Salo(NXP), Gustavo Naspolini(NXP), and Manil Dev Gomony(Bell Lab & TU/e).
 	My work as follow:
-	- Define a custom digital communication protocol between two ICs and modeling in **Simulink**.
-	- Develop and verify an IP module implementing the new communication protocol using SystemVerilog.
+	- Define a custom 1-wire digital communication protocol between two ICs.
+	- Develope high-level model in **Simulink** and test the channel model with parasitic parameter.
+	- Develop and verify an IP module implementing the new communication protocol using **SystemVerilog**.
+	- Use **Cadence Xcelium** to simulate and **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint. 
 	- Build a prototype demonstrator with FPGA(s).
 
 ## 2023.11 - 2024.06, Linear Capital, China(remote)
