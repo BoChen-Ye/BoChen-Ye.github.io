@@ -62,7 +62,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Define a custom 1-wire digital communication protocol between two ICs.
 	- Develope high-level model in **Simulink** and test the channel model with parasitic parameter.
 	- Develop and verify an IP module implementing the new communication protocol using **SystemVerilog**.
-	- Use **Cadence Xcelium** to simulate and **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint. 
+	- Use **Cadence Xcelium** to simulate, **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint and **DesignSync** to verision control. 
 	- Build a prototype demonstrator with FPGA(s).
 
 ## 2023.11 - 2024.06, Linear Capital, China(remote)
