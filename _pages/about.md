@@ -25,6 +25,9 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
+- *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen),Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). I also received PhD interview from National University of Singapore(NUS) and University of Groningen.
+- *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from University College Dublin(one from mix-signal group, and one from digital group).
+- *2024.06*: &nbsp;🎉🎉 I received my first PhD interview from RWTH Aachen University.
 - *2024.03*: &nbsp;🎉🎉 Congratulations **[Intrinsic ID](https://www.intrinsic-id.com/)** is acquired by **[Synopsys](https://www.synopsys.com/)**.
 - *2024.03*: &nbsp;🎉🎉 I change my master thesis to **[NXP Semiconductors](https://www.nxp.com/)** in Nijmegen, supervised by [Kimmo Salo](https://www.linkedin.com/in/kimmosalo/)(NXP), [Gustavo Naspolini](https://www.linkedin.com/in/gustavo-naspolini-b866287/)(NXP).
 - *2023.11*: &nbsp;🎉🎉 I started working as a Oversea VC Intern(Remote) at [Linear Capital](https://www.linear.vc/).
@@ -65,7 +68,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Use **Cadence Xcelium** to simulate, **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint and **DesignSync** to verision control. 
 	- Build a prototype demonstrator with FPGA(s).
 
-## 2023.11 - 2024.06, Linear Capital, China(remote)
+## 2023.11 - 2024.06, Linear Capital, China (remote)
 - **Oversea VC Intern**
 
 	During my internship at Linear Capital, my responsibilities included:
@@ -85,6 +88,12 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Under the 50MHz condition, after several improvements, the hardware resource consumption decreased from 938 LUTs to 843 LUTs. Meanwhile, the decoding latency reduced to 6 clock cycles, and continuous decoding became possible.
 
 # 🔬 Research Experience
+## 2024.09 - Now, Research Assistant of 3D point cloud (Remote)
+- Collaborate with [Changchun Zhou](https://changchun-zhou.github.io/)
+
+	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS).
+
+
 ## 2023.10 - 2024.02, Neuromorphic Research Student
 - Eindhoven University of Technology, Netherlands
 
