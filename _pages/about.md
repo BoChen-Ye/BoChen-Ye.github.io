@@ -25,7 +25,8 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
-- *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen),Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). I also received PhD interview from National University of Singapore(NUS) and University of Groningen.
+- *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from National University of Singapore(NUS) and University of Groningen.
+- *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen),Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
 - *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from University College Dublin(one from mix-signal group, and one from digital group).
 - *2024.06*: &nbsp;🎉🎉 I received my first PhD interview from RWTH Aachen University.
 - *2024.03*: &nbsp;🎉🎉 Congratulations **[Intrinsic ID](https://www.intrinsic-id.com/)** is acquired by **[Synopsys](https://www.synopsys.com/)**.
