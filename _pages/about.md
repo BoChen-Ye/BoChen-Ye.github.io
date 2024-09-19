@@ -25,10 +25,10 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
-- *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from National University of Singapore(NUS) and University of Groningen.
-- *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen),Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
-- *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from University College Dublin(one from mix-signal group, and one from digital group).
-- *2024.06*: &nbsp;🎉🎉 I received my first PhD interview from RWTH Aachen University.
+- *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from **National University of Singapore(NUS)** and **University of Groningen**.
+- *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
+- *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from **University College Dublin**(one from mix-signal group, and one from digital group).
+- *2024.06*: &nbsp;🎉🎉 I received my first PhD interview from **RWTH Aachen University**.
 - *2024.03*: &nbsp;🎉🎉 Congratulations **[Intrinsic ID](https://www.intrinsic-id.com/)** is acquired by **[Synopsys](https://www.synopsys.com/)**.
 - *2024.03*: &nbsp;🎉🎉 I change my master thesis to **[NXP Semiconductors](https://www.nxp.com/)** in Nijmegen, supervised by [Kimmo Salo](https://www.linkedin.com/in/kimmosalo/)(NXP), [Gustavo Naspolini](https://www.linkedin.com/in/gustavo-naspolini-b866287/)(NXP).
 - *2023.11*: &nbsp;🎉🎉 I started working as a Oversea VC Intern(Remote) at [Linear Capital](https://www.linear.vc/).
@@ -90,7 +90,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 # 🔬 Research Experience
 ## 2024.09 - Now, Research Assistant of 3D point cloud (Remote)
-- Collaborate with [Changchun Zhou](https://changchun-zhou.github.io/)
+- Collaborate with [Dr.Changchun Zhou](https://changchun-zhou.github.io/)(PhD@PKU & postdoc@DUKE)
 
 	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS).
 
