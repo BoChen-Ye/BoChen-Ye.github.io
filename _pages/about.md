@@ -89,7 +89,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Under the 50MHz condition, after several improvements, the hardware resource consumption decreased from 938 LUTs to 843 LUTs. Meanwhile, the decoding latency reduced to 6 clock cycles, and continuous decoding became possible.
 
 # 🔬 Research Experience
-## 2024.09 - Now, Research Assistant of 3D point cloud (Remote)
+## 2024.09 - 2024.09, Research Assistant of 3D point cloud hardware (Remote)
 - Collaborate with [Dr.Changchun Zhou](https://changchun-zhou.github.io/)(PhD@PKU & postdoc@DUKE)
 
 	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS).
