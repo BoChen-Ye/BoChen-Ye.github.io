@@ -25,6 +25,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
+- *2023.10*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors.
 - *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from **National University of Singapore(NUS)** and **University of Groningen**.
 - *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
 - *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from **University College Dublin**(one from mix-signal group, and one from digital group).
@@ -43,12 +44,13 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - **Language:** Mandarian(Native), TOEFL(iBT) 92
 
 # 🏫 Educations
-## 2022.09-Now, Eindhoven University of Technology, Netherlands
+## 2022.09-2024.11, Eindhoven University of Technology, Netherlands
 - **Msc.Eletrical Engneering**(track:Electronic System) 
 - **GPA:** [7.5/10](https://BoChen-Ye.github.io/files/transcript_Master.pdf)
 - **Relevant Course:** Digital integrated circuit design, Embedded computer architecture, Electronic design automation,
 					Applied combinatorial algorithms, Intelligent architectures(focus on DNN/Hardware co-design), 
 					Systems on silicon(focus on SoC backend), Neuro computation(focus on Neuromorphic computing).
+- **Thesis:** LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications
 
 ## 2018.09 - 2022.07, Hefei University of Technology, China
 - **Bachelor** in Integrated Circuit Design and Integrated Systems 
@@ -58,7 +60,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - **Thesis:** [The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip](https://BoChen-Ye.github.io/files/Bsc_thesis.pdf)
 
 # 💻 Internships
-## 2024.03 - 2024.11, NXP Semidocutors, Nijmegen NL
+## 2024.03 - 2024.10, NXP Semidocutors, Nijmegen NL
 -  **Digital Design Intern**
 
 	I am working in AA-APS, this thesis project supervised by Kimmo Salo(NXP), Gustavo Naspolini(NXP), and Manil Dev Gomony(Bell Lab & TU/e).
@@ -67,7 +69,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Develope high-level model in **Simulink** and test the channel model with parasitic parameter.
 	- Develop and verify an IP module implementing the new communication protocol using **SystemVerilog**.
 	- Use **Cadence Xcelium** to simulate, **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint and **DesignSync** to verision control. 
-	- Build a prototype demonstrator with FPGA(s).
+	- Build a prototype demonstrator with 2 FPGAs.
 
 ## 2023.11 - 2024.06, Linear Capital, China (remote)
 - **Oversea VC Intern**
@@ -112,13 +114,13 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT).
 
 # 🔥 Project
-## 2024.06 - Now, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
+## 2024.06 - 2024.09, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
 - Designed the SoC (System on Chip) architecture, incorporating an RISC-V core, memory, Levit accelerator, and AHB/APB buses with connected peripherals. Utilized previous project designs for the RISC-V core and Levit accelerator.
 - Developed a Python program to convert assembly code to binary, enabling rapid generation of binary instruction files to meet SoC requirements.
 - Constructed a warpper for the accelerator with input and output buffers, ensuring synchronized data input when all required data was present.
 - Implemented AHB-compatible interfaces for the CPU, memory, and accelerator using SystemVerilog.
 
-## 2024.04 - 2024.6, [Tiny LeViT Hardware Accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_LeViT_Hardware_Accelerator)
+## 2024.04 - 2024.06, [Tiny LeViT Hardware Accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_LeViT_Hardware_Accelerator)
 - Use **System Verilog** to design hardware accelerator for accelerate LeViT Network which contain Convolutional layer, Attention layer and Average pooling layer.
 - Use row stationary (RS) and systolic array to get max parallel computing. The delay is only 3 cycle from input data to first output data. Also, it has specific core to accelerate the convolutional layer when stride=2 and padding=1.
 - Use Tanh instead of softmax and use ReLU instead of Hardswish to simplify that difficulty of hardware calculation in attention layer.
