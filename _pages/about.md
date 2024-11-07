@@ -25,7 +25,8 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
-- *2023.10*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors.
+- *2024.11*: &nbsp;🎉🎉 I successfully defenced my Master Thesis and got 8.5/10.
+- *2024.10*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors.
 - *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from **National University of Singapore(NUS)** and **University of Groningen**.
 - *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
 - *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from **University College Dublin**(one from mix-signal group, and one from digital group).
@@ -46,11 +47,11 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 # 🏫 Educations
 ## 2022.09-2024.11, Eindhoven University of Technology, Netherlands
 - **Msc.Eletrical Engneering**(track:Electronic System) 
-- **GPA:** [7.5/10](https://BoChen-Ye.github.io/files/transcript_Master.pdf)
+- **GPA:** [7.8/10](https://BoChen-Ye.github.io/files/transcript_Master.pdf)
 - **Relevant Course:** Digital integrated circuit design, Embedded computer architecture, Electronic design automation,
 					Applied combinatorial algorithms, Intelligent architectures(focus on DNN/Hardware co-design), 
 					Systems on silicon(focus on SoC backend), Neuro computation(focus on Neuromorphic computing).
-- **Thesis:** LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications
+- **Thesis:** LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications (8.5/10)
 
 ## 2018.09 - 2022.07, Hefei University of Technology, China
 - **Bachelor** in Integrated Circuit Design and Integrated Systems 
