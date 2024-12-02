@@ -25,8 +25,8 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
-- *2024.11*: &nbsp;🎉🎉 I successfully defenced my Master Thesis and got 8.5/10.
-- *2024.10*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors.
+- *2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10.
+- *2024.09*: &nbsp;🎉🎉 I got a conditional **PhD offer** at **the University of Edinburgh**.
 - *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from **National University of Singapore(NUS)** and **University of Groningen**.
 - *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
 - *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from **University College Dublin**(one from mix-signal group, and one from digital group).
@@ -92,11 +92,10 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Under the 50MHz condition, after several improvements, the hardware resource consumption decreased from 938 LUTs to 843 LUTs. Meanwhile, the decoding latency reduced to 6 clock cycles, and continuous decoding became possible.
 
 # 🔬 Research Experience
-## 2024.11 - Now, Research Assistant of 3D point cloud hardware (Remote)
+## 2024.11 - 2024.12, Research Assistant of 3D point cloud hardware (Remote)
 - Collaborate with [Dr.Changchun Zhou](https://changchun-zhou.github.io/)(PhD@PKU & postdoc@DUKE)
 
-	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS).
-
+	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS), AXI interface(Master/Slave).
 
 ## 2023.10 - 2024.02, Neuromorphic Research Student
 - Eindhoven University of Technology, Netherlands
