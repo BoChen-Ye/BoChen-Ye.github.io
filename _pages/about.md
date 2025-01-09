@@ -16,11 +16,10 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-I am studying at TU/e for my master degree. I got my bachelor degree from Hefei University of Technology(HFUT), China.
+I am studying at University of Edinburgh for my PhD degree. I got my Master degree from Eindhoven University of Technology and my bachelor degree from Hefei University of Technology(HFUT), China.
 
 I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.
 
-I am also looking for PhD position or full-time job in VLSI/SoC.
 Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
