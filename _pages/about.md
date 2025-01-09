@@ -25,6 +25,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
 
 # 📯 News
+- *2025.01*: &nbsp;🎉🎉 I started my PhD study in **University of Edinburgh**, supervised by [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis).
 - *2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10.
 - *2024.09*: &nbsp;🎉🎉 I got a conditional **PhD offer** at **the University of Edinburgh**.
 - *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from **National University of Singapore(NUS)** and **University of Groningen**.
@@ -45,6 +46,11 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - **Language:** Mandarian(Native), TOEFL(iBT) 92
 
 # 🏫 Educations
+## 2025.01-Now, University of Edinburgh, United Kingdom
+- **PhD student of Engneering**
+- **Supervisor:** [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis)
+- **Research interest:**
+
 ## 2022.09-2024.11, Eindhoven University of Technology, Netherlands
 - **Msc.Eletrical Engneering**(track:Electronic System) 
 - **GPA:** [7.8/10](https://BoChen-Ye.github.io/files/transcript_Master.pdf)
