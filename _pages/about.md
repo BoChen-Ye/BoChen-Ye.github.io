@@ -77,7 +77,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	- Use **Cadence Xcelium** to simulate, **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint and **DesignSync** to verision control. 
 	- Build a prototype demonstrator with 2 FPGAs.
 
-## 2023.11 - 2024.06, Linear Capital, China (remote)
+## 2023.11 - 2024.06, Linear Capital, China (Remote Part-time)
 - **Oversea VC Intern**
 
 	During my internship at Linear Capital, my responsibilities included:

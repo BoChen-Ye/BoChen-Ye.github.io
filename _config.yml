@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Bochen Ye(叶波辰)"
   avatar           : "images/photo.jpg"
-  bio              : "Eindhoven University of Technology"
-  location         : "Eindhoven, Netherlands"
+  bio              : "University of Edinburgh"
+  location         : "Edinburgh, UK"
   employer         :
   pubmed           : 
   googlescholar    : #"https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
