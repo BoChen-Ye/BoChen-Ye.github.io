@@ -16,9 +16,10 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-I am studying at University of Edinburgh for my PhD degree. I got my Master degree from Eindhoven University of Technology and my bachelor degree from Hefei University of Technology(HFUT), China.
 
-I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.
+I am a fist-year PhD student at **[University of Edinburgh(UoE)](https://www.ed.ac.uk/)**, UK. I got my Master degree from **[Eindhoven University of Technology(TU/e)](https://www.tue.nl/en/)**, Netherlands and my bachelor degree from **[Hefei University of Technology(HFUT)](https://www.hfut.edu.cn/)**, China. My research focuses on designing digital hardware acceleration systems for large-scale AI models using novel architectures, aiming to overcome memory and computational bottlenecks. My current focus is on advancing hardware accelerators for LLMs, VLMs, and generative AI to enable next-generation intelligent computing.
+
+<!--I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.-->
 
 Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 
@@ -39,16 +40,13 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - *2022.09*: &nbsp;🎉🎉 I started my master's study at TU/e.
 - *2022.07*: &nbsp;🎉🎉 I am graduated from Hefei University of Technology with a bachelor degree, supervised by [Zhenmin Li](https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm).  
 
-# 📝 Skill
-- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
-- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
-- **Language:** Mandarian(Native), TOEFL(iBT) 92
+
 
 # 🏫 Educations
 ## 2025.01-Now, University of Edinburgh, United Kingdom
 - **PhD student of Engneering**
-- **Supervisor:** [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis)
-- **Research interest:**
+- **Advisors:** [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis)
+- **Research interest:** Digital Hardware Accelerator for LLMs, VLMs, and generative AI.
 
 ## 2022.09-2024.11, Eindhoven University of Technology, Netherlands
 - **Msc.Eletrical Engneering**(track:Electronic System) 
@@ -160,6 +158,11 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 ## 2020.10 - 2020.11, VLSI Simulation and Synthesis	
 - Use VCS to verify the function of Tinycore based on RISC-V on the test platform.
 - Use DC compiler to synthesize four different hardware description ALUs, and analyze the comprehensive report to compare and analyze different parameters.
+
+# 📝 Skill
+- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
+- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
+- **Language:** Mandarian(Native), TOEFL(iBT) 92
 
 # 📖 Self-Studying
 - **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
