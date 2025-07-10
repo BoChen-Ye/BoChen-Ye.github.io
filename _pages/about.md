@@ -17,21 +17,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a fist-year PhD student at **[University of Edinburgh(UoE)](https://www.ed.ac.uk/)**, UK. I got my Master degree from **[Eindhoven University of Technology(TU/e)](https://www.tue.nl/en/)**, Netherlands and my bachelor degree from **[Hefei University of Technology(HFUT)](https://www.hfut.edu.cn/)**, China. My research focuses on designing digital hardware acceleration systems for large-scale AI models using novel architectures, aiming to overcome memory and computational bottlenecks. My current focus is on advancing hardware accelerators for LLMs, VLMs, and generative AI to enable next-generation intelligent computing.
+I am a fist-year PhD student at **[University of Edinburgh(UoE)](https://eng.ed.ac.uk/centre-electronics-frontiers)**, UK. I got my Master degree from **[Eindhoven University of Technology(TU/e)](https://www.tue.nl/en/)**, Netherlands and my bachelor degree from **[Hefei University of Technology(HFUT)](https://www.hfut.edu.cn/)**, China. My research focuses on designing digital hardware acceleration systems for large-scale AI models using novel architectures, aiming to overcome memory and computational bottlenecks. My current focus is on advancing hardware accelerators for LLMs, VLMs, and generative AI to enable next-generation intelligent computing.
 
 <!--I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.-->
 
-Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
+Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for possible research collaboration. If you are interested in me, please feel free to contact me at any time.
 
 
 # 📯 News
 - *2025.01*: &nbsp;🎉🎉 I started my PhD study in **University of Edinburgh**, supervised by [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis).
-- *2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10.
+- *2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li).
 - *2024.09*: &nbsp;🎉🎉 I got a conditional **PhD offer** at **the University of Edinburgh**.
-- *2024.09*: &nbsp;🎉🎉 I also received 2 PhD interviews from **National University of Singapore(NUS)** and **University of Groningen**.
-- *2024.09*: &nbsp;🎉🎉 I finished the half-way presentation at TU/e, committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li). 
-- *2024.07*: &nbsp;🎉🎉 I received 2 PhD interview from **University College Dublin**(one from mix-signal group, and one from digital group).
-- *2024.06*: &nbsp;🎉🎉 I received my first PhD interview from **RWTH Aachen University**.
 - *2024.03*: &nbsp;🎉🎉 Congratulations **[Intrinsic ID](https://www.intrinsic-id.com/)** is acquired by **[Synopsys](https://www.synopsys.com/)**.
 - *2024.03*: &nbsp;🎉🎉 I change my master thesis to **[NXP Semiconductors](https://www.nxp.com/)** in Nijmegen, supervised by [Kimmo Salo](https://www.linkedin.com/in/kimmosalo/)(NXP), [Gustavo Naspolini](https://www.linkedin.com/in/gustavo-naspolini-b866287/)(NXP).
 - *2023.11*: &nbsp;🎉🎉 I started working as a Oversea VC Intern(Remote) at [Linear Capital](https://www.linear.vc/).
@@ -99,6 +95,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - Collaborate with [Dr.Changchun Zhou](https://changchun-zhou.github.io/)(PhD@PKU & postdoc@DUKE)
 
 	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS), AXI interface(Master/Slave).
+	- An energy-efficient acceleration chip supporting transformer-based networks and Fabricated in TSMC 28-nm HPC technology with an expected area of 2 mm×3 mm.
 
 ## 2023.10 - 2024.02, Neuromorphic Research Student
 - Eindhoven University of Technology, Netherlands
@@ -164,7 +161,11 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 - **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
 - **Language:** Mandarian(Native), TOEFL(iBT) 92
 
-# 📖 Self-Studying
+# 🎖 Honors and Awards
+- *2022,* My bachelor thesis of NoC get A grade.
+- *2021/2022,* Unergraduate Scholarship. 
+
+<!--# 📖 Self-Studying
 - **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
 	
 	- Provides the most up-to-date information on current SOCs and architectural insights for the design of future semiconductor systems
@@ -201,9 +202,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf).
 	
 	- beignner.
 
-# 🎖 Honors and Awards
-- *2022,* My bachelor thesis of NoC get A grade.
-- *2021/2022,* Unergraduate Scholarship. 
+
 
 # 🚩 Activities
 ## 2019.03 - 2020.07, HFUT Innovation and Entrepreneurship @ Big Data Center
@@ -221,3 +220,5 @@ Director, Organizing Department
 Director, Innovation and Entrepreneurship Department
 - Responsible for organizing and promoting the Microelectronics College Innovation and Entrepreneurship Competition and the National College Student Electronics Design Competition training.
 - Actively collaborated with the Big Data Center to facilitate the entry of Microelectronics College's innovation teams into the center.
+-->
+
