@@ -24,7 +24,7 @@ I am a fist-year PhD student at **[University of Edinburgh(UoE)](https://eng.ed.
 Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for possible research collaboration. If you are interested in me, please feel free to contact me at any time.
 
 
-# 📯 News
+# 🔥 News
 - *2025.01*: &nbsp;🎉🎉 I started my PhD study in **University of Edinburgh**, supervised by [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis).
 - *2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li).
 - *2024.09*: &nbsp;🎉🎉 I got a conditional **PhD offer** at **the University of Edinburgh**.
@@ -64,7 +64,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SOCC 2025</div><img src='images/linkbo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications]
+**LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**
 
 **Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
 </div>
@@ -124,7 +124,12 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 	- Use Python to verify result automatically.
 	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT).
 
-# 🔥 Project
+# 📖 Skill
+- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
+- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
+- **Language:** Mandarian(Native), TOEFL(iBT) 92, IELTS 6.5
+<!--#
+# 🔥📯 Project
 ## 2024.06 - 2024.09, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
 - Designed the SoC (System on Chip) architecture, incorporating an RISC-V core, memory, Levit accelerator, and AHB/APB buses with connected peripherals. Utilized previous project designs for the RISC-V core and Levit accelerator.
 - Developed a Python program to convert assembly code to binary, enabling rapid generation of binary instruction files to meet SoC requirements.
@@ -167,16 +172,13 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 - Use VCS to verify the function of Tinycore based on RISC-V on the test platform.
 - Use DC compiler to synthesize four different hardware description ALUs, and analyze the comprehensive report to compare and analyze different parameters.
 
-# 📝 Skill
-- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
-- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
-- **Language:** Mandarian(Native), TOEFL(iBT) 92
+
 
 # 🎖 Honors and Awards
 - *2022,* My bachelor thesis of NoC get A grade.
 - *2021/2022,* Unergraduate Scholarship. 
 
-<!--# 📖 Self-Studying
+ 📖 Self-Studying
 - **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
 	
 	- Provides the most up-to-date information on current SOCs and architectural insights for the design of future semiconductor systems
