@@ -128,8 +128,8 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 - **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
 - **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
 - **Language:** Mandarian(Native), TOEFL(iBT) 92, IELTS 6.5
-<!--#
-# 🔥📯 Project
+
+<!--# 🔥📯 Project
 ## 2024.06 - 2024.09, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
 - Designed the SoC (System on Chip) architecture, incorporating an RISC-V core, memory, Levit accelerator, and AHB/APB buses with connected peripherals. Utilized previous project designs for the RISC-V core and Levit accelerator.
 - Developed a Python program to convert assembly code to binary, enabling rapid generation of binary instruction files to meet SoC requirements.
@@ -178,7 +178,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 - *2022,* My bachelor thesis of NoC get A grade.
 - *2021/2022,* Unergraduate Scholarship. 
 
- 📖 Self-Studying
+# 📖 Self-Studying
 - **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
 	
 	- Provides the most up-to-date information on current SOCs and architectural insights for the design of future semiconductor systems
