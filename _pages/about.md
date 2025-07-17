@@ -67,6 +67,8 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 [LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications]
 
 **Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
+</div>
+</div>
 
 # 💻 Internships
 ## 2024.03 - 2024.10, NXP Semidocutors, Nijmegen NL
