@@ -27,7 +27,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 # 🔥 News
 <div style="height:500px;overflow-y:auto"> 
 <p></p><ul>
-<li> *2025.01*: &nbsp;🎉🎉 I started my PhD study in **University of Edinburgh**, supervised by [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis).</li>
+<li> *2025.01*: &nbsp;🎉🎉 I started my PhD study in **University of Edinburgh**, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis).</li>
 <li>*2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li).</li>
 <li>*2024.09*: &nbsp;🎉🎉 I got a conditional **PhD offer** at **the University of Edinburgh**.</li>
 <li>*2024.03*: &nbsp;🎉🎉 Congratulations **[Intrinsic ID](https://www.intrinsic-id.com/)** is acquired by **[Synopsys](https://www.synopsys.com/)**.</li>
