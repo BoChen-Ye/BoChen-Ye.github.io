@@ -27,16 +27,17 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 # 🔥 News
 <div style="height:500px;overflow-y:auto"> 
 <p></p><ul>
-<li> *2025.01*: &nbsp;🎉🎉 I started my PhD study in **University of Edinburgh**, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis).</li>
-<li>*2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: [Marc Geilen](https://www.tue.nl/en/research/researchers/marc-geilen), Manil Dev Gomony and [Chengmin Li](https://www.tue.nl/en/research/researchers/chengmin-li).</li>
-<li>*2024.09*: &nbsp;🎉🎉 I got a conditional **PhD offer** at **the University of Edinburgh**.</li>
-<li>*2024.03*: &nbsp;🎉🎉 Congratulations **[Intrinsic ID](https://www.intrinsic-id.com/)** is acquired by **[Synopsys](https://www.synopsys.com/)**.</li>
-<li>*2024.03*: &nbsp;🎉🎉 I change my master thesis to **[NXP Semiconductors](https://www.nxp.com/)** in Nijmegen, supervised by [Kimmo Salo](https://www.linkedin.com/in/kimmosalo/)(NXP), [Gustavo Naspolini](https://www.linkedin.com/in/gustavo-naspolini-b866287/)(NXP).</li>
-<li> *2023.11*: &nbsp;🎉🎉 I started working as a Oversea VC Intern(Remote) at [Linear Capital](https://www.linear.vc/).</li>
+<li> [2025.07] &nbsp;🎉🎉 Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  accepted to <strong>SOCC 2025</strong>.</li>
+<li> [2025.01] &nbsp;🎉🎉 I started my PhD study in <strong>University of Edinburgh</strong>, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a>.</li>
+<li>*2024.11*: &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: <a href="https://www.tue.nl/en/research/researchers/marc-geilen">Marc Geilen</a>, <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a> and <a href="https://www.tue.nl/en/research/researchers/chengmin-li">Chengmin Li</a>.</li>
+<li>*2024.09*: &nbsp;🎉🎉 I got a conditional <strong>PhD offer<strong> at <strong>the University of Edinburgh<strong>.</li>
+<li>*2024.03*: &nbsp;🎉🎉 Congratulations <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> is acquired by <a href="https://www.synopsys.com/">Synopsys</a>.</li>
+<li>*2024.03*: &nbsp;🎉🎉 I change my master thesis to <a href="https://www.nxp.com/">NXP Semiconductors</a> in Nijmegen, supervised by <a href="https://www.linkedin.com/in/kimmosalo/">Kimmo Salo</a>(NXP), <a href="https://www.linkedin.com/in/gustavo-naspolini-b866287/">Gustavo Naspolini</a>(NXP).</li>
+<li> *2023.11*: &nbsp;🎉🎉 I started working as a Oversea VC Intern(Remote) at <a href="https://www.linear.vc/">Linear Capital</a>.</li>
 <li>*2023.10*: &nbsp;🎉🎉 I finished my internship at Intrinsic ID and got 8.5 of internship. I also start my research on Neuromorphic at TU/e.</li>
-<li>*2023.07*: &nbsp;🎉🎉 I will be an intern at **[Intrinsic ID](https://www.intrinsic-id.com/)** for 3.5 months, supervised by [Rui Wang](https://www.linkedin.com/in/rui-wang-a4499611b/)(Intrinsic ID), [Roel Maes](https://www.linkedin.com/in/roel-maes-37ba4a4/)(Intrinsic ID) and [Manil Dev Gomony](https://www.tue.nl/en/research/researchers/manil-dev-gomony)(TU/e & Nokia Bell Labs).</li>
-<li>*2022.09*: &nbsp;🎉🎉 I started my master's study at TU/e.</li>
-<li> *2022.07*: &nbsp;🎉🎉 I am graduated from Hefei University of Technology with a bachelor degree, supervised by [Zhenmin Li](https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm). </li>
+<li>*2023.07*: &nbsp;🎉🎉 I will be an intern at <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> for 3.5 months, supervised by <a href="https://www.linkedin.com/in/rui-wang-a4499611b/">Rui Wang</a>(Intrinsic ID), <a href="https://www.linkedin.com/in/roel-maes-37ba4a4/">Roel Maes</a>(Intrinsic ID) and <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a>(TU/e & Nokia Bell Labs).</li>
+<li>*2022.09*: &nbsp;🎉🎉 I started my master's study at <strong>Eindhoven University of Technology (TU/e), The Netherlands<strong>.</li>
+<li> *2022.07*: &nbsp;🎉🎉 I am graduated from <strong>Hefei University of Technology<strong> with a bachelor degree, supervised by <a href="https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm">Zhenmin Li</a>. </li>
 </ul> 
 </div>
 
@@ -47,7 +48,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 - **Advisors:** [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis)
 - **Research interest:** Digital Hardware Accelerator for LLMs, VLMs, and generative AI.
 
-## 2022.09-2024.11, Eindhoven University of Technology, Netherlands
+## 2022.09-2024.11, Eindhoven University of Technology, The Netherlands
 - **Msc.Eletrical Engneering**(track:Electronic System) 
 - **GPA:** [7.8/10](https://BoChen-Ye.github.io/files/transcript_Master.pdf)
 - **Relevant Course:** Digital integrated circuit design, Embedded computer architecture, Electronic design automation,
