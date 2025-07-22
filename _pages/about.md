@@ -25,7 +25,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 
 
 # 🔥 News
-<div style="height:500px;overflow-y:auto"> 
+<div style="height:300px;overflow-y:auto"> 
 <p></p><ul>
 <li> [2025.07] &nbsp;🎉🎉 Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  accepted to <strong>SOCC 2025</strong>.</li>
 <li> [2025.01] &nbsp;🎉🎉 I started my PhD study in <strong>University of Edinburgh</strong>, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a>.</li>
@@ -40,7 +40,6 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 <li> *2022.07*: &nbsp;🎉🎉 I am graduated from <strong>Hefei University of Technology</strong> with a bachelor degree, supervised by <a href="https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm">Zhenmin Li</a>. </li>
 </ul> 
 </div>
-
 
 # 🏫 Educations
 ## 2025.01-Now, University of Edinburgh, United Kingdom
