@@ -41,6 +41,19 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 </ul> 
 </div>
 
+# 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SOCC 2025</div><img src='images/linkbo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**
+
+**Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
+
+IEEE International System-on-Chip Conference (**SOCC**), 2025
+</div>
+</div>
+
 # 🏫 Educations
 ## 2025.01-Now, University of Edinburgh, United Kingdom
 - **PhD student of Engneering**
@@ -61,19 +74,6 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 - **Relevant Class:** Analysis and Design of Integrated Digital Circuit, Microprocessor architecture and design,
 					Introduction to SoC design, Verilog HDL and FPGA implementation and so on.
 - **Thesis:** [The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip](https://BoChen-Ye.github.io/files/Bsc_thesis.pdf)
-
-# 📝 Publications 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SOCC 2025</div><img src='images/linkbo.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-**LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**
-
-**Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
-
-IEEE International System-on-Chip Conference (**SOCC**), 2025
-</div>
-</div>
 
 # 💻 Internships
 ## 2024.03 - 2024.10, NXP Semidocutors, Nijmegen NL
