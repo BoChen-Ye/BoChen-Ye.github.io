@@ -27,7 +27,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 # 🔥 News
 <div style="height:300px;overflow-y:auto"> 
 <p></p><ul>
-<li>[2025.07] &nbsp;🎉🎉 Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  accepted to <strong>SOCC 2025</strong>.</li>
+<li>[2025.07] <b style="color:#3EA055;">[Paper]</b>  Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  accepted to <strong>SOCC 2025</strong>.</li>
 <li>[2025.01] &nbsp;🎉🎉 I started my PhD study in <strong>University of Edinburgh</strong>, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a>.</li>
 <li>[2024.11] &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: <a href="https://www.tue.nl/en/research/researchers/marc-geilen">Marc Geilen</a>, <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a> and <a href="https://www.tue.nl/en/research/researchers/chengmin-li">Chengmin Li</a>.</li>
 <li>[2024.09] &nbsp;🎉🎉 I got a conditional <strong>PhD offer</strong> at <strong>the University of Edinburgh</strong>.</li>
@@ -70,6 +70,8 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 **LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**
 
 **Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
+
+IEEE International System-on-Chip Conference (**SOCC**), 2025
 </div>
 </div>
 
