@@ -49,9 +49,9 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 <b style="color:#000000;">**LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**</b>
 
 
-<strong>**Bochen Ye**</strong> (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
+<b style="color:#000000;">**Bochen Ye**</b>(TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
 
-IEEE International System-on-Chip Conference (**SOCC**), 2025
+IEEE International System-on-Chip Conference (<b style="color:#000000;">**SOCC**</b>), 2025
 
 <b style="color:#FF2400;">Selected as Oral Presentation</b>
 
