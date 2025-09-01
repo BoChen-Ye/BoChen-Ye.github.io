@@ -46,15 +46,16 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">SOCC 2025</div><img src='images/linkbo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<b> **LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications** </b>
+<b style="color:#000000;">**LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**</b>
 
-**Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
+
+<strong>**Bochen Ye**</strong> (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
 
 IEEE International System-on-Chip Conference (**SOCC**), 2025
 
 <b style="color:#FF2400;">Selected as Oral Presentation</b>
 
-[Paper]/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[ArXiv(Full Version)]()
+[Paper]()/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[ArXiv(Full Version)]()
 
 We propose LinkBo, a single-wire communication protocol with dedicated hardware architecture, designed to achieve low latency (50.4 µs), high throughput (up to 7.5 Mbps @ 11 cm and 300 kbps @ 15 m), and robust priority-aware delivery.
 </div>
