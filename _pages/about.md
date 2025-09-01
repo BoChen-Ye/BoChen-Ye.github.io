@@ -51,14 +51,18 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 **Bochen Ye** (TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
 
 IEEE International System-on-Chip Conference (**SOCC**), 2025
+<b style="color:#FF2400;">Selected as Oral Presentation</b>
+[Paper]/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[ArXiv(Full Version)]()
+
+We propose LinkBo, a single-wire communication protocol with dedicated hardware architecture, designed to achieve low latency (50.4 µs), high throughput (up to 7.5 Mbps @ 11 cm and 300 kbps @ 15 m), and robust priority-aware delivery.
 </div>
 </div>
 
 # 🏫 Educations
 ## 2025.01-Now, University of Edinburgh, United Kingdom
 - **PhD student of Engneering**
-- **Advisors:** [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa) and [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis)
-- **Research interest:** Digital Hardware Accelerator for LLMs, VLMs, and generative AI.
+- **Advisors:**  [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis) and [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa)
+- **Research interest:** Digital Hardware Accelerator for Generative AI.
 
 ## 2022.09-2024.11, Eindhoven University of Technology, The Netherlands
 - **Msc.Eletrical Engneering**(track:Electronic System) 
