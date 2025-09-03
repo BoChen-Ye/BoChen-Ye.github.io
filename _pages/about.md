@@ -55,7 +55,7 @@ IEEE International System-on-Chip Conference (<b style="color:#000000;">**SOCC**
 
 <b style="color:#FF2400;">Selected as Oral Presentation</b>
 
-[Paper]()/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[ArXiv(Full Version)]()
+[Paper]()/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[ArXiv(Full Version)](https://arxiv.org/abs/2509.01339v1)
 
 We propose LinkBo, a single-wire communication protocol with dedicated hardware architecture, designed to achieve low latency (50.4 µs), high throughput (up to 7.5 Mbps @ 11 cm and 300 kbps @ 15 m), and robust priority-aware delivery.
 </div>
