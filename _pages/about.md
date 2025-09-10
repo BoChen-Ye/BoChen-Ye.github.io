@@ -136,10 +136,14 @@ We propose LinkBo, a single-wire communication protocol with dedicated hardware 
 	- Use Python to verify result automatically.
 	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT).
 
+# 🎖 Honors and Awards
+-  IEEE CAS Student Travel Grant, SOCC 2025
+-  Unergraduate Scholarship 2021/2022
+
 # 📖 Skill
 - **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
 - **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
-- **Language:** Mandarian(Native), TOEFL(iBT) 92, IELTS 6.5
+- **Language:** Mandarian(Native), English
 
 <!--# 🔥📯 Project
 ## 2024.06 - 2024.09, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
@@ -186,9 +190,7 @@ We propose LinkBo, a single-wire communication protocol with dedicated hardware 
 
 
 
-# 🎖 Honors and Awards
-- *2022,* My bachelor thesis of NoC get A grade.
-- *2021/2022,* Unergraduate Scholarship. 
+
 
 # 📖 Self-Studying
 - **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
