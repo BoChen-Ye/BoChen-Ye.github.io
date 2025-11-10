@@ -73,7 +73,7 @@ We propose LinkBo, a single-wire communication protocol with dedicated hardware 
 - **Relevant Course:** Digital integrated circuit design, Embedded computer architecture, Electronic design automation,
 					Applied combinatorial algorithms, Intelligent architectures(focus on DNN/Hardware co-design), 
 					Systems on silicon(focus on SoC backend), Neuro computation(focus on Neuromorphic computing).
-- **Thesis:** LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications (8.5/10)
+- **Thesis:** [LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications](https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf) (8.5/10)
 
 ## 2018.09 - 2022.07, Hefei University of Technology, China
 - **Bachelor** in Integrated Circuit Design and Integrated Systems 
