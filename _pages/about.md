@@ -28,9 +28,9 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 <div style="height:300px;overflow-y:auto"> 
 <p></p><ul>
 <li>[2026.03] &nbsp;🎉🎉  I served as teaching assistant of <strong>Mini ASIC-BASIC Workshop</strong> and give a tutorial about <strong>Digital ASIC Flow in GF-22nm</strong>.</li>
-<li>[2026.02] &nbsp;🎉🎉  I finished my tape-out <strong>Bent-Pyramid Systolic Array</strong> in TSMC-180nm.</li>
+<li>[2026.02] &nbsp;🎉🎉  I finished my tape-out <strong>Bent-Pyramid Systolic Array</strong> in TSMC-180nm and served as a demonstrator of <strong>Digital System Laboratory 4</strong>.</li>
 <li>[2025.11] &nbsp;🎉🎉  I attend course <strong>Advanced Node Digital IC Implementation</strong> of Europractice and got certficate.</li>
-<li>[2025.10] &nbsp;🎉🎉  I attend <strong>MeMRISYS 2025</strong> as a volunteer in Edinburgh.</li>
+<li>[2025.10] &nbsp;🎉🎉  I attend <strong>MeMRISYS 2025</strong> as a volunteer in Edinburgh and served as a demonstrator of <strong>Digital System Laboratory 3</strong>.</li>
 <li>[2025.09] <b style="color:#FF2400;">[Conference]</b>  I present my work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  on <strong>SOCC 2025</strong> in Dubai, UAE.</li>
 <li>[2025.07] <b style="color:#3EA055;">[Paper]</b>  Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  accepted to <strong>SOCC 2025</strong> and selected as <strong>oral presentation</strong>.</li>
 <li>[2025.01] &nbsp;🎉🎉 I started my PhD study in <strong>University of Edinburgh</strong>, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a>.</li>
