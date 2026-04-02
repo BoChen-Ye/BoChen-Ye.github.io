@@ -69,7 +69,7 @@ We propose LinkBo, a single-wire communication protocol with dedicated hardware 
 
 # 📝 Research Artifact
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/PGR-poster.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/PGR-Poster.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 <b style="color:#000000;">**Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework**</b>
@@ -83,7 +83,7 @@ School of Engineering Research Conference, 2026
 
 This poster presents an automated design space exploration framework for dataflow systolic GenAI accelerators, aiming to identify the optimal hardware architecture for diverse workloads under given resource budgets.
 
-[Slides]()/[Poster]()/[Website]()
+[Slides]()/[Poster]()/[Website](https://bochen-ye.github.io/pgr26_web/)
 
 
 </div>
