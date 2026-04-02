@@ -68,6 +68,7 @@ We propose LinkBo, a single-wire communication protocol with dedicated hardware 
 </div>
 
 # 📝 Research Artifact
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/socc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
