@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a fist-year PhD student at **[University of Edinburgh(UoE)](https://eng.ed.ac.uk/centre-electronics-frontiers)**, UK. I got my Master degree from **[Eindhoven University of Technology(TU/e)](https://www.tue.nl/en/)**, Netherlands and my bachelor degree from **[Hefei University of Technology(HFUT)](https://www.hfut.edu.cn/)**, China. My research focuses on designing digital hardware acceleration systems for large-scale AI models using novel architectures, aiming to overcome memory and computational bottlenecks. My current focus is on advancing hardware accelerators for LLMs, VLMs, and generative AI to enable next-generation intelligent computing.
+I am a Second-year PhD student at **[University of Edinburgh(UoE)](https://eng.ed.ac.uk/centre-electronics-frontiers)**, UK. I got my Master degree from **[Eindhoven University of Technology(TU/e)](https://www.tue.nl/en/)**, Netherlands and my bachelor degree from **[Hefei University of Technology(HFUT)](https://www.hfut.edu.cn/)**, China. My research focuses on designing digital hardware acceleration systems for large-scale AI models using novel architectures, aiming to overcome memory and computational bottlenecks. My current focus is on advancing hardware accelerators for LLMs, VLMs, and generative AI to enable next-generation intelligent computing.
 
 <!--I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.-->
 
@@ -27,6 +27,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 # 🔥 News
 <div style="height:300px;overflow-y:auto"> 
 <p></p><ul>
+<li>[2026.04] &nbsp;🎉🎉  I present a poster and give a short 2 minute presentation about <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> on <strong>School of Engineering Research Conference 2026</strong>.</li>
 <li>[2026.03] &nbsp;🎉🎉  I served as teaching assistant of <strong>Mini ASIC-BASIC Workshop</strong> and give a tutorial about <strong>Digital ASIC Flow in GF-22nm</strong>.</li>
 <li>[2026.02] &nbsp;🎉🎉  I finished my first tape-out <strong>Bent-Pyramid Systolic Array</strong> in TSMC-180nm and served as a demonstrator of <strong>Digital System Laboratory 4</strong>.</li>
 <li>[2025.11] &nbsp;🎉🎉  I attend course <strong>Advanced Node Digital IC Implementation</strong> of Europractice and got certficate.</li>
@@ -63,6 +64,27 @@ IEEE International System-on-Chip Conference (<b style="color:#000000;">**SOCC**
 [Paper](https://ieeexplore.ieee.org/document/11235355)/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[Poster](https://BoChen-Ye.github.io/files/LinkBo_poster.pdf)/[ArXiv(Full Version)](https://arxiv.org/abs/2509.01339v1)/[Website](https://bochen-ye.github.io/LinkBo_web/)
 
 We propose LinkBo, a single-wire communication protocol with dedicated hardware architecture, designed to achieve low latency (50.4 µs), high throughput (up to 7.5 Mbps @ 11 cm and 300 kbps @ 15 m), and robust priority-aware delivery.
+</div>
+</div>
+
+# 📝 Research Artifact
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/socc.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<b style="color:#000000;">**Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework**</b>
+
+
+<b style="color:#000000;">**Bochen Ye**</b>(UoE), Shady Agwa (UoE), Themis Prodromakis (UoE)
+
+School of Engineering Research Conference, 2026
+
+<!-- <b style="color:#FF2400;">Selected as Oral Presentation</b> and Student Contest -->
+
+This poster presents an automated design space exploration framework for dataflow systolic GenAI accelerators, aiming to identify the optimal hardware architecture for diverse workloads under given resource budgets.
+
+[Slides]()/[Poster]()/[Website]()
+
+
 </div>
 </div>
 
