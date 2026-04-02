@@ -69,8 +69,13 @@ We propose LinkBo, a single-wire communication protocol with dedicated hardware 
 
 # 📝 Research Artifact
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/PGR-Poster.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/PGR-Poster.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1"> -->
+<img
+  src="images/PGR-Poster.png"
+  alt="PGR Poster"
+  style="max-width: 100%; height: auto; display: block; margin: 0 auto;"
+>
 
 <b style="color:#000000;">**Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework**</b>
 
