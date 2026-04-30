@@ -84,11 +84,11 @@ School of Engineering Research Conference, 2026
 
 <!-- This poster presents an automated design space exploration framework for dataflow systolic GenAI accelerators, aiming to identify the optimal hardware architecture for diverse workloads under given resource budgets.
 
-[Slides]()/[Poster]()/[Website](https://bochen-ye.github.io/pgr26_web/)  -->
+[Slides]()/[Poster]()/[Website](https://bochen-ye.github.io/pgr26_web/)  
 
 
 </div>
-</div>
+</div>-->
 
 # 🏫 Educations
 ## 2025.01-Now, University of Edinburgh, United Kingdom
