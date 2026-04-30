@@ -27,6 +27,7 @@ Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for 
 # 🔥 News
 <div style="height:300px;overflow-y:auto"> 
 <p></p><ul>
+<li>[2026.04] &nbsp;🎉🎉  I finished my first-year annual review.</li>
 <li>[2026.04] &nbsp;🎉🎉  I present a poster and give a short 2 minute presentation about <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> on <strong>School of Engineering Research Conference 2026</strong>.</li>
 <li>[2026.03] &nbsp;🎉🎉  I served as teaching assistant of <strong>Mini ASIC-BASIC Workshop</strong> and give a tutorial about <strong>Digital ASIC Flow in GF-22nm</strong>.</li>
 <li>[2026.02] &nbsp;🎉🎉  I finished my first tape-out <strong>Bent-Pyramid Systolic Array</strong> in TSMC-180nm and served as a demonstrator of <strong>Digital System Laboratory 4</strong>.</li>
@@ -81,9 +82,9 @@ School of Engineering Research Conference, 2026
 
 <!-- <b style="color:#FF2400;">Selected as Oral Presentation</b> and Student Contest -->
 
-This poster presents an automated design space exploration framework for dataflow systolic GenAI accelerators, aiming to identify the optimal hardware architecture for diverse workloads under given resource budgets.
+<!-- This poster presents an automated design space exploration framework for dataflow systolic GenAI accelerators, aiming to identify the optimal hardware architecture for diverse workloads under given resource budgets.
 
-[Slides]()/[Poster]()/[Website](https://bochen-ye.github.io/pgr26_web/) -->
+[Slides]()/[Poster]()/[Website](https://bochen-ye.github.io/pgr26_web/)  -->
 
 
 </div>
