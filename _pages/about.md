@@ -91,56 +91,111 @@ School of Engineering Research Conference, 2026
 </div>-->
 
 # 🏫 Educations
-## 2025.01-Now, University of Edinburgh, United Kingdom
-- **PhD student of Engneering**
-- **Advisors:**  [Professor Themis Prodromakis](https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis) and [Dr. Shady Agwa](https://edwebprofiles.ed.ac.uk/profile/shadyagwa)
-- **Research interest:** Digital Hardware Accelerator for Generative AI.
+<div class="profile-section">
+  <div class="profile-section__list profile-education-list">
+    <article class="profile-entry profile-entry--education">
+      <div class="profile-entry__logo-wrap">
+        <img class="profile-entry__logo" src="https://logo.clearbit.com/ed.ac.uk?size=160" alt="University of Edinburgh logo">
+      </div>
+      <div class="profile-entry__content">
+        <h3 class="profile-entry__title">University of Edinburgh</h3>
+        <p class="profile-entry__subtitle">PhD Student in Engineering</p>
+        <p class="profile-entry__meta">January 2025 - Present</p>
+        <p class="profile-entry__detail"><strong>Advisors:</strong> <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a> and <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a></p>
+        <p class="profile-entry__detail"><strong>Research interest:</strong> Digital hardware accelerators for generative AI.</p>
+      </div>
+    </article>
 
-## 2022.09-2024.11, Eindhoven University of Technology, The Netherlands
-- **Msc.Eletrical Engneering**(track:Electronic System) 
-- **GPA:** [7.8/10](https://BoChen-Ye.github.io/files/transcript_Master.pdf)
-- **Relevant Course:** Digital integrated circuit design, Embedded computer architecture, Electronic design automation,
-					Applied combinatorial algorithms, Intelligent architectures(focus on DNN/Hardware co-design), 
-					Systems on silicon(focus on SoC backend), Neuro computation(focus on Neuromorphic computing).
-- **Thesis:** [LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications](https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf) (8.5/10)
+    <article class="profile-entry profile-entry--education">
+      <div class="profile-entry__logo-wrap">
+        <img class="profile-entry__logo" src="https://logo.clearbit.com/tue.nl?size=160" alt="Eindhoven University of Technology logo">
+      </div>
+      <div class="profile-entry__content">
+        <h3 class="profile-entry__title">Eindhoven University of Technology</h3>
+        <p class="profile-entry__subtitle">MSc Electrical Engineering, Electronic Systems Track</p>
+        <p class="profile-entry__meta">September 2022 - November 2024</p>
+        <p class="profile-entry__detail"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_Master.pdf">7.8/10</a></p>
+        <p class="profile-entry__detail"><strong>Thesis:</strong> <a href="https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf">LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications</a> (8.5/10)</p>
+        <p class="profile-entry__detail"><strong>Relevant courses:</strong> Digital integrated circuit design, embedded computer architecture, electronic design automation, intelligent architectures, systems on silicon, and neuro computation.</p>
+      </div>
+    </article>
 
-## 2018.09 - 2022.07, Hefei University of Technology, China
-- **Bachelor** in Integrated Circuit Design and Integrated Systems 
-- **GPA:** [83.1/100](https://BoChen-Ye.github.io/files/transcript_bsc.pdf) (TOP 22%)
-- **Relevant Course:** Analysis and Design of Integrated Digital Circuit, Microprocessor architecture and design,
-					Introduction to SoC design, Verilog HDL and FPGA implementation and so on.
-- **Thesis:** [The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip](https://BoChen-Ye.github.io/files/Bsc_thesis.pdf)
+    <article class="profile-entry profile-entry--education">
+      <div class="profile-entry__logo-wrap">
+        <img class="profile-entry__logo" src="https://logo.clearbit.com/hfut.edu.cn?size=160" alt="Hefei University of Technology logo">
+      </div>
+      <div class="profile-entry__content">
+        <h3 class="profile-entry__title">Hefei University of Technology</h3>
+        <p class="profile-entry__subtitle">Bachelor in Integrated Circuit Design and Integrated Systems</p>
+        <p class="profile-entry__meta">September 2018 - July 2022</p>
+        <p class="profile-entry__detail"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_bsc.pdf">83.1/100</a> (Top 22%)</p>
+        <p class="profile-entry__detail"><strong>Thesis:</strong> <a href="https://BoChen-Ye.github.io/files/Bsc_thesis.pdf">The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip</a></p>
+        <p class="profile-entry__detail"><strong>Relevant courses:</strong> Analysis and design of integrated digital circuit, microprocessor architecture and design, introduction to SoC design, and Verilog HDL with FPGA implementation.</p>
+      </div>
+    </article>
+  </div>
+</div>
 
 # 💻 Internships
-## 2024.03 - 2024.10, NXP Semidocutors, Nijmegen NL
--  **Digital Design Intern**
+<div class="profile-section">
+  <div class="profile-timeline">
+    <article class="profile-entry profile-entry--timeline">
+      <div class="profile-timeline__marker"></div>
+      <div class="profile-entry__logo-wrap profile-entry__logo-wrap--timeline">
+        <img class="profile-entry__logo" src="https://logo.clearbit.com/nxp.com?size=160" alt="NXP Semiconductors logo">
+      </div>
+      <div class="profile-entry__content">
+        <h3 class="profile-entry__title">NXP Semiconductors</h3>
+        <p class="profile-entry__subtitle">Digital Design Intern</p>
+        <p class="profile-entry__detail"><strong>Location:</strong> Nijmegen, The Netherlands</p>
+        <p class="profile-entry__detail"><strong>Supervisors:</strong> Kimmo Salo, Gustavo Naspolini, and Manil Dev Gomony</p>
+        <p class="profile-entry__meta">March 2024 - October 2024</p>
+        <ul class="profile-entry__highlights">
+          <li>Defined a custom 1-wire digital communication protocol between two ICs.</li>
+          <li>Built a high-level Simulink model and evaluated the channel with parasitic parameters.</li>
+          <li>Developed and verified a SystemVerilog IP and built a two-FPGA demonstrator.</li>
+        </ul>
+      </div>
+    </article>
 
-	I am working in AA-APS, this thesis project supervised by Kimmo Salo(NXP), Gustavo Naspolini(NXP), and Manil Dev Gomony(Bell Lab & TU/e).
-	My work as follow:
-	- Define a custom 1-wire digital communication protocol between two ICs.
-	- Develope high-level model in **Simulink** and test the channel model with parasitic parameter.
-	- Develop and verify an IP module implementing the new communication protocol using **SystemVerilog**.
-	- Use **Cadence Xcelium** to simulate, **Cadence SimVision** to see the wave, **Cadence Conformal Lint** to lint and **DesignSync** to verision control. 
-	- Build a prototype demonstrator with 2 FPGAs.
+    <article class="profile-entry profile-entry--timeline">
+      <div class="profile-timeline__marker"></div>
+      <div class="profile-entry__logo-wrap profile-entry__logo-wrap--timeline">
+        <img class="profile-entry__logo" src="https://logo.clearbit.com/linear.vc?size=160" alt="Linear Capital logo">
+      </div>
+      <div class="profile-entry__content">
+        <h3 class="profile-entry__title">Linear Capital</h3>
+        <p class="profile-entry__subtitle">Oversea VC Intern</p>
+        <p class="profile-entry__detail"><strong>Location:</strong> China (Remote, part-time)</p>
+        <p class="profile-entry__meta">November 2023 - June 2024</p>
+        <ul class="profile-entry__highlights">
+          <li>Mapped overseas talent in academia and industry for recruitment and collaboration.</li>
+          <li>Assessed commercialization potential, market opportunities, and implementation risks.</li>
+          <li>Supported early-stage investment planning and startup collaboration.</li>
+        </ul>
+      </div>
+    </article>
 
-## 2023.11 - 2024.06, Linear Capital, China (Remote Part-time)
-- **Oversea VC Intern**
-
-	During my internship at Linear Capital, my responsibilities included:
-	- Mapping overseas talent in the academic and industrial sectors, providing vital insights for project recruitment and business collaborations.
-	- Conducting assessments for the commercialization and implementation of potential projects, analyzing market opportunities and risks to support investment decisions.
-	- Participating in the planning and execution of early-stage investments, collaborating with startups to drive project success.
-	
-## 2023.07 - 2023.10, Intrinsic ID(Now acquired by Synopsys), Eindhoven NL
--  **IP Modeling and Digital IC Design Intern**
-
-	I worked in Research and Security Department(now SoC Security of Synopsys). This internship supervised by Manil Dev Gomony(Bell Lab & TU/e) and Rui Wang & Roel Maes(Intrinsic ID).
-	My work as follow:
-	- Study on a trellis-based Reed-Muller codec.(Algorithm) 
-	- Use **Python** modeling it as a digital IP module.(software)
-	- Design the architecture of codec and implementation by **VHDL**.(harware)
-	- Verify on **Arty-z7 FPGA**(zynq) with vivado and vitis.(Embeded System)
-	- Under the 50MHz condition, after several improvements, the hardware resource consumption decreased from 938 LUTs to 843 LUTs. Meanwhile, the decoding latency reduced to 6 clock cycles, and continuous decoding became possible.
+    <article class="profile-entry profile-entry--timeline">
+      <div class="profile-timeline__marker"></div>
+      <div class="profile-entry__logo-wrap profile-entry__logo-wrap--timeline">
+        <img class="profile-entry__logo" src="https://logo.clearbit.com/intrinsic-id.com?size=160" alt="Intrinsic ID logo">
+      </div>
+      <div class="profile-entry__content">
+        <h3 class="profile-entry__title">Intrinsic ID</h3>
+        <p class="profile-entry__subtitle">IP Modeling and Digital IC Design Intern</p>
+        <p class="profile-entry__detail"><strong>Location:</strong> Eindhoven, The Netherlands</p>
+        <p class="profile-entry__detail"><strong>Supervisors:</strong> Manil Dev Gomony, Rui Wang, and Roel Maes</p>
+        <p class="profile-entry__meta">July 2023 - October 2023</p>
+        <ul class="profile-entry__highlights">
+          <li>Studied a trellis-based Reed-Muller codec and modeled it in Python.</li>
+          <li>Designed the hardware architecture in VHDL and verified it on Arty-Z7 FPGA.</li>
+          <li>Reduced resource usage from 938 LUTs to 843 LUTs and achieved 6-cycle decoding latency.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div>
 
 <!-- # 🔬 Research Experience
 ## 2024.11 - 2024.12, Research Assistant of 3D point cloud hardware (Remote)
@@ -281,16 +336,18 @@ Director, Innovation and Entrepreneurship Department
 
 <div class="visitor-map">
   <div class="visitor-map__widget">
-    <script
-      type="text/javascript"
-      id="mapmyvisitors"
-      src="//mapmyvisitors.com/map.js?d=vKMfTYe-lJEZr4YgvFgg6TYKLenoeLAhc_tVHN4E4HE&cl=ffffff&w=200">
-    </script>
-    <noscript>
-      <a href="https://mapmyvisitors.com/web/1c4l5" title="Visit tracker">
-        <img src="https://mapmyvisitors.com/map.png?d=vKMfTYe-lJEZr4YgvFgg6TYKLenoeLAhc_tVHN4E4HE&cl=ffffff" alt="Visitor map">
-      </a>
-    </noscript>
+    {% if site.clustrmaps.enabled and site.clustrmaps.widget_id and site.clustrmaps.widget_id != "" %}
+      <script
+        type="text/javascript"
+        id="clustrmaps"
+        src="//clustrmaps.com/map_v2.js?d={{ site.clustrmaps.widget_id }}&cl=ffffff&w={{ site.clustrmaps.width | default: 200 }}">
+      </script>
+    {% else %}
+      <div class="visitor-map__placeholder">
+        ClustrMaps is enabled, but the widget token is not set yet.
+        Paste the <code>d=...</code> value from your ClustrMaps embed code into <code>_config.yml</code> under <code>clustrmaps.widget_id</code>.
+      </div>
+    {% endif %}
   </div>
 </div>
 

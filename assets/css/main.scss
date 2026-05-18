@@ -127,7 +127,7 @@ h1:before, .anchor:before {
     justify-content: center;
     align-items: center;
     min-height: 120px;
-    max-width: 220px;
+    max-width: 280px;
     margin: 0 auto;
 }
 
@@ -145,4 +145,135 @@ h1:before, .anchor:before {
     border: 1px dashed #c9d6e5;
     border-radius: 10px;
     line-height: 1.7;
+}
+
+.profile-section {
+    margin-bottom: 2.5rem;
+}
+
+.profile-section__list {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.profile-entry {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.profile-entry__logo-wrap {
+    flex: 0 0 72px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.profile-entry__logo-wrap--timeline {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-entry__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.55rem;
+}
+
+.profile-entry__content {
+    min-width: 0;
+    flex: 1 1 auto;
+}
+
+.profile-entry__title {
+    margin: 0 0 0.2rem;
+    font-size: 1.35em;
+    line-height: 1.3;
+}
+
+.profile-entry__subtitle {
+    margin: 0 0 0.2rem;
+    color: #5f6875;
+    font-weight: 600;
+}
+
+.profile-entry__meta {
+    margin: 0.2rem 0 0.55rem;
+    color: #d06d3c;
+    font-weight: 600;
+}
+
+.profile-entry__detail {
+    margin: 0.22rem 0;
+}
+
+.profile-entry__highlights {
+    margin: 0.6rem 0 0;
+    padding-left: 1.2rem;
+}
+
+.profile-entry__highlights li {
+    margin-bottom: 0.35rem;
+}
+
+.profile-timeline {
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.profile-timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.18rem;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    width: 2px;
+    background: #e6b39a;
+}
+
+.profile-entry--timeline {
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+
+.profile-entry--timeline:last-child {
+    margin-bottom: 0;
+}
+
+.profile-timeline__marker {
+    position: absolute;
+    left: -0.1rem;
+    top: 2rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d06d3c;
+    box-shadow: 0 0 0 4px #fff;
+}
+
+@media (max-width: 768px) {
+    .profile-entry {
+        gap: 0.85rem;
+    }
+
+    .profile-entry__logo-wrap {
+        flex-basis: 58px;
+        width: 58px;
+        height: 58px;
+    }
+
+    .profile-entry__title {
+        font-size: 1.15em;
+    }
+
+    .profile-timeline {
+        padding-left: 0.45rem;
+    }
 }

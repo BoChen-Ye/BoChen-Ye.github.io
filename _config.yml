@@ -10,6 +10,10 @@ title                    : "Bochen Ye(叶波辰)"
 description              : "PhD student@Edinburgh | Msc.EE@TU/e | ex-Intern@NXP"
 repository               : "BoChen-Ye/BoChen-Ye.github.io"
 google_scholar_stats_use_cdn : False
+clustrmaps:
+  enabled                  : true
+  widget_id                : "WWBUfK31vbmdK6Xa7hTRlcZulkC-SMWXaU0fHb-aMHY"
+  width                    : 260
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
