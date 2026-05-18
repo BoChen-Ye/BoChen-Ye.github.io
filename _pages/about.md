@@ -95,7 +95,7 @@ School of Engineering Research Conference, 2026
   <div class="profile-section__list profile-education-list">
     <article class="profile-entry profile-entry--education">
       <div class="profile-entry__logo-wrap">
-        <img class="profile-entry__logo" src="https://logo.clearbit.com/ed.ac.uk?size=160" alt="University of Edinburgh logo">
+        <img class="profile-entry__logo" src="{{ '/images/uoe-logo.png' | relative_url }}" alt="University of Edinburgh logo">
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">University of Edinburgh</h3>
@@ -108,7 +108,7 @@ School of Engineering Research Conference, 2026
 
     <article class="profile-entry profile-entry--education">
       <div class="profile-entry__logo-wrap">
-        <img class="profile-entry__logo" src="https://logo.clearbit.com/tue.nl?size=160" alt="Eindhoven University of Technology logo">
+        <img class="profile-entry__logo" src="{{ '/images/tue-logo.png' | relative_url }}" alt="Eindhoven University of Technology logo">
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">Eindhoven University of Technology</h3>
@@ -122,7 +122,7 @@ School of Engineering Research Conference, 2026
 
     <article class="profile-entry profile-entry--education">
       <div class="profile-entry__logo-wrap">
-        <img class="profile-entry__logo" src="https://logo.clearbit.com/hfut.edu.cn?size=160" alt="Hefei University of Technology logo">
+        <img class="profile-entry__logo" src="{{ '/images/hfut-logo.png' | relative_url }}" alt="Hefei University of Technology logo">
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">Hefei University of Technology</h3>
