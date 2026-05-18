@@ -216,6 +216,25 @@ a:focus,
     color: var(--site-accent);
 }
 
+.page__content a[href^="http"],
+.homepage-copy a[href^="http"],
+.paper-box-text a[href^="http"],
+.profile-entry__detail a[href^="http"],
+.profile-entry__highlights a[href^="http"] {
+    text-decoration: none;
+    border-bottom: 0 !important;
+    box-shadow: none;
+}
+
+.page__content a[href^="http"]:hover,
+.homepage-copy a[href^="http"]:hover,
+.paper-box-text a[href^="http"]:hover,
+.profile-entry__detail a[href^="http"]:hover,
+.profile-entry__highlights a[href^="http"]:hover {
+    text-decoration: none;
+    border-bottom: 0 !important;
+}
+
 p,
 li,
 dt,
@@ -525,22 +544,24 @@ button {
 
 .profile-timeline {
     position: relative;
-    padding-left: 0.8rem;
+    padding-left: 1.25rem;
+    margin-left: 0.15rem;
 }
 
 .profile-timeline::before {
     content: "";
     position: absolute;
-    left: 0.18rem;
-    top: 0.4rem;
-    bottom: 0.4rem;
-    width: 2px;
-    background: var(--site-timeline);
+    left: 0.44rem;
+    top: 0.9rem;
+    bottom: 1rem;
+    width: 1.5px;
+    background: color-mix(in srgb, var(--site-accent) 45%, white 55%);
 }
 
 .profile-entry--timeline {
     position: relative;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
+    padding-left: 0.7rem;
 }
 
 .profile-entry--timeline:last-child {
@@ -549,13 +570,14 @@ button {
 
 .profile-timeline__marker {
     position: absolute;
-    left: -0.1rem;
-    top: 2rem;
-    width: 10px;
-    height: 10px;
+    left: 0.15rem;
+    top: 1.65rem;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
-    background: var(--site-highlight);
-    box-shadow: 0 0 0 4px var(--site-bg);
+    background: var(--site-accent);
+    border: 3px solid var(--site-bg);
+    box-shadow: none;
 }
 
 @media (max-width: 768px) {
@@ -574,7 +596,21 @@ button {
     }
 
     .profile-timeline {
+        padding-left: 0.85rem;
+    }
+
+    .profile-timeline::before {
+        left: 0.29rem;
+    }
+
+    .profile-entry--timeline {
         padding-left: 0.45rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .profile-timeline__marker {
+        left: -0.01rem;
+        top: 1.45rem;
     }
 }
 
@@ -735,12 +771,13 @@ html[data-theme="dark"] .profile-entry__meta {
 }
 
 html[data-theme="dark"] .profile-timeline::before {
-    background: var(--site-timeline);
+    background: color-mix(in srgb, var(--site-accent) 42%, white 58%);
 }
 
 html[data-theme="dark"] .profile-timeline__marker {
-    background: var(--site-highlight);
-    box-shadow: 0 0 0 4px var(--site-bg);
+    background: var(--site-accent);
+    border-color: var(--site-bg);
+    box-shadow: none;
 }
 
 /* Theme refinement: keep body/sidebar stable, shift titles and accents only */
