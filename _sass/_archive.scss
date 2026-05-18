@@ -105,7 +105,7 @@
 }
 
 .blog-index__intro--minimal {
-  padding: 0 0 1rem;
+  padding: 0 0 0.75rem;
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -126,6 +126,57 @@
   text-transform: uppercase;
 }
 
+.blog-filter-strip {
+  margin: 0 0 2rem;
+  padding: 1rem 0 1.15rem;
+  border-top: 1px solid mix(#fff, $info-color, 72%);
+  border-bottom: 1px solid mix(#fff, $info-color, 72%);
+}
+
+.blog-filter-strip__group + .blog-filter-strip__group {
+  margin-top: 0.8rem;
+}
+
+.blog-filter-strip__label {
+  display: inline-block;
+  min-width: 88px;
+  margin-right: 0.75rem;
+  color: mix(#fff, $gray, 15%);
+  font-size: $type-size-7;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-filter-strip__items {
+  display: inline;
+}
+
+.blog-filter-strip__link {
+  display: inline-block;
+  margin-right: 0.85rem;
+  margin-bottom: 0.35rem;
+  color: $info-color;
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .blog-filter-strip__label {
+    display: block;
+    min-width: 0;
+    margin-right: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  .blog-filter-strip__items {
+    display: block;
+  }
+}
+
 .blog-post-list {
   margin: 0;
   padding: 0;
@@ -134,12 +185,12 @@
 
 .blog-post-list__item {
   margin: 0;
-  padding: 1.35rem 0 1.5rem;
-  border-top: 1px solid $border-color;
+  padding: 1.65rem 0 1.8rem;
+  border-top: 1px solid mix(#fff, $info-color, 72%);
 
   &:first-child {
     border-top: 0;
-    padding-top: 0.25rem;
+    padding-top: 0.4rem;
   }
 }
 
@@ -161,7 +212,8 @@
 .blog-post-preview__title {
   margin: 0 0 0.45rem !important;
   border-bottom: 0 !important;
-  font-size: $type-size-4;
+  font-size: 1.8em;
+  line-height: 1.25;
 
   a {
     text-decoration: none;
@@ -179,7 +231,7 @@
   margin: 0;
   color: mix(#fff, $gray, 18%);
   font-family: $sans-serif;
-  font-size: $type-size-7;
+  font-size: 0.8em;
   line-height: 1.8;
 
   span {
@@ -192,8 +244,15 @@
 }
 
 .blog-post-preview__year,
-.blog-post-preview__tag {
+.blog-post-preview__tag,
+.blog-post-preview__category {
   color: $info-color;
+  text-decoration: none !important;
+}
+
+.blog-post-preview__tag:hover,
+.blog-post-preview__category:hover {
+  text-decoration: underline !important;
 }
 
 .blog-post-preview__thumb {
@@ -221,6 +280,17 @@
   &:hover img {
     transform: scale(1.03);
   }
+}
+
+.blog-taxonomy-section {
+  margin-bottom: 2rem;
+}
+
+.blog-taxonomy-section__title {
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid mix(#fff, $info-color, 72%);
+  font-size: $type-size-3;
 }
 
 

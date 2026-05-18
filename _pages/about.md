@@ -278,7 +278,6 @@ Director, Innovation and Entrepreneurship Department
 - Actively collaborated with the Big Data Center to facilitate the entry of Microelectronics College's innovation teams into the center.
 -->
 
-# Visitor Map
 
 <div class="visitor-map">
   <div class="visitor-map__widget">

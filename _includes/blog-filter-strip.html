@@ -1,0 +1,30 @@
+{% assign sorted_tags = site.tags | sort %}
+{% assign sorted_categories = site.categories | sort %}
+{% assign has_tags = sorted_tags.size > 0 %}
+{% assign has_categories = sorted_categories.size > 0 %}
+
+{% if has_tags or has_categories %}
+<div class="blog-filter-strip">
+  {% if has_tags %}
+    <div class="blog-filter-strip__group">
+      <span class="blog-filter-strip__label">Tags</span>
+      <div class="blog-filter-strip__items">
+        {% for tag in sorted_tags %}
+          <a class="blog-filter-strip__link" href="{{ '/blog/tag/#' | append: tag[0] | slugify | relative_url }}">#{{ tag[0] }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if has_categories %}
+    <div class="blog-filter-strip__group">
+      <span class="blog-filter-strip__label">Categories</span>
+      <div class="blog-filter-strip__items">
+        {% for category in sorted_categories %}
+          <a class="blog-filter-strip__link" href="{{ '/blog/category/#' | append: category[0] | slugify | relative_url }}">{{ category[0] }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+{% endif %}
