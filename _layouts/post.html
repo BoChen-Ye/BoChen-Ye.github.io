@@ -23,8 +23,14 @@ layout: compress
           {% assign page_cover = page.cover_image | default: page.image %}
           {% assign read_time = page.content | number_of_words | divided_by: 180 | plus: 1 %}
           {% assign year = page.date | date: "%Y" %}
-          {% assign has_categories = page.categories and page.categories.size > 0 %}
-          {% assign has_tags = page.tags and page.tags.size > 0 %}
+          {% assign has_categories = false %}
+          {% assign has_tags = false %}
+          {% if page.categories and page.categories.size > 0 %}
+            {% assign has_categories = true %}
+          {% endif %}
+          {% if page.tags and page.tags.size > 0 %}
+            {% assign has_tags = true %}
+          {% endif %}
           {% if page_cover %}
             <figure class="post-cover">
               <img class="page__hero-image post-cover__image" src="{{ page_cover | relative_url }}" alt="{{ page.title }}">

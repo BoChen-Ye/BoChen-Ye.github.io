@@ -3,8 +3,14 @@
 {% assign post_summary = post.description | default: post.excerpt %}
 {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
 {% assign year = post.date | date: "%Y" %}
-{% assign has_tags = post.tags and post.tags.size > 0 %}
-{% assign has_categories = post.categories and post.categories.size > 0 %}
+{% assign has_tags = false %}
+{% assign has_categories = false %}
+{% if post.tags and post.tags.size > 0 %}
+  {% assign has_tags = true %}
+{% endif %}
+{% if post.categories and post.categories.size > 0 %}
+  {% assign has_categories = true %}
+{% endif %}
 
 <li class="blog-post-list__item">
   <article class="blog-post-preview" itemscope itemtype="http://schema.org/CreativeWork">

@@ -2,12 +2,14 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button type="button" aria-label="Toggle menu">
+          <div class="navicon"></div>
+        </button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
             <a href="{{ '/#about-me' | relative_url }}">
               <span class="lang-en">Homepage</span>
-              <span class="lang-zh">主页</span>
+              <span class="lang-zh">&#39318;&#39029;</span>
             </a>
           </li>
           {% for link in site.data.navigation.main %}
@@ -18,21 +20,19 @@
               </a>
             </li>
           {% endfor %}
-          <li class="masthead__menu-item masthead__controls">
-            <button type="button" class="masthead__toggle masthead__toggle--lang" data-toggle-language aria-label="Toggle language">
-              <span class="lang-en">中</span>
-              <span class="lang-zh">EN</span>
-            </button>
-          </li>
-          <li class="masthead__menu-item masthead__controls">
-            <button type="button" class="masthead__toggle masthead__toggle--theme" data-toggle-theme aria-label="Toggle theme">
-              <span class="theme-icon theme-icon--light">&#9728;</span>
-              <span class="theme-icon theme-icon--dark">&#9790;</span>
-            </button>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+    </div>
+    <div class="masthead__tools">
+      <button type="button" class="masthead__toggle masthead__toggle--lang" data-toggle-language aria-label="Toggle language">
+        <span class="lang-en">&#20013;</span>
+        <span class="lang-zh">EN</span>
+      </button>
+      <button type="button" class="masthead__toggle masthead__toggle--theme" data-toggle-theme aria-label="Toggle theme">
+        <span class="theme-icon theme-icon--light">&#9728;</span>
+        <span class="theme-icon theme-icon--dark">&#9790;</span>
+      </button>
     </div>
   </div>
 </div>

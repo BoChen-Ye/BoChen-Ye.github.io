@@ -200,11 +200,16 @@ redirect_from:
 <div class="visitor-map">
   <div class="visitor-map__widget">
     {% if site.clustrmaps.enabled and site.clustrmaps.widget_id and site.clustrmaps.widget_id != "" %}
-      <script
-        type="text/javascript"
-        id="clustrmaps"
-        src="//clustrmaps.com/map_v2.js?d={{ site.clustrmaps.widget_id }}&cl=ffffff&w={{ site.clustrmaps.width | default: 200 }}">
-      </script>
+      <div
+        data-clustrmaps-widget
+        data-widget-id="{{ site.clustrmaps.widget_id }}"
+        data-widget-width="{{ site.clustrmaps.width | default: 200 }}">
+      </div>
+      <noscript>
+        <a href="https://clustrmaps.com/site/1c4l5" title="ClustrMaps visitor map">
+          <img src="//clustrmaps.com/map_v2.png?d={{ site.clustrmaps.widget_id }}&cl=ffffff&w={{ site.clustrmaps.width | default: 200 }}&t=n" alt="ClustrMaps visitor map">
+        </a>
+      </noscript>
     {% else %}
       <div class="visitor-map__placeholder">
         ClustrMaps is enabled, but the widget token is not set yet.
