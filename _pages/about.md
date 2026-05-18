@@ -281,14 +281,11 @@ Director, Innovation and Entrepreneurship Department
 # Visitor Map
 
 <div class="visitor-map">
-  <p class="visitor-map__intro">
-    A live snapshot of where visitors to this homepage are coming from.
-  </p>
   <div class="visitor-map__widget">
     <script
       type="text/javascript"
       id="mapmyvisitors"
-      src="//mapmyvisitors.com/map.js?d=vKMfTYe-lJEZr4YgvFgg6TYKLenoeLAhc_tVHN4E4HE&cl=ffffff&w=a">
+      src="//mapmyvisitors.com/map.js?d=vKMfTYe-lJEZr4YgvFgg6TYKLenoeLAhc_tVHN4E4HE&cl=ffffff&w=200">
     </script>
     <noscript>
       <a href="https://mapmyvisitors.com/web/1c4l5" title="Visit tracker">

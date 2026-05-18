@@ -127,6 +127,15 @@ h1:before, .anchor:before {
     justify-content: center;
     align-items: center;
     min-height: 120px;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.visitor-map__widget img,
+.visitor-map__widget iframe,
+.visitor-map__widget div,
+.visitor-map__widget canvas {
+    max-width: 100%;
 }
 
 .visitor-map__placeholder {
