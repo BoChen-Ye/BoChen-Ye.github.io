@@ -278,3 +278,23 @@ Director, Innovation and Entrepreneurship Department
 - Actively collaborated with the Big Data Center to facilitate the entry of Microelectronics College's innovation teams into the center.
 -->
 
+# Visitor Map
+
+<div class="visitor-map">
+  <p class="visitor-map__intro">
+    A live snapshot of where visitors to this homepage are coming from.
+  </p>
+  <div class="visitor-map__widget">
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="//mapmyvisitors.com/map.js?d=vKMfTYe-lJEZr4YgvFgg6TYKLenoeLAhc_tVHN4E4HE&cl=ffffff&w=a">
+    </script>
+    <noscript>
+      <a href="https://mapmyvisitors.com/web/1c4l5" title="Visit tracker">
+        <img src="https://mapmyvisitors.com/map.png?d=vKMfTYe-lJEZr4YgvFgg6TYKLenoeLAhc_tVHN4E4HE&cl=ffffff" alt="Visitor map">
+      </a>
+    </noscript>
+  </div>
+</div>
+
