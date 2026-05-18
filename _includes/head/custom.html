@@ -7,6 +7,20 @@
 <meta name="msapplication-TileImage" content="{{ '/images/android-chrome-192x192.jpg' | relative_url }}">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}"/>
+<script>
+  (function () {
+    try {
+      var savedTheme = window.localStorage.getItem("site-theme");
+      var savedLanguage = window.localStorage.getItem("site-language");
+      var theme = savedTheme === "dark" || savedTheme === "light"
+        ? savedTheme
+        : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.setAttribute("data-lang", savedLanguage === "zh" ? "zh" : "en");
+    } catch (error) {}
+  })();
+</script>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">

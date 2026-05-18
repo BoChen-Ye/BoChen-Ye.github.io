@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -15,82 +15,66 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span class='anchor' id='about-me'></span>
+<span class="anchor" id="about-me"></span>
 
-I am a Second-year PhD student at **[University of Edinburgh(UoE)](https://eng.ed.ac.uk/centre-electronics-frontiers)**, UK. I got my Master degree from **[Eindhoven University of Technology(TU/e)](https://www.tue.nl/en/)**, Netherlands and my bachelor degree from **[Hefei University of Technology(HFUT)](https://www.hfut.edu.cn/)**, China. My research focuses on designing digital hardware acceleration systems for large-scale AI models using novel architectures, aiming to overcome memory and computational bottlenecks. My current focus is on advancing hardware accelerators for LLMs, VLMs, and generative AI to enable next-generation intelligent computing.
-
-<!--I am interested in **VLSI/ASIC/SoC Design, NoC, Neuromorphic Hardware and Efficient AI Hardware Accelerator**.-->
-
-Here is my [CV](https://BoChen-Ye.github.io/files/CV.pdf), and I am looking for possible research collaboration. If you are interested in me, please feel free to contact me at any time.
-
-
-# 🔥 News
-<div style="height:300px;overflow-y:auto"> 
-<p></p><ul>
-<li>[2026.04] &nbsp;🎉🎉  I finished my first-year annual review.</li>
-<li>[2026.04] &nbsp;🎉🎉  I present a poster and give a short 2 minute presentation about <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> on <strong>School of Engineering Research Conference 2026</strong>.</li>
-<li>[2026.03] &nbsp;🎉🎉  I served as teaching assistant of <strong>Mini ASIC-BASIC Workshop</strong> and give a tutorial about <strong>Digital ASIC Flow in GF-22nm</strong>.</li>
-<li>[2026.02] &nbsp;🎉🎉  I finished my first tape-out <strong>Bent-Pyramid Systolic Array</strong> in TSMC-180nm and served as a demonstrator of <strong>Digital System Laboratory 4</strong>.</li>
-<li>[2025.11] &nbsp;🎉🎉  I attend course <strong>Advanced Node Digital IC Implementation</strong> of Europractice and got certficate.</li>
-<li>[2025.10] &nbsp;🎉🎉  I attend <strong>MeMRISYS 2025</strong> as a volunteer in Edinburgh and served as a demonstrator of <strong>Digital System Laboratory 3</strong>.</li>
-<li>[2025.09] <b style="color:#FF2400;">[Conference]</b>  I present my work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  on <strong>SOCC 2025</strong> in Dubai, UAE.</li>
-<li>[2025.07] <b style="color:#3EA055;">[Paper]</b>  Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications"  accepted to <strong>SOCC 2025</strong> and selected as <strong>oral presentation</strong>.</li>
-<li>[2025.01] &nbsp;🎉🎉 I started my PhD study in <strong>University of Edinburgh</strong>, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a>.</li>
-<li>[2024.11] &nbsp;🎉🎉 I finished my internship at NXP Semiconductors and successfully defenced my Master Thesis with 8.5/10 at TU/e. Committee member: <a href="https://www.tue.nl/en/research/researchers/marc-geilen">Marc Geilen</a>, <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a> and <a href="https://www.tue.nl/en/research/researchers/chengmin-li">Chengmin Li</a>.</li>
-<li>[2024.09] &nbsp;🎉🎉 I got a conditional <strong>PhD offer</strong> at <strong>the University of Edinburgh</strong>.</li>
-<li>[2024.03] &nbsp;🎉🎉 Congratulations <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> is acquired by <a href="https://www.synopsys.com/">Synopsys</a>.</li>
-<li>[2024.03] &nbsp;🎉🎉 I change my master thesis to <a href="https://www.nxp.com/">NXP Semiconductors</a> in Nijmegen, supervised by <a href="https://www.linkedin.com/in/kimmosalo/">Kimmo Salo</a>(NXP), <a href="https://www.linkedin.com/in/gustavo-naspolini-b866287/">Gustavo Naspolini</a>(NXP).</li>
-<li>[2023.11] &nbsp;🎉🎉 I started working as a Oversea VC Intern(Remote) at <a href="https://www.linear.vc/">Linear Capital</a>.</li>
-<li>[2023.10] &nbsp;🎉🎉 I finished my internship at Intrinsic ID and got 8.5 of internship. I also start my research on Neuromorphic at TU/e.</li>
-<li>[2023.07] &nbsp;🎉🎉 I will be an intern at <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> for 3.5 months, supervised by <a href="https://www.linkedin.com/in/rui-wang-a4499611b/">Rui Wang</a>(Intrinsic ID), <a href="https://www.linkedin.com/in/roel-maes-37ba4a4/">Roel Maes</a>(Intrinsic ID) and <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a>(TU/e & Nokia Bell Labs).</li>
-<li>[2022.09] &nbsp;🎉🎉 I started my master's study at <strong>Eindhoven University of Technology (TU/e), The Netherlands</strong>.</li>
-<li>[2022.07] &nbsp;🎉🎉 I am graduated from <strong>Hefei University of Technology</strong> with a bachelor degree, supervised by <a href="https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm">Zhenmin Li</a>. </li>
-</ul> 
+<div class="homepage-copy">
+  <p class="lang-en">I am a second-year PhD student at <strong><a href="https://eng.ed.ac.uk/centre-electronics-frontiers">University of Edinburgh (UoE)</a></strong>, UK. I received my master's degree from <strong><a href="https://www.tue.nl/en/">Eindhoven University of Technology (TU/e)</a></strong>, Netherlands, and my bachelor's degree from <strong><a href="https://www.hfut.edu.cn/">Hefei University of Technology (HFUT)</a></strong>, China. My research focuses on digital hardware acceleration systems for large-scale AI models, with an emphasis on overcoming memory and computational bottlenecks through novel architectures. I am currently working on efficient hardware accelerators for LLMs, VLMs, and generative AI.</p>
+  <p class="lang-zh">我目前是英国<strong><a href="https://eng.ed.ac.uk/centre-electronics-frontiers">爱丁堡大学（UoE）</a></strong>工程学院二年级博士生，此前获得荷兰<strong><a href="https://www.tue.nl/en/">埃因霍温理工大学（TU/e）</a></strong>硕士学位，以及中国<strong><a href="https://www.hfut.edu.cn/">合肥工业大学（HFUT）</a></strong>学士学位。我的研究主要聚焦于面向大规模人工智能模型的数字硬件加速系统设计，希望通过新型体系结构缓解存储与计算瓶颈。目前的重点方向包括 LLM、VLM 以及生成式 AI 的高效硬件加速器。</p>
 </div>
 
-# 📝 Publications 
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SOCC 2025</div><img src='images/socc.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<b style="color:#000000;">**LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications**</b>
-
-
-<b style="color:#000000;">**Bochen Ye**</b>(TU/e & NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)
-
-IEEE International System-on-Chip Conference (<b style="color:#000000;">**SOCC**</b>), 2025
-
-<b style="color:#FF2400;">Selected as Oral Presentation</b> and Student Contest
-
-[Paper](https://ieeexplore.ieee.org/document/11235355)/[Slides](https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf)/[Poster](https://BoChen-Ye.github.io/files/LinkBo_poster.pdf)/[ArXiv(Full Version)](https://arxiv.org/abs/2509.01339v1)/[Website](https://bochen-ye.github.io/LinkBo_web/)
-
-We propose LinkBo, a single-wire communication protocol with dedicated hardware architecture, designed to achieve low latency (50.4 µs), high throughput (up to 7.5 Mbps @ 11 cm and 300 kbps @ 15 m), and robust priority-aware delivery.
-</div>
+<div class="homepage-copy">
+  <p class="lang-en">Here is my <a href="https://BoChen-Ye.github.io/files/CV.pdf">CV</a>. I am always open to research collaborations, so please feel free to contact me if my work resonates with your interests.</p>
+  <p class="lang-zh">这里是我的 <a href="https://BoChen-Ye.github.io/files/CV.pdf">CV</a>。我一直欢迎潜在的科研合作，如果你的研究方向和我的工作有交集，欢迎随时与我联系。</p>
 </div>
 
-<!-- # 📝 Research Artifact
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">PGR Conf</div><img src='images/PGR-Poster.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<b style="color:#000000;">**Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework**</b>
-
-
-<b style="color:#000000;">**Bochen Ye**</b>(UoE), Shady Agwa (UoE), Themis Prodromakis (UoE)
-
-School of Engineering Research Conference, 2026
-
-<!-- <b style="color:#FF2400;">Selected as Oral Presentation</b> and Student Contest -->
-
-<!-- This poster presents an automated design space exploration framework for dataflow systolic GenAI accelerators, aiming to identify the optimal hardware architecture for diverse workloads under given resource budgets.
-
-[Slides]()/[Poster]()/[Website](https://bochen-ye.github.io/pgr26_web/)  
-
-
+<span class="anchor" id="-news"></span>
+<h1><span class="lang-en">News</span><span class="lang-zh">新闻</span></h1>
+<div style="height:300px;overflow-y:auto">
+  <p></p>
+  <ul>
+    <li><span class="lang-en">[2026.04] I finished my first-year annual review.</span><span class="lang-zh">[2026.04] 我顺利完成了博士第一年的年度考核。</span></li>
+    <li><span class="lang-en">[2026.04] I presented a poster and gave a two-minute talk on <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> at the <strong>School of Engineering Research Conference 2026</strong>.</span><span class="lang-zh">[2026.04] 我在 <strong>School of Engineering Research Conference 2026</strong> 上展示了海报，并就 <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> 做了两分钟口头介绍。</span></li>
+    <li><span class="lang-en">[2026.03] I served as a teaching assistant for the <strong>Mini ASIC-BASIC Workshop</strong> and delivered a tutorial on <strong>Digital ASIC Flow in GF-22nm</strong>.</span><span class="lang-zh">[2026.03] 我担任 <strong>Mini ASIC-BASIC Workshop</strong> 助教，并讲授了 <strong>Digital ASIC Flow in GF-22nm</strong> 相关教程。</span></li>
+    <li><span class="lang-en">[2026.02] I completed my first tape-out, <strong>Bent-Pyramid Systolic Array</strong>, in TSMC-180nm and served as a demonstrator for <strong>Digital System Laboratory 4</strong>.</span><span class="lang-zh">[2026.02] 我完成了第一颗流片芯片 <strong>Bent-Pyramid Systolic Array</strong>（TSMC-180nm），并担任 <strong>Digital System Laboratory 4</strong> demonstrator。</span></li>
+    <li><span class="lang-en">[2025.11] I attended Europractice's <strong>Advanced Node Digital IC Implementation</strong> course and received the certificate.</span><span class="lang-zh">[2025.11] 我参加了 Europractice 的 <strong>Advanced Node Digital IC Implementation</strong> 课程，并获得结业证书。</span></li>
+    <li><span class="lang-en">[2025.10] I joined <strong>MeMRISYS 2025</strong> in Edinburgh as a volunteer and served as a demonstrator for <strong>Digital System Laboratory 3</strong>.</span><span class="lang-zh">[2025.10] 我在爱丁堡以志愿者身份参加 <strong>MeMRISYS 2025</strong>，并担任 <strong>Digital System Laboratory 3</strong> demonstrator。</span></li>
+    <li><span class="lang-en">[2025.09] <b style="color:#FF2400;">[Conference]</b> I presented my work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications" at <strong>SOCC 2025</strong> in Dubai, UAE.</span><span class="lang-zh">[2025.09] <b style="color:#FF2400;">[会议]</b> 我在阿联酋迪拜举办的 <strong>SOCC 2025</strong> 上汇报了论文 “LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications”。</span></li>
+    <li><span class="lang-en">[2025.07] <b style="color:#3EA055;">[Paper]</b> Our work "LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications" was accepted by <strong>SOCC 2025</strong> and selected for an <strong>oral presentation</strong>.</span><span class="lang-zh">[2025.07] <b style="color:#3EA055;">[论文]</b> 我们的工作 “LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications” 被 <strong>SOCC 2025</strong> 接收，并被选为<strong>口头报告</strong>。</span></li>
+    <li><span class="lang-en">[2025.01] I started my PhD at the <strong>University of Edinburgh</strong>, supervised by <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> and <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a>.</span><span class="lang-zh">[2025.01] 我在<strong>爱丁堡大学</strong>开始博士学习，由 <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a> 和 <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a> 指导。</span></li>
+    <li><span class="lang-en">[2024.11] I finished my internship at NXP Semiconductors and successfully defended my master's thesis at TU/e with a score of 8.5/10. Committee members: <a href="https://www.tue.nl/en/research/researchers/marc-geilen">Marc Geilen</a>, <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a>, and <a href="https://www.tue.nl/en/research/researchers/chengmin-li">Chengmin Li</a>.</span><span class="lang-zh">[2024.11] 我完成了在 NXP Semiconductors 的实习，并在 TU/e 以 8.5/10 的成绩顺利完成硕士答辩。答辩委员会成员包括 <a href="https://www.tue.nl/en/research/researchers/marc-geilen">Marc Geilen</a>、<a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a> 和 <a href="https://www.tue.nl/en/research/researchers/chengmin-li">Chengmin Li</a>。</span></li>
+    <li><span class="lang-en">[2024.09] I received a conditional <strong>PhD offer</strong> from the <strong>University of Edinburgh</strong>.</span><span class="lang-zh">[2024.09] 我收到了<strong>爱丁堡大学</strong>的有条件<strong>博士录取</strong>。</span></li>
+    <li><span class="lang-en">[2024.03] Congratulations to <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> on being acquired by <a href="https://www.synopsys.com/">Synopsys</a>.</span><span class="lang-zh">[2024.03] 祝贺 <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> 被 <a href="https://www.synopsys.com/">Synopsys</a> 收购。</span></li>
+    <li><span class="lang-en">[2024.03] I moved my master's thesis to <a href="https://www.nxp.com/">NXP Semiconductors</a> in Nijmegen, supervised by <a href="https://www.linkedin.com/in/kimmosalo/">Kimmo Salo</a> and <a href="https://www.linkedin.com/in/gustavo-naspolini-b866287/">Gustavo Naspolini</a>.</span><span class="lang-zh">[2024.03] 我的硕士论文课题转到奈梅亨的 <a href="https://www.nxp.com/">NXP Semiconductors</a> 完成，由 <a href="https://www.linkedin.com/in/kimmosalo/">Kimmo Salo</a> 和 <a href="https://www.linkedin.com/in/gustavo-naspolini-b866287/">Gustavo Naspolini</a> 指导。</span></li>
+    <li><span class="lang-en">[2023.11] I started working remotely as an Oversea VC Intern at <a href="https://www.linear.vc/">Linear Capital</a>.</span><span class="lang-zh">[2023.11] 我开始在 <a href="https://www.linear.vc/">Linear Capital</a> 远程担任海外 VC 实习生。</span></li>
+    <li><span class="lang-en">[2023.10] I completed my internship at Intrinsic ID with a score of 8.5 and also started my neuromorphic hardware research at TU/e.</span><span class="lang-zh">[2023.10] 我完成了在 Intrinsic ID 的实习并获得 8.5 分，同时开始在 TU/e 开展神经形态方向研究。</span></li>
+    <li><span class="lang-en">[2023.07] I joined <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> for a 3.5-month internship, supervised by <a href="https://www.linkedin.com/in/rui-wang-a4499611b/">Rui Wang</a>, <a href="https://www.linkedin.com/in/roel-maes-37ba4a4/">Roel Maes</a>, and <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a>.</span><span class="lang-zh">[2023.07] 我在 <a href="https://www.intrinsic-id.com/">Intrinsic ID</a> 开始了为期 3.5 个月的实习，由 <a href="https://www.linkedin.com/in/rui-wang-a4499611b/">Rui Wang</a>、<a href="https://www.linkedin.com/in/roel-maes-37ba4a4/">Roel Maes</a> 和 <a href="https://www.tue.nl/en/research/researchers/manil-dev-gomony">Manil Dev Gomony</a> 指导。</span></li>
+    <li><span class="lang-en">[2022.09] I started my master's study at <strong>Eindhoven University of Technology (TU/e), The Netherlands</strong>.</span><span class="lang-zh">[2022.09] 我开始在<strong>荷兰埃因霍温理工大学（TU/e）</strong>攻读硕士学位。</span></li>
+    <li><span class="lang-en">[2022.07] I graduated from <strong>Hefei University of Technology</strong> with a bachelor's degree, supervised by <a href="https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm">Zhenmin Li</a>.</span><span class="lang-zh">[2022.07] 我从<strong>合肥工业大学</strong>本科毕业，由 <a href="https://wdzxy.hfut.edu.cn/2020/1231/c11547a249635/page.htm">Zhenmin Li</a> 老师指导完成毕业设计。</span></li>
+  </ul>
 </div>
-</div>-->
 
-# 🏫 Educations
+<span class="anchor" id="-research-experience"></span>
+<h1><span class="lang-en">Publications</span><span class="lang-zh">论文发表</span></h1>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">SOCC 2025</div>
+      <img src="images/socc.png" alt="SOCC paper figure" width="100%">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <p><strong>LinkBo: a Single-Wire, Low-Latency, and Robust Protocol for Variable-Distance Chip-to-Chip Communications</strong></p>
+    <p><span class="lang-en"><strong>Bochen Ye</strong> (TU/e &amp; NXP), Gustavo Naspolini (NXP), Kimmo Salo (NXP), Manil Dev Gomony (TU/e)</span><span class="lang-zh"><strong>Bochen Ye</strong>（TU/e &amp; NXP）, Gustavo Naspolini（NXP）, Kimmo Salo（NXP）, Manil Dev Gomony（TU/e）</span></p>
+    <p><span class="lang-en">IEEE International System-on-Chip Conference (<strong>SOCC</strong>), 2025</span><span class="lang-zh">IEEE International System-on-Chip Conference（<strong>SOCC</strong>）, 2025</span></p>
+    <p><span class="lang-en"><strong style="color:#FF2400;">Selected as Oral Presentation</strong> and Student Contest</span><span class="lang-zh"><strong style="color:#FF2400;">入选口头报告</strong>，并进入 Student Contest</span></p>
+    <p><a href="https://ieeexplore.ieee.org/document/11235355">Paper</a> / <a href="https://BoChen-Ye.github.io/files/SOCC_LinkBo.pdf">Slides</a> / <a href="https://BoChen-Ye.github.io/files/LinkBo_poster.pdf">Poster</a> / <a href="https://arxiv.org/abs/2509.01339v1">ArXiv (Full Version)</a> / <a href="https://bochen-ye.github.io/LinkBo_web/">Website</a></p>
+    <p><span class="lang-en">We propose LinkBo, a single-wire communication protocol with dedicated hardware architecture, designed to achieve low latency (50.4 us), high throughput (up to 7.5 Mbps @ 11 cm and 300 kbps @ 15 m), and robust priority-aware delivery.</span><span class="lang-zh">我们提出了 LinkBo。这是一种配套专用硬件架构的单线通信协议，能够实现低延迟（50.4 us）、高吞吐（11 cm 条件下最高 7.5 Mbps，15 m 条件下 300 kbps），并具备优先级感知的鲁棒传输能力。</span></p>
+  </div>
+</div>
+
+<span class="anchor" id="-educations"></span>
+<h1><span class="lang-en">Educations</span><span class="lang-zh">教育经历</span></h1>
 <div class="profile-section">
   <div class="profile-section__list profile-education-list">
     <article class="profile-entry profile-entry--education">
@@ -99,10 +83,10 @@ School of Engineering Research Conference, 2026
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">University of Edinburgh</h3>
-        <p class="profile-entry__subtitle">PhD Student in Engineering</p>
-        <p class="profile-entry__meta">January 2025 - Present</p>
-        <p class="profile-entry__detail"><strong>Advisors:</strong> <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a> and <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a></p>
-        <p class="profile-entry__detail"><strong>Research interest:</strong> Digital hardware accelerators for generative AI.</p>
+        <p class="profile-entry__subtitle"><span class="lang-en">PhD Student in Engineering</span><span class="lang-zh">工程学院博士生</span></p>
+        <p class="profile-entry__meta"><span class="lang-en">January 2025 - Present</span><span class="lang-zh">2025 年 1 月 - 至今</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Advisors:</strong> <a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a> and <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a></span><span class="lang-zh"><strong>导师：</strong><a href="https://www.eng.ed.ac.uk/about/people/professor-themis-prodromakis">Professor Themis Prodromakis</a> 和 <a href="https://edwebprofiles.ed.ac.uk/profile/shadyagwa">Dr. Shady Agwa</a></span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Research interest:</strong> Digital hardware accelerators for generative AI.</span><span class="lang-zh"><strong>研究方向：</strong>面向生成式 AI 的数字硬件加速器。</span></p>
       </div>
     </article>
 
@@ -112,11 +96,11 @@ School of Engineering Research Conference, 2026
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">Eindhoven University of Technology</h3>
-        <p class="profile-entry__subtitle">MSc Electrical Engineering, Electronic Systems Track</p>
-        <p class="profile-entry__meta">September 2022 - November 2024</p>
-        <p class="profile-entry__detail"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_Master.pdf">7.8/10</a></p>
-        <p class="profile-entry__detail"><strong>Thesis:</strong> <a href="https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf">LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications</a> (8.5/10)</p>
-        <p class="profile-entry__detail"><strong>Relevant courses:</strong> Digital integrated circuit design, embedded computer architecture, electronic design automation, intelligent architectures, systems on silicon, and neuro computation.</p>
+        <p class="profile-entry__subtitle"><span class="lang-en">MSc Electrical Engineering, Electronic Systems Track</span><span class="lang-zh">电气工程硕士，Electronic Systems 方向</span></p>
+        <p class="profile-entry__meta"><span class="lang-en">September 2022 - November 2024</span><span class="lang-zh">2022 年 9 月 - 2024 年 11 月</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_Master.pdf">7.8/10</a></span><span class="lang-zh"><strong>绩点：</strong><a href="https://BoChen-Ye.github.io/files/transcript_Master.pdf">7.8/10</a></span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Thesis:</strong> <a href="https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf">LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications</a> (8.5/10)</span><span class="lang-zh"><strong>硕士论文：</strong><a href="https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf">LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications</a>（8.5/10）</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Relevant courses:</strong> Digital integrated circuit design, embedded computer architecture, electronic design automation, intelligent architectures, systems on silicon, and neuro computation.</span><span class="lang-zh"><strong>相关课程：</strong>数字集成电路设计、嵌入式计算机体系结构、电子设计自动化、智能体系结构、片上系统以及神经计算。</span></p>
       </div>
     </article>
 
@@ -126,34 +110,35 @@ School of Engineering Research Conference, 2026
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">Hefei University of Technology</h3>
-        <p class="profile-entry__subtitle">Bachelor in Integrated Circuit Design and Integrated Systems</p>
-        <p class="profile-entry__meta">September 2018 - July 2022</p>
-        <p class="profile-entry__detail"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_bsc.pdf">83.1/100</a> (Top 22%)</p>
-        <p class="profile-entry__detail"><strong>Thesis:</strong> <a href="https://BoChen-Ye.github.io/files/Bsc_thesis.pdf">The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip</a></p>
-        <p class="profile-entry__detail"><strong>Relevant courses:</strong> Analysis and design of integrated digital circuit, microprocessor architecture and design, introduction to SoC design, and Verilog HDL with FPGA implementation.</p>
+        <p class="profile-entry__subtitle"><span class="lang-en">Bachelor in Integrated Circuit Design and Integrated Systems</span><span class="lang-zh">集成电路设计与集成系统本科</span></p>
+        <p class="profile-entry__meta"><span class="lang-en">September 2018 - July 2022</span><span class="lang-zh">2018 年 9 月 - 2022 年 7 月</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_bsc.pdf">83.1/100</a> (Top 22%)</span><span class="lang-zh"><strong>绩点：</strong><a href="https://BoChen-Ye.github.io/files/transcript_bsc.pdf">83.1/100</a>（前 22%）</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Thesis:</strong> <a href="https://BoChen-Ye.github.io/files/Bsc_thesis.pdf">The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip</a></span><span class="lang-zh"><strong>本科论文：</strong><a href="https://BoChen-Ye.github.io/files/Bsc_thesis.pdf">The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip</a></span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Relevant courses:</strong> Analysis and design of integrated digital circuit, microprocessor architecture and design, introduction to SoC design, and Verilog HDL with FPGA implementation.</span><span class="lang-zh"><strong>相关课程：</strong>集成数字电路分析与设计、微处理器体系结构与设计、SoC 设计导论，以及 Verilog HDL 与 FPGA 实现。</span></p>
       </div>
     </article>
   </div>
 </div>
 
-# 💻 Internships
+<span class="anchor" id="-internships"></span>
+<h1><span class="lang-en">Internships</span><span class="lang-zh">实习经历</span></h1>
 <div class="profile-section">
   <div class="profile-timeline">
     <article class="profile-entry profile-entry--timeline">
       <div class="profile-timeline__marker"></div>
       <div class="profile-entry__logo-wrap profile-entry__logo-wrap--timeline">
-        <img class="profile-entry__logo" src="https://logo.clearbit.com/nxp.com?size=160" alt="NXP Semiconductors logo">
+        <img class="profile-entry__logo" src="{{ '/images/nxp-logo.png' | relative_url }}" alt="NXP Semiconductors logo">
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">NXP Semiconductors</h3>
-        <p class="profile-entry__subtitle">Digital Design Intern</p>
-        <p class="profile-entry__detail"><strong>Location:</strong> Nijmegen, The Netherlands</p>
-        <p class="profile-entry__detail"><strong>Supervisors:</strong> Kimmo Salo, Gustavo Naspolini, and Manil Dev Gomony</p>
-        <p class="profile-entry__meta">March 2024 - October 2024</p>
+        <p class="profile-entry__subtitle"><span class="lang-en">Digital Design Intern</span><span class="lang-zh">数字设计实习生</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Location:</strong> Nijmegen, The Netherlands</span><span class="lang-zh"><strong>地点：</strong>荷兰奈梅亨</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Supervisors:</strong> Kimmo Salo, Gustavo Naspolini, and Manil Dev Gomony</span><span class="lang-zh"><strong>导师：</strong>Kimmo Salo、Gustavo Naspolini 和 Manil Dev Gomony</span></p>
+        <p class="profile-entry__meta"><span class="lang-en">March 2024 - October 2024</span><span class="lang-zh">2024 年 3 月 - 2024 年 10 月</span></p>
         <ul class="profile-entry__highlights">
-          <li>Defined a custom 1-wire digital communication protocol between two ICs.</li>
-          <li>Built a high-level Simulink model and evaluated the channel with parasitic parameters.</li>
-          <li>Developed and verified a SystemVerilog IP and built a two-FPGA demonstrator.</li>
+          <li><span class="lang-en">Defined a custom 1-wire digital communication protocol between two ICs.</span><span class="lang-zh">设计了两颗芯片之间的定制单线数字通信协议。</span></li>
+          <li><span class="lang-en">Built a high-level Simulink model and evaluated the channel with parasitic parameters.</span><span class="lang-zh">搭建了高层次 Simulink 模型，并结合寄生参数对信道进行评估。</span></li>
+          <li><span class="lang-en">Developed and verified a SystemVerilog IP and built a two-FPGA demonstrator.</span><span class="lang-zh">完成了 SystemVerilog IP 的设计与验证，并搭建了双 FPGA 演示平台。</span></li>
         </ul>
       </div>
     </article>
@@ -161,17 +146,17 @@ School of Engineering Research Conference, 2026
     <article class="profile-entry profile-entry--timeline">
       <div class="profile-timeline__marker"></div>
       <div class="profile-entry__logo-wrap profile-entry__logo-wrap--timeline">
-        <img class="profile-entry__logo" src="https://logo.clearbit.com/linear.vc?size=160" alt="Linear Capital logo">
+        <img class="profile-entry__logo" src="{{ '/images/linear-logo.png' | relative_url }}" alt="Linear Capital logo">
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">Linear Capital</h3>
-        <p class="profile-entry__subtitle">Oversea VC Intern</p>
-        <p class="profile-entry__detail"><strong>Location:</strong> China (Remote, part-time)</p>
-        <p class="profile-entry__meta">November 2023 - June 2024</p>
+        <p class="profile-entry__subtitle"><span class="lang-en">Oversea VC Intern</span><span class="lang-zh">海外 VC 实习生</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Location:</strong> China (Remote, part-time)</span><span class="lang-zh"><strong>地点：</strong>中国（远程，兼职）</span></p>
+        <p class="profile-entry__meta"><span class="lang-en">November 2023 - June 2024</span><span class="lang-zh">2023 年 11 月 - 2024 年 6 月</span></p>
         <ul class="profile-entry__highlights">
-          <li>Mapped overseas talent in academia and industry for recruitment and collaboration.</li>
-          <li>Assessed commercialization potential, market opportunities, and implementation risks.</li>
-          <li>Supported early-stage investment planning and startup collaboration.</li>
+          <li><span class="lang-en">Mapped overseas talent in academia and industry for recruitment and collaboration.</span><span class="lang-zh">梳理海外学术界和工业界人才信息，用于招聘与合作评估。</span></li>
+          <li><span class="lang-en">Assessed commercialization potential, market opportunities, and implementation risks.</span><span class="lang-zh">评估技术商业化潜力、市场机会与落地风险。</span></li>
+          <li><span class="lang-en">Supported early-stage investment planning and startup collaboration.</span><span class="lang-zh">支持早期投资研判与初创企业合作分析。</span></li>
         </ul>
       </div>
     </article>
@@ -179,160 +164,38 @@ School of Engineering Research Conference, 2026
     <article class="profile-entry profile-entry--timeline">
       <div class="profile-timeline__marker"></div>
       <div class="profile-entry__logo-wrap profile-entry__logo-wrap--timeline">
-        <img class="profile-entry__logo" src="https://logo.clearbit.com/intrinsic-id.com?size=160" alt="Intrinsic ID logo">
+        <img class="profile-entry__logo" src="{{ '/images/intrinsic-logo.png' | relative_url }}" alt="Intrinsic ID logo">
       </div>
       <div class="profile-entry__content">
         <h3 class="profile-entry__title">Intrinsic ID</h3>
-        <p class="profile-entry__subtitle">IP Modeling and Digital IC Design Intern</p>
-        <p class="profile-entry__detail"><strong>Location:</strong> Eindhoven, The Netherlands</p>
-        <p class="profile-entry__detail"><strong>Supervisors:</strong> Manil Dev Gomony, Rui Wang, and Roel Maes</p>
-        <p class="profile-entry__meta">July 2023 - October 2023</p>
+        <p class="profile-entry__subtitle"><span class="lang-en">IP Modeling and Digital IC Design Intern</span><span class="lang-zh">IP 建模与数字 IC 设计实习生</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Location:</strong> Eindhoven, The Netherlands</span><span class="lang-zh"><strong>地点：</strong>荷兰埃因霍温</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Supervisors:</strong> Manil Dev Gomony, Rui Wang, and Roel Maes</span><span class="lang-zh"><strong>导师：</strong>Manil Dev Gomony、Rui Wang 和 Roel Maes</span></p>
+        <p class="profile-entry__meta"><span class="lang-en">July 2023 - October 2023</span><span class="lang-zh">2023 年 7 月 - 2023 年 10 月</span></p>
         <ul class="profile-entry__highlights">
-          <li>Studied a trellis-based Reed-Muller codec and modeled it in Python.</li>
-          <li>Designed the hardware architecture in VHDL and verified it on Arty-Z7 FPGA.</li>
-          <li>Reduced resource usage from 938 LUTs to 843 LUTs and achieved 6-cycle decoding latency.</li>
+          <li><span class="lang-en">Studied a trellis-based Reed-Muller codec and modeled it in Python.</span><span class="lang-zh">研究基于 trellis 的 Reed-Muller 编码器，并使用 Python 完成建模。</span></li>
+          <li><span class="lang-en">Designed the hardware architecture in VHDL and verified it on Arty-Z7 FPGA.</span><span class="lang-zh">使用 VHDL 设计硬件架构，并在 Arty-Z7 FPGA 上完成验证。</span></li>
+          <li><span class="lang-en">Reduced resource usage from 938 LUTs to 843 LUTs and achieved 6-cycle decoding latency.</span><span class="lang-zh">将资源占用从 938 LUTs 优化到 843 LUTs，并实现了 6 个周期的解码延迟。</span></li>
         </ul>
       </div>
     </article>
   </div>
 </div>
 
-<!-- # 🔬 Research Experience
-## 2024.11 - 2024.12, Research Assistant of 3D point cloud hardware (Remote)
-- Collaborate with [Dr.Changchun Zhou](https://changchun-zhou.github.io/)(PhD@PKU & postdoc@DUKE)
+<span class="anchor" id="-honors-and-awards"></span>
+<h1><span class="lang-en">Honors and Awards</span><span class="lang-zh">荣誉奖励</span></h1>
+<ul>
+  <li><span class="lang-en">IEEE CAS Student Travel Grant, SOCC 2025</span><span class="lang-zh">IEEE CAS 学生差旅资助，SOCC 2025</span></li>
+  <li><span class="lang-en">Undergraduate Scholarship, 2021/2022</span><span class="lang-zh">本科生奖学金，2021/2022 学年</span></li>
+</ul>
 
-	- Design hardware acceleration units for 3D point cloud applications, include Farthest Point Sampling(FPS), AXI interface(Master/Slave).
-	- An energy-efficient acceleration chip supporting transformer-based networks and Fabricated in TSMC 28-nm HPC technology with an expected area of 2 mm×3 mm.
-
-## 2023.10 - 2024.02, Neuromorphic Research Student
-- Eindhoven University of Technology, Netherlands
-
-	- I have completed the [literature review on Neuromorphic Hardware Accelerator and Neuromorphic NoC](https://github.com/BoChen-Ye/SpkingNN-on-Chip). 
-	- I have started architectural simulation using [OpenSoC](https://github.com/BoChen-Ye/OpenSoCFabric) for the baseline NoC.
-	- Work in Eletronic System group with Prof. [Manil Dev Gomony](https://www.tue.nl/en/research/researchers/manil-dev-gomony), Prof. [Federico Corradi](https://www.tue.nl/en/research/researchers/federico-corradi), and Prof. [Henk Corporaal](https://www.tue.nl/en/research/researchers/henk-corporaal).
-
-## 2021.10 - 2022.05, NoC Research Student 
-- Institute of VLSI Design of HFUT, China
-	
-	- Study the knowledge of [Network-on-Chip(NoC) Router Based on Packet Connected Circuit(PCC)](https://github.com/BoChen-Ye/Network-on-Chip-Router-Based-on-Packet-Connected-Circuit).
-	- Implement the router and routing algorithm of PCC-NoC by using VerilogHDL.
-	- Verify it on FPGA and use UART(with FIFO) to communicate with PC.
-	- Use Python to verify result automatically.
-	- This project as my bachelor graduation project got A and advised by Zhenmin Li(HFUT). -->
-
-# 🎖 Honors and Awards
--  IEEE CAS Student Travel Grant, SOCC 2025
--  Unergraduate Scholarship 2021/2022
-
-# 📖 Skill
-- **Professional:** Verilog/SystemVerilog/VHDL · FPGA · Lint · Linux · Cadence Tool(Xcelium,SimVision,Conformal Lint,Virtuoso,Genus,Innovus)
-- **Miscellaneous:** Python · C/C++ · SystemC · MATLAB/Simulink · LaTex · CUDA · Pytorch · Perl/TCL/Shell · Git
-- **Language:** Mandarian(Native), English
-
-<!--# 🔥📯 Project
-## 2024.06 - 2024.09, [Tiny SoC based on Rsic-V processor and Tiny LeViT accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_SoC)
-- Designed the SoC (System on Chip) architecture, incorporating an RISC-V core, memory, Levit accelerator, and AHB/APB buses with connected peripherals. Utilized previous project designs for the RISC-V core and Levit accelerator.
-- Developed a Python program to convert assembly code to binary, enabling rapid generation of binary instruction files to meet SoC requirements.
-- Constructed a warpper for the accelerator with input and output buffers, ensuring synchronized data input when all required data was present.
-- Implemented AHB-compatible interfaces for the CPU, memory, and accelerator using SystemVerilog.
-
-## 2024.04 - 2024.06, [Tiny LeViT Hardware Accelerator(hobby project)](https://github.com/BoChen-Ye/Tiny_LeViT_Hardware_Accelerator)
-- Use **System Verilog** to design hardware accelerator for accelerate LeViT Network which contain Convolutional layer, Attention layer and Average pooling layer.
-- Use row stationary (RS) and systolic array to get max parallel computing. The delay is only 3 cycle from input data to first output data. Also, it has specific core to accelerate the convolutional layer when stride=2 and padding=1.
-- Use Tanh instead of softmax and use ReLU instead of Hardswish to simplify that difficulty of hardware calculation in attention layer.
-
-## 2023.05 - 2023.06, Low power design and synthesis of SOC based on MIPS and AES
-- Used Verilog to design a SoC which include five-stage pipelined mMIPS processor core, AES encryption module, and AMBA bus and Used **Cadence Incisive** to simulation and functional verification.
-- Used **Cadence Genus** for logic synthesis with low power strategies which is reduce 3% power consumption under 125MHz.
-- Used **Cadence Innovus** for place and route with two power domain which is reduce 8% power consumption under 200MHz.
-
-## 2023.02 - 2023.04, Inference acceleration of deep neural network based on TCU accelerator
-- Train [a multilayer perceptron for handwritten digit classification(MNIST)](https://github.com/BoChen-Ye/MNIST-handwritten-digit-classification) using the **PyTorch** framework.
-- Optimize a VGG5 for image classification using various quantization and pruning techniques. Explore the impact of these techniques on both accuracy and compute cost.
-- Use open source [Tensil AI](https://www.tensil.ai/) for generating tensor computing units(TCU), compiling and accelerating ResNet20 by systolic array on PYNQ . 
-
-## 2023.02 - 2023.03, [Five-stage pipelined RISC-V processor with full hazard handling(hobby project)](https://github.com/BoChen-Ye/RISC-V-five-stage-CPU)
-- I have implemented a **RISC-V five-stage pipeline processor** with full hazard handling. The RTL level design using **Verilog** and simulated in Modelsim for simulation. 
-- The processor can run the basic RV32i instructions, solves data conflicts, structure conflicts, and control conflicts, and supports stalling, flushing and forwarding.
-
-## 2022.11 - 2023.01, Full Custom 16-bit Brent-Kung Adder Design
-- Completed CMOS circuit design and layout design for a 45nm full custom 16-bit Brent-Kung adder. Circuit design and layout design via **Cadence Virtuoso**, DRC and LVS verification of the layout using **Calibre**. The circuit design can be functionally verified by simulation at 500MHz, 90◦C with an output rise and fall time of less than 100ps, and the layout results can be functionally verified at a post-simulation of 500MHz.
-
-## 2022.12 - 2023.01, Implementation of image processing kernels on CUDA
-- Mapping Grayscale processing and convolution 2D kernels from C to **CUDA** and optimaize the loop, then running on the Nvidia GPU.
-- The result is that the processing time of 13 images is accelerated from 4872ms to 27ms.
-
-## 2021.04 - 2021.06, A single-cycle CPU compatible with Microchip PIC16F54 microprocessor	
-- The CPU is designed in modules, and each module uses Verilog HDL to design, which is implemented on the Basys3 after being verified by Modelsim pre-imitation. The complex C language load can run, and UART serial communication function controlled by softcore can be realized.
-
-## 2020.12 - 2021.01, Design of Lightweight System Based on SystemC
-- Studying the structural design of soc, and use **SystemC** to write Bus and UART serial interface, function processing module, arbiter module, data receiving and sending module to form a lightweight system and verify it. Drive data enters two processing modules, and one of the results is selected by the arbiter in the bus and sent to the receiving module through UART interface and displayed.
-
-## 2020.10 - 2020.11, VLSI Simulation and Synthesis	
-- Use VCS to verify the function of Tinycore based on RISC-V on the test platform.
-- Use DC compiler to synthesize four different hardware description ALUs, and analyze the comprehensive report to compare and analyze different parameters.
-
-
-
-
-
-# 📖 Self-Studying
-- **[System on Chip (SOC) Architecture: A Practical Approach](https://link.springer.com/book/10.1007/978-3-031-36242-2)**,Veena S. Chakravarthi & Shivananda R. Koteshwar.
-	
-	- Provides the most up-to-date information on current SOCs and architectural insights for the design of future semiconductor systems
-	- Explores concepts such as parallelism, pipelining, data-driven or instruction-driven, and event-driven systems and their respective tradeoffs in SOC architectures
-	- Provides a practical approach to defining SOC architecture with real case studies
-
-- **[A Practical Approach to VLSI System on Chip (SoC) Design: A Comprehensive Guide](https://link.springer.com/book/10.1007/978-3-030-23049-4)**,Veena S. Chakravarthi.
-
-	- A comprehensive practical guide for VLSI designers
-	- Covers end-to-end VLSI SoC design flow
-	- Includes source code, case studies, and application examples
-
-- **[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)**, MIT.
-
-	- Content: Shell Tools and Scriptin, Editors (Vim), Data Wrangling, Command-line Environment, Version Control (Git). Debugging and Profiling, Metaprogramming, Security and Cryptography, Potpourri.
-
-- **[How to Start a Startup](https://startupclass.samaltman.com/)**, Sam Altman in Stanford.
-
-	- Current progress: Lecture 3.
-
-- **[TinyML and Efficient Deep Learning Computing](https://efficientml.ai)**, MIT HAN LAB.
-	
-	- Content: Basics of Deep Learning, Pruning and Sparsity, Quantization, Neural Architecture Search, Knowledge distillation.
-
-- **[一生一芯ysyx](https://ysyx.oscc.cc/)**, Institute of Computing technology, CAS.
-
-	- Current progress: Prestudy->Stop.
-
-- **[SoC 101](https://www.youtube.com/playlist?list=PLZU5hLL_713ygweO3b_9KiZUJuEI7I5yK)**, Adam Teman(Bar-Ilan University).
-	
-	- Focus on SoC architecture.
-
-- **[Digital Design and Computer Architecture](https://safari.ethz.ch/digitaltechnik/doku.php)**, ETH.
-	
-	- beignner.
-
-
-
-# 🚩 Activities
-## 2019.03 - 2020.07, HFUT Innovation and Entrepreneurship @ Big Data Center
-Director, External Relations Department
-- Participated in writing the introduction of the center. Led the Computer Science College's party branch in visiting and introducing the Big Data Center and led high school students from Hefei to visit the center.
--  Organized and planned the Innovation and Entrepreneurship Forum at the Big Data Center. Invited teachers from various colleges to give lectures. Attracted active participation from 500 students across the university.
-- Participated in editing the WeChat official account of INOW Creators.
-
-## 2019.09 - 2020.07, HFUT Electronics and Science Association
-Director, Organizing Department
-- Responsible for the Organization Department of the new District's daily work, organized and planned the new district association recruitment activities, thus the association became the largest association at our university.
-- Coordinated the students' Union and other departments, carried out targeted basic teaching work, held "no innovation, not young" electronic science and technology exchange lectures and other activities, the association was rated as the annual model association.
-
-## 2019.09 - 2020.07, HFUT National Microelectronics College Student Union
-Director, Innovation and Entrepreneurship Department
-- Responsible for organizing and promoting the Microelectronics College Innovation and Entrepreneurship Competition and the National College Student Electronics Design Competition training.
-- Actively collaborated with the Big Data Center to facilitate the entry of Microelectronics College's innovation teams into the center.
--->
-
+<span class="anchor" id="-skill"></span>
+<h1><span class="lang-en">Skill</span><span class="lang-zh">技能</span></h1>
+<ul>
+  <li><span class="lang-en"><strong>Professional:</strong> Verilog / SystemVerilog / VHDL, FPGA, Lint, Linux, Cadence tools (Xcelium, SimVision, Conformal Lint, Virtuoso, Genus, Innovus)</span><span class="lang-zh"><strong>专业技能：</strong>Verilog / SystemVerilog / VHDL、FPGA、Lint、Linux，以及 Cadence 工具链（Xcelium、SimVision、Conformal Lint、Virtuoso、Genus、Innovus）</span></li>
+  <li><span class="lang-en"><strong>Miscellaneous:</strong> Python, C/C++, SystemC, MATLAB / Simulink, LaTeX, CUDA, PyTorch, Perl / TCL / Shell, Git</span><span class="lang-zh"><strong>其他技能：</strong>Python、C/C++、SystemC、MATLAB / Simulink、LaTeX、CUDA、PyTorch、Perl / TCL / Shell、Git</span></li>
+  <li><span class="lang-en"><strong>Language:</strong> Mandarin (native), English</span><span class="lang-zh"><strong>语言：</strong>中文（母语）、英文</span></li>
+</ul>
 
 <div class="visitor-map">
   <div class="visitor-map__widget">
@@ -350,4 +213,3 @@ Director, Innovation and Entrepreneurship Department
     {% endif %}
   </div>
 </div>
-

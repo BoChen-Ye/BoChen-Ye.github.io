@@ -277,3 +277,170 @@ h1:before, .anchor:before {
         padding-left: 0.45rem;
     }
 }
+
+html:not([data-lang-ready="true"]) .lang-zh {
+    display: none !important;
+}
+
+.masthead__controls {
+    display: flex;
+    align-items: center;
+}
+
+.masthead__toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    height: 2.2rem;
+    padding: 0 0.8rem;
+    border: 1px solid #d6dfec;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #244b8d;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.masthead__toggle:hover {
+    background: #f4f8fc;
+    border-color: #9ab2d8;
+    transform: translateY(-1px);
+}
+
+.masthead__toggle--theme {
+    padding: 0;
+    min-width: 2.4rem;
+}
+
+.theme-icon {
+    font-size: 1rem;
+}
+
+.theme-icon--dark {
+    display: none;
+}
+
+.homepage-copy {
+    margin-bottom: 1.75rem;
+}
+
+.homepage-copy p:last-child {
+    margin-bottom: 0;
+}
+
+html[data-theme="dark"] body {
+    background: #10161f;
+    color: #e3ebf5;
+}
+
+html[data-theme="dark"] .masthead,
+html[data-theme="dark"] .greedy-nav,
+html[data-theme="dark"] .page,
+html[data-theme="dark"] .archive,
+html[data-theme="dark"] .sidebar {
+    background: #10161f;
+}
+
+html[data-theme="dark"] .masthead {
+    border-bottom-color: #223245;
+}
+
+html[data-theme="dark"] .greedy-nav a,
+html[data-theme="dark"] .greedy-nav .visible-links a,
+html[data-theme="dark"] .page__content,
+html[data-theme="dark"] .author__name,
+html[data-theme="dark"] .author__bio,
+html[data-theme="dark"] .author__urls,
+html[data-theme="dark"] .archive__item-title,
+html[data-theme="dark"] .page__title,
+html[data-theme="dark"] .page__meta,
+html[data-theme="dark"] .profile-entry__title {
+    color: #e8eef7;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links {
+    background: #16202c;
+    border-color: #223245;
+}
+
+html[data-theme="dark"] .greedy-nav .hidden-links a:hover,
+html[data-theme="dark"] .greedy-nav .visible-links a:hover,
+html[data-theme="dark"] a {
+    color: #8eb8ff;
+}
+
+html[data-theme="dark"] .masthead__toggle {
+    background: #16202c;
+    color: #d9e6fb;
+    border-color: #2c435c;
+}
+
+html[data-theme="dark"] .theme-icon--light {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-icon--dark {
+    display: inline;
+}
+
+html[data-theme="dark"] .masthead__toggle:hover {
+    background: #1b2a38;
+    border-color: #4b6b90;
+}
+
+html[data-theme="dark"] .paper-box,
+html[data-theme="dark"] .page__content h1,
+html[data-theme="dark"] .page__content h2,
+html[data-theme="dark"] .page__content h3,
+html[data-theme="dark"] .page__content h4,
+html[data-theme="dark"] .archive__item,
+html[data-theme="dark"] .list__item,
+html[data-theme="dark"] .greedy-nav {
+    border-color: #223245;
+}
+
+html[data-theme="dark"] .paper-box img {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme="dark"] .badge {
+    background-color: #0f4cb5;
+}
+
+html[data-theme="dark"] .visitor-map {
+    background: linear-gradient(180deg, #17212d 0%, #131b25 100%);
+    border-color: #223245;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .visitor-map__placeholder,
+html[data-theme="dark"] .profile-entry__logo-wrap {
+    background: #16202c;
+    border-color: #223245;
+    color: #d7e2ee;
+}
+
+html[data-theme="dark"] .profile-entry__subtitle,
+html[data-theme="dark"] .profile-entry__detail,
+html[data-theme="dark"] .profile-entry__highlights,
+html[data-theme="dark"] .visitor-map__intro,
+html[data-theme="dark"] .author__urls li,
+html[data-theme="dark"] .archive__item-excerpt {
+    color: #b9c8d9;
+}
+
+html[data-theme="dark"] .profile-entry__meta {
+    color: #ffb286;
+}
+
+html[data-theme="dark"] .profile-timeline::before {
+    background: #5c7190;
+}
+
+html[data-theme="dark"] .profile-timeline__marker {
+    background: #ff9c64;
+    box-shadow: 0 0 0 4px #10161f;
+}

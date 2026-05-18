@@ -8,6 +8,7 @@
 # Site Settings
 title                    : "Bochen Ye(叶波辰)"
 description              : "PhD student@Edinburgh | Msc.EE@TU/e | ex-Intern@NXP"
+description_zh           : "爱丁堡大学博士生 | TU/e 硕士 | 曾在 NXP 实习"
 repository               : "BoChen-Ye/BoChen-Ye.github.io"
 google_scholar_stats_use_cdn : False
 clustrmaps:
@@ -28,9 +29,10 @@ author:
   name             : "Bochen Ye(叶波辰)"
   avatar           : "images/photo.jpg"
   bio              : "University of Edinburgh"
+  bio_zh           : "爱丁堡大学"
   location         : "Edinburgh, UK"
   employer         :
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=Dc5xDEsAAAAJ"
   email            : "bochen.ye@ed.ac.uk"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
@@ -55,7 +57,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            : #76561198842522026
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :
