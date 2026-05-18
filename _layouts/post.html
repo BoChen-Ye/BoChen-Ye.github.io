@@ -1,0 +1,75 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      {% include sidebar.html %}
+
+      <article class="page" itemscope itemtype="http://schema.org/Article">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          {% assign page_cover = page.cover_image | default: page.image %}
+          {% if page_cover %}
+            <figure class="post-cover">
+              <img class="page__hero-image post-cover__image" src="{{ page_cover | relative_url }}" alt="{{ page.title }}">
+              {% if page.cover_caption %}
+                <figcaption class="post-cover__caption">{{ page.cover_caption }}</figcaption>
+              {% endif %}
+            </figure>
+          {% endif %}
+          <header>
+            {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title }}</h1>{% endif %}
+            {% if page.excerpt %}<p class="page__lead">{{ page.excerpt }}</p>{% endif %}
+            <p class="page__meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                Published {{ page.date | date: "%B %-d, %Y" }}
+              </time>
+            </p>
+          </header>
+
+          <section class="page__content" itemprop="articleBody">
+            {{ content }}
+          </section>
+
+          {% assign has_categories = page.categories and page.categories.size > 0 %}
+          {% assign has_tags = page.tags and page.tags.size > 0 %}
+          {% if has_categories or has_tags %}
+            <div class="page__meta">
+              {% if has_categories %}
+                <p>
+                  Categories:
+                  {% for category in page.categories %}
+                    <span class="page__taxonomy-item">{{ category }}</span>
+                  {% endfor %}
+                </p>
+              {% endif %}
+              {% if has_tags %}
+                <p>
+                  Tags:
+                  {% for tag in page.tags %}
+                    <span class="page__taxonomy-item">{{ tag }}</span>
+                  {% endfor %}
+                </p>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

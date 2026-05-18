@@ -84,6 +84,120 @@
   }
 }
 
+.blog-index__intro {
+  margin: 0 0 2rem;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background: linear-gradient(135deg, mix(#fff, $info-color, 90%) 0%, #fff 100%);
+  border: 1px solid mix(#fff, $info-color, 75%);
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba($info-color, 0.08);
+
+  h2 {
+    margin: 0 0 0.5rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: $type-size-3;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.blog-index__eyebrow {
+  margin-bottom: 0.5rem !important;
+  color: $info-color;
+  font-size: $type-size-7;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.blog-card-grid {
+  display: grid;
+  gap: 1.25rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 1.25rem 1.25rem 1rem;
+  background: linear-gradient(180deg, #fff 0%, mix(#fff, $info-color, 96%) 100%);
+  border: 1px solid mix(#fff, $gray, 78%);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(#000, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: mix(#fff, $info-color, 60%);
+    box-shadow: 0 18px 34px rgba($info-color, 0.14);
+  }
+
+  .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 0;
+  }
+
+  .archive__item-excerpt {
+    margin-bottom: 1rem;
+    color: mix(#000, $gray, 75%);
+    line-height: 1.7;
+  }
+}
+
+.blog-card__cover {
+  display: block;
+  margin: -1.25rem -1.25rem 1rem;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  background: mix(#fff, $info-color, 92%);
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+  }
+}
+
+.blog-card:hover .blog-card__cover img {
+  transform: scale(1.03);
+}
+
+.blog-card__meta {
+  margin: 0 0 0.75rem;
+  color: $info-color;
+  font-size: $type-size-7;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.blog-card__title a {
+  text-decoration: none;
+}
+
+.blog-card__tags {
+  margin-top: auto;
+  margin-bottom: 1rem;
+
+  .page__taxonomy-item {
+    background: #fff;
+  }
+}
+
+.blog-card__footer {
+  margin: 0;
+}
+
 
 /*
    List view

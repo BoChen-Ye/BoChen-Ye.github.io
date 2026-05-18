@@ -21,6 +21,9 @@ main:
   - title: "Skill"
     url: "/#-skill"
 
+  - title: "Blog"
+    url: "/blog/"
+
 
 
 
