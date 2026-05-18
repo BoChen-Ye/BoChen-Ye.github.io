@@ -5,12 +5,11 @@ excerpt: "Notes on AI hardware, projects, and research progress."
 author_profile: true
 ---
 
-<div class="blog-index__intro">
+<div class="blog-index__intro blog-index__intro--minimal">
   <p class="blog-index__eyebrow">Research Notes</p>
-  <h2>Longer writing beyond the homepage</h2>
+  <h2>Blogs</h2>
   <p>
-    This page collects project notes, engineering write-ups, and research reflections.
-    It is meant to be a lighter, more update-friendly space than the main homepage.
+    Notes on AI hardware, engineering workflows, and research progress.
   </p>
 </div>
 
@@ -18,41 +17,49 @@ author_profile: true
 
 <div class="archive blog-index">
   {% if posts.size > 0 %}
-    <div class="blog-card-grid">
+    <ul class="blog-post-list">
       {% for post in posts %}
-        <article class="blog-card" itemscope itemtype="http://schema.org/CreativeWork">
-          {% assign post_cover = post.cover_image | default: post.image %}
-          {% if post_cover %}
-            <a class="archive__item-teaser blog-card__cover" href="{{ post.url | relative_url }}">
-              <img src="{{ post_cover | relative_url }}" alt="{{ post.title }}">
-            </a>
-          {% endif %}
-          <p class="blog-card__meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </time>
-          </p>
-          <h2 class="archive__item-title blog-card__title" itemprop="headline">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h2>
-          {% if post.excerpt %}
-            <p class="archive__item-excerpt blog-card__excerpt" itemprop="description">
-              {{ post.excerpt | markdownify | strip_html | strip_newlines }}
-            </p>
-          {% endif %}
-          {% if post.tags and post.tags.size > 0 %}
-            <div class="blog-card__tags">
-              {% for tag in post.tags limit:3 %}
-                <span class="page__taxonomy-item">{{ tag }}</span>
-              {% endfor %}
+        {% assign post_cover = post.thumbnail | default: post.cover_image | default: post.image %}
+        {% assign post_summary = post.description | default: post.excerpt %}
+        {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+        {% assign year = post.date | date: "%Y" %}
+        <li class="blog-post-list__item">
+          <article class="blog-post-preview" itemscope itemtype="http://schema.org/CreativeWork">
+            <div class="blog-post-preview__main">
+              <h2 class="archive__item-title blog-post-preview__title" itemprop="headline">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h2>
+              {% if post_summary %}
+                <p class="archive__item-excerpt blog-post-preview__excerpt" itemprop="description">
+                  {{ post_summary | markdownify | strip_html | strip_newlines }}
+                </p>
+              {% endif %}
+              <p class="blog-post-preview__meta">
+                {{ read_time }} min read
+                <span>&middot;</span>
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: "%B %-d, %Y" }}
+                </time>
+              </p>
+              <p class="blog-post-preview__tags">
+                <span class="blog-post-preview__year">{{ year }}</span>
+                {% if post.tags and post.tags.size > 0 %}
+                  <span>&middot;</span>
+                  {% for tag in post.tags %}
+                    <span class="blog-post-preview__tag">#{{ tag }}</span>{% unless forloop.last %} {% endunless %}
+                  {% endfor %}
+                {% endif %}
+              </p>
             </div>
-          {% endif %}
-          <p class="blog-card__footer">
-            <a class="btn btn--info btn--small" href="{{ post.url | relative_url }}">Read article</a>
-          </p>
-        </article>
+            {% if post_cover %}
+              <a class="blog-post-preview__thumb" href="{{ post.url | relative_url }}">
+                <img src="{{ post_cover | relative_url }}" alt="{{ post.title }}">
+              </a>
+            {% endif %}
+          </article>
+        </li>
       {% endfor %}
-    </div>
+    </ul>
   {% else %}
     <p>No posts published yet. The first article will appear here once a file is added to <code>_posts/</code>.</p>
   {% endif %}
