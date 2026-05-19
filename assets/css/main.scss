@@ -118,8 +118,9 @@
 }
 
 .publication-highlight {
-    color: var(--site-accent);
+    color: #ff2400;
     font-weight: 800;
+    font-size: 1.04em;
 }
 
 .paper-box-text__links {
@@ -684,6 +685,10 @@ html[data-theme="dark"] .profile-entry__annotation {
 }
 
 @media (max-width: 768px) {
+    .layout--home .page__content {
+        font-size: 1.03rem;
+    }
+
     .page {
         padding-top: 0.5rem;
     }
@@ -973,11 +978,15 @@ html:not([data-lang-ready="true"]) .lang-zh {
     display: inline-block;
     margin-right: 0.35rem;
     font-weight: 800;
+    font-size: 1.04em;
 }
 
-.news-pill--conference,
+.news-pill--conference {
+    color: #ff2400;
+}
+
 .news-pill--paper {
-    color: var(--site-accent);
+    color: #3ea055;
 }
 
 .news-feed strong {
@@ -1139,6 +1148,27 @@ body,
     color: var(--site-body-text);
 }
 
+.layout--home .page__content {
+    font-size: 1.1rem;
+}
+
+.layout--home .homepage-copy p,
+.layout--home .news-feed__scroll li,
+.layout--home .paper-box-text__authors,
+.layout--home .paper-box-text__venue,
+.layout--home .paper-box-text__note,
+.layout--home .paper-box-text__links,
+.layout--home .paper-box-text__summary,
+.layout--home .profile-entry__subtitle,
+.layout--home .profile-entry__meta,
+.layout--home .profile-entry__detail,
+.layout--home .profile-entry__highlights li,
+.layout--home .homepage-cv-link,
+.layout--home .opportunity-callout p {
+    font-size: 1.05rem;
+    line-height: 1.72;
+}
+
 .page__content strong,
 .homepage-copy strong,
 .profile-entry__detail strong,
@@ -1263,6 +1293,10 @@ h6,
 }
 
 @media (max-width: 520px) {
+    .layout--home .page__content {
+        font-size: 1rem;
+    }
+
     .masthead__inner-wrap {
         gap: 0.35rem;
     }
