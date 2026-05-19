@@ -1,32 +1,8 @@
-# main links links
+# main links
 main:
   - title: "About Me"
     title_zh: "关于我"
     url: "/#about-me"
-
-  - title: "News"
-    title_zh: "新闻"
-    url: "/#-news"
-
-  - title: "Educations"
-    title_zh: "教育经历"
-    url: "/#-educations"
-
-  - title: "Internships"
-    title_zh: "实习经历"
-    url: "/#-internships"
-
-  - title: "Publication"
-    title_zh: "论文发表"
-    url: "/#-research-experience"
-
-  - title: "Honors and Awards"
-    title_zh: "荣誉奖励"
-    url: "/#-honors-and-awards"
-
-  - title: "Skill"
-    title_zh: "技能"
-    url: "/#-skill"
 
   - title: "Blog"
     title_zh: "博客"

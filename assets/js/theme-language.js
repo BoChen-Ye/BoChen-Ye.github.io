@@ -4,28 +4,37 @@
   var themeKey = "site-theme";
 
   function renderClustrMaps(theme) {
-    var widgets = Array.prototype.slice.call(document.querySelectorAll("[data-clustrmaps-widget]"));
-    if (!widgets.length) {
+    var images = Array.prototype.slice.call(document.querySelectorAll("[data-clustrmaps-image]"));
+    if (!images.length) {
       return;
     }
 
-    widgets.forEach(function (widget, index) {
-      var widgetId = widget.getAttribute("data-widget-id");
-      var width = widget.getAttribute("data-widget-width") || "260";
-      var color = "ffffff";
+    var palette = theme === "dark"
+      ? { ocean: "76b900", land: "000000", text: "edf5e9" }
+      : { ocean: "d97757", land: "ffffff", text: "8e4a34" };
+
+    images.forEach(function (image) {
+      var widgetId = image.getAttribute("data-widget-id");
+      var width = image.getAttribute("data-widget-width") || "260";
+      var mapSrc;
 
       if (!widgetId) {
         return;
       }
 
-      widget.innerHTML = "";
+      mapSrc = "//clustrmaps.com/map_v2.png?d="
+        + encodeURIComponent(widgetId)
+        + "&cl=" + palette.ocean
+        + "&co=" + palette.land
+        + "&ct=" + palette.text
+        + "&w=" + encodeURIComponent(width)
+        + "&t=n";
 
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      script.async = true;
-      script.id = index === 0 ? "clustrmaps" : "clustrmaps-" + index;
-      script.src = "//clustrmaps.com/map_v2.js?d=" + encodeURIComponent(widgetId) + "&cl=" + color + "&w=" + encodeURIComponent(width) + "&t=n";
-      widget.appendChild(script);
+      image.src = mapSrc;
+
+      if (image.parentElement && image.parentElement.tagName === "A") {
+        image.parentElement.href = "https://clustrmaps.com/site/1c4l5";
+      }
     });
   }
 

@@ -10,6 +10,7 @@ tags:
   - ai-accelerator
   - hardware-design
   - workflow
+published: false
 ---
 
 When I start exploring a new AI accelerator idea, I usually try to avoid jumping directly into RTL. The first few days are much more productive when the workflow is structured around fast feedback: define the problem, set a few measurable targets, and build a lightweight model that makes trade-offs visible.
