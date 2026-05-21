@@ -109,7 +109,7 @@ redirect_from:
         <p class="profile-entry__meta"><span class="lang-en">September 2022 - November 2024</span><span class="lang-zh">2022 年 9 月 - 2024 年 11 月</span></p>
         <p class="profile-entry__detail"><span class="lang-en"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_Master.pdf">7.8/10</a></span><span class="lang-zh"><strong>绩点：</strong><a href="https://BoChen-Ye.github.io/files/transcript_Master.pdf">7.8/10</a></span></p>
         <p class="profile-entry__detail"><span class="lang-en"><strong>Thesis:</strong> <a href="https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf">LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications</a> (8.5/10)</span><span class="lang-zh"><strong>硕士论文：</strong><a href="https://pure.tue.nl/ws/portalfiles/portal/369257601/1805673_-_Ye_B._Bochen_-_Thesis_report_-_MEI.pdf">LinkBo: A Robust Low-Latency 1-Wire Protocol for Chip-to-Chip Communications</a>（8.5/10）</span></p>
-        <p class="profile-entry__detail"><span class="lang-en"><strong>Relevant courses:</strong> Digital integrated circuit design, embedded computer architecture, electronic design automation, intelligent architectures, systems on silicon, and neuro computation.</span><span class="lang-zh"><strong>相关课程：</strong>数字集成电路设计、嵌入式计算机体系结构、电子设计自动化、智能体系结构、片上系统以及神经计算。</span></p>
+        
       </div>
     </article>
 
@@ -123,7 +123,7 @@ redirect_from:
         <p class="profile-entry__meta"><span class="lang-en">September 2018 - July 2022</span><span class="lang-zh">2018 年 9 月 - 2022 年 7 月</span></p>
         <p class="profile-entry__detail"><span class="lang-en"><strong>GPA:</strong> <a href="https://BoChen-Ye.github.io/files/transcript_bsc.pdf">83.1/100</a> (Top 22%)</span><span class="lang-zh"><strong>绩点：</strong><a href="https://BoChen-Ye.github.io/files/transcript_bsc.pdf">83.1/100</a>（前 22%）</span></p>
         <p class="profile-entry__detail"><span class="lang-en"><strong>Thesis:</strong> <a href="https://BoChen-Ye.github.io/files/Bsc_thesis.pdf">The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip</a></span><span class="lang-zh"><strong>本科论文：</strong><a href="https://BoChen-Ye.github.io/files/Bsc_thesis.pdf">The Research and Implementation of Router for Packet-Connect-Circuit Network-on-chip</a></span></p>
-        <p class="profile-entry__detail"><span class="lang-en"><strong>Relevant courses:</strong> Analysis and design of integrated digital circuit, microprocessor architecture and design, introduction to SoC design, and Verilog HDL with FPGA implementation.</span><span class="lang-zh"><strong>相关课程：</strong>集成数字电路分析与设计、微处理器体系结构与设计、SoC 设计导论，以及 Verilog HDL 与 FPGA 实现。</span></p>
+        
       </div>
     </article>
   </div>
@@ -145,9 +145,7 @@ redirect_from:
         <p class="profile-entry__detail"><span class="lang-en"><strong>Supervisors:</strong> Kimmo Salo, Gustavo Naspolini, and Manil Dev Gomony</span><span class="lang-zh"><strong>导师：</strong>Kimmo Salo、Gustavo Naspolini 和 Manil Dev Gomony</span></p>
         <p class="profile-entry__meta"><span class="lang-en">March 2024 - October 2024</span><span class="lang-zh">2024 年 3 月 - 2024 年 10 月</span></p>
         <ul class="profile-entry__highlights">
-          <li><span class="lang-en">Defined a custom 1-wire digital communication protocol between two ICs.</span><span class="lang-zh">设计了两颗芯片之间的定制单线数字通信协议。</span></li>
-          <li><span class="lang-en">Built a high-level Simulink model and evaluated the channel with parasitic parameters.</span><span class="lang-zh">搭建了高层次 Simulink 模型，并结合寄生参数对信道进行评估。</span></li>
-          <li><span class="lang-en">Developed and verified a SystemVerilog IP and built a two-FPGA demonstrator.</span><span class="lang-zh">完成了 SystemVerilog IP 的设计与验证，并搭建了双 FPGA 演示平台。</span></li>
+          <li><span class="lang-en">A Robust Low-latency 1-wire Protocol for Chip-to-Chip Communications for PowerIC</span><span class="lang-zh">一种面向 PowerIC 芯片间通信的鲁棒低延迟单线协议。</span></li>
         </ul>
       </div>
     </article>
@@ -161,12 +159,9 @@ redirect_from:
         <h3 class="profile-entry__title">Linear Capital</h3>
         <p class="profile-entry__subtitle"><span class="lang-en">Oversea VC Intern</span><span class="lang-zh">海外 VC 实习生</span></p>
         <p class="profile-entry__detail"><span class="lang-en"><strong>Location:</strong> China (Remote, part-time)</span><span class="lang-zh"><strong>地点：</strong>中国（远程，兼职）</span></p>
+        <p class="profile-entry__detail"><span class="lang-en"><strong>Mentor:</strong> Wei Xin, Songyan Huang</span><span class="lang-zh"><strong>导师：</strong>Wei Xin, Songyan Huang</span></p>
         <p class="profile-entry__meta"><span class="lang-en">November 2023 - June 2024</span><span class="lang-zh">2023 年 11 月 - 2024 年 6 月</span></p>
-        <ul class="profile-entry__highlights">
-          <li><span class="lang-en">Mapped overseas talent in academia and industry for recruitment and collaboration.</span><span class="lang-zh">梳理海外学术界和工业界人才信息，用于招聘与合作评估。</span></li>
-          <li><span class="lang-en">Assessed commercialization potential, market opportunities, and implementation risks.</span><span class="lang-zh">评估技术商业化潜力、市场机会与落地风险。</span></li>
-          <li><span class="lang-en">Supported early-stage investment planning and startup collaboration.</span><span class="lang-zh">支持早期投资研判与初创企业合作分析。</span></li>
-        </ul>
+        
       </div>
     </article>
 
@@ -185,9 +180,7 @@ redirect_from:
         <p class="profile-entry__detail"><span class="lang-en"><strong>Supervisors:</strong> Manil Dev Gomony, Rui Wang, and Roel Maes</span><span class="lang-zh"><strong>导师：</strong>Manil Dev Gomony、Rui Wang 和 Roel Maes</span></p>
         <p class="profile-entry__meta"><span class="lang-en">July 2023 - October 2023</span><span class="lang-zh">2023 年 7 月 - 2023 年 10 月</span></p>
         <ul class="profile-entry__highlights">
-          <li><span class="lang-en">Studied a trellis-based Reed-Muller codec and modeled it in Python.</span><span class="lang-zh">研究基于 trellis 的 Reed-Muller 编码器，并使用 Python 完成建模。</span></li>
-          <li><span class="lang-en">Designed the hardware architecture in VHDL and verified it on Arty-Z7 FPGA.</span><span class="lang-zh">使用 VHDL 设计硬件架构，并在 Arty-Z7 FPGA 上完成验证。</span></li>
-          <li><span class="lang-en">Reduced resource usage from 938 LUTs to 843 LUTs and achieved 6-cycle decoding latency.</span><span class="lang-zh">将资源占用从 938 LUTs 优化到 843 LUTs，并实现了 6 个周期的解码延迟。</span></li>
+          <li><span class="lang-en">Focus on a trellis-based Reed-Muller codec on FPGA for PUF IP.</span><span class="lang-zh">面向 PUF 的基于网格树结构的一阶 Reed-Muller 编解码器在 FPGA 上的实现。</span></li>
         </ul>
       </div>
     </article>
