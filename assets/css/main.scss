@@ -812,6 +812,10 @@ html[data-theme="dark"] .profile-entry__annotation {
     }
 }
 
+.lang-zh {
+    display: none !important;
+}
+
 html:not([data-lang-ready="true"]) .lang-zh {
     display: none !important;
 }

@@ -8,16 +8,12 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
             <a href="{{ '/#about-me' | relative_url }}">
-              <span class="lang-en">Homepage</span>
-              <span class="lang-zh">&#39318;&#39029;</span>
+              Homepage
             </a>
           </li>
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item">
-              <a href="{{ domain }}{{ link.url }}">
-                <span class="lang-en">{{ link.title }}</span>
-                <span class="lang-zh">{{ link.title_zh | default: link.title }}</span>
-              </a>
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -25,10 +21,6 @@
       </nav>
     </div>
     <div class="masthead__tools">
-      <button type="button" class="masthead__toggle masthead__toggle--lang" data-toggle-language aria-label="Toggle language">
-        <span class="lang-en">&#20013;</span>
-        <span class="lang-zh">EN</span>
-      </button>
       <button type="button" class="masthead__toggle masthead__toggle--theme" data-toggle-theme aria-label="Toggle theme">
         <span class="theme-icon theme-icon--light">&#9728;</span>
         <span class="theme-icon theme-icon--dark">&#9790;</span>

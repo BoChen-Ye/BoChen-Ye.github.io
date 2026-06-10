@@ -1,6 +1,5 @@
 (function () {
   var root = document.documentElement;
-  var languageKey = "site-language";
   var themeKey = "site-theme";
 
   function renderClustrMaps(theme) {
@@ -10,19 +9,26 @@
     }
 
     var palette = theme === "dark"
-      ? { ocean: "76b900", land: "000000", text: "edf5e9" }
-      : { ocean: "d97757", land: "ffffff", text: "8e4a34" };
+      ? { ocean: "000000", land: "76b900", text: "edf5e9" }
+      : { ocean: "ffffff", land: "d97757", text: "8e4a34" };
 
     images.forEach(function (image) {
       var widgetId = image.getAttribute("data-widget-id");
       var width = image.getAttribute("data-widget-width") || "260";
       var mapSrc;
+      var fallbackSrc;
 
       if (!widgetId) {
         return;
       }
 
-      mapSrc = "//clustrmaps.com/map_v2.png?d="
+      fallbackSrc = "https://clustrmaps.com/map_v2.png?d="
+        + encodeURIComponent(widgetId)
+        + "&cl=ffffff&w="
+        + encodeURIComponent(width)
+        + "&t=n";
+
+      mapSrc = "https://clustrmaps.com/map_v2.png?d="
         + encodeURIComponent(widgetId)
         + "&cl=" + palette.ocean
         + "&co=" + palette.land
@@ -30,6 +36,10 @@
         + "&w=" + encodeURIComponent(width)
         + "&t=n";
 
+      image.onerror = function () {
+        image.onerror = null;
+        image.src = fallbackSrc;
+      };
       image.src = mapSrc;
 
       if (image.parentElement && image.parentElement.tagName === "A") {
@@ -39,47 +49,10 @@
   }
 
   function updateThemeLabels(theme) {
-    var nextTheme = theme === "dark" ? "light" : "dark";
-    var english = nextTheme === "dark" ? "Night Mode" : "Day Mode";
-    var chinese = nextTheme === "dark" ? "夜间模式" : "日间模式";
-
-    Array.prototype.slice.call(document.querySelectorAll("[data-theme-label-en]")).forEach(function (element) {
-      element.textContent = english;
-    });
-
-    Array.prototype.slice.call(document.querySelectorAll("[data-theme-label-zh]")).forEach(function (element) {
-      element.textContent = chinese;
-    });
-
     Array.prototype.slice.call(document.querySelectorAll("[data-toggle-theme]")).forEach(function (element) {
       element.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
       element.setAttribute("data-current-theme", theme);
     });
-  }
-
-  function setHidden(elements, shouldHide) {
-    elements.forEach(function (element) {
-      if (shouldHide) {
-        element.setAttribute("hidden", "hidden");
-      } else {
-        element.removeAttribute("hidden");
-      }
-    });
-  }
-
-  function applyLanguage(language) {
-    var enElements = Array.prototype.slice.call(document.querySelectorAll(".lang-en"));
-    var zhElements = Array.prototype.slice.call(document.querySelectorAll(".lang-zh"));
-    var nextLanguage = language === "zh" ? "zh" : "en";
-
-    root.setAttribute("data-lang", nextLanguage);
-    setHidden(enElements, nextLanguage !== "en");
-    setHidden(zhElements, nextLanguage !== "zh");
-    root.setAttribute("data-lang-ready", "true");
-
-    try {
-      window.localStorage.setItem(languageKey, nextLanguage);
-    } catch (error) {}
   }
 
   function applyTheme(theme) {
@@ -96,14 +69,6 @@
     } catch (error) {}
   }
 
-  function getInitialLanguage() {
-    try {
-      return window.localStorage.getItem(languageKey) || "en";
-    } catch (error) {
-      return "en";
-    }
-  }
-
   function getInitialTheme() {
     try {
       var savedTheme = window.localStorage.getItem(themeKey);
@@ -118,14 +83,7 @@
   }
 
   function bindControls() {
-    var languageButtons = Array.prototype.slice.call(document.querySelectorAll("[data-toggle-language]"));
     var themeButtons = Array.prototype.slice.call(document.querySelectorAll("[data-toggle-theme]"));
-
-    languageButtons.forEach(function (languageButton) {
-      languageButton.addEventListener("click", function () {
-        applyLanguage(root.getAttribute("data-lang") === "zh" ? "en" : "zh");
-      });
-    });
 
     themeButtons.forEach(function (themeButton) {
       themeButton.addEventListener("click", function () {
@@ -137,7 +95,8 @@
     renderClustrMaps(root.getAttribute("data-theme") || "light");
   }
 
-  applyLanguage(getInitialLanguage());
+  root.setAttribute("data-lang", "en");
+  root.setAttribute("data-lang-ready", "true");
   applyTheme(getInitialTheme());
 
   if (document.readyState === "loading") {
