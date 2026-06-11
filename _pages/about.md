@@ -33,6 +33,7 @@ redirect_from:
 <div class="news-feed news-feed__scroll">
   <p></p>
   <ul>
+    <li>[2025.07] <span class="news-pill news-pill--paper">[Paper]</span> Our work "BenDi: An Energy-Efficient Quasi-Stochastic Systolic Architecture for Edge Bioelectronics" was accepted by <strong>ASAP 2026</strong> and selected for an <strong>oral presentation</strong>.</li>
     <li>[2026.04] I finished my first-year annual review.</li>
     <li>[2026.04] I presented a poster and gave a two-minute talk on <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> at the <strong>School of Engineering Research Conference 2026</strong>.</li>
     <li>[2026.03] I served as a teaching assistant for the <strong>Mini ASIC-BASIC Workshop</strong> and delivered a tutorial on <strong>Digital ASIC Flow in GF-22nm</strong>.</li>
@@ -208,19 +209,11 @@ redirect_from:
 <div class="visitor-map">
   <div class="visitor-map__widget">
     {% if site.clustrmaps.enabled and site.clustrmaps.widget_id and site.clustrmaps.widget_id != "" %}
-      <a
-        class="visitor-map__link"
-        href="https://clustrmaps.com/site/1c4l5"
-        title="ClustrMaps visitor map"
-        target="_blank"
-        rel="noopener noreferrer">
-        <img
-          data-clustrmaps-image
-          data-widget-id="{{ site.clustrmaps.widget_id }}"
-          data-widget-width="{{ site.clustrmaps.width | default: 200 }}"
-          src="https://clustrmaps.com/map_v2.png?d={{ site.clustrmaps.widget_id }}&cl=ffffff&w={{ site.clustrmaps.width | default: 200 }}&t=n"
-          alt="ClustrMaps visitor map">
-      </a>
+      <div
+        data-clustrmaps-widget
+        data-widget-id="{{ site.clustrmaps.widget_id }}"
+        data-widget-width="{{ site.clustrmaps.width | default: 200 }}">
+      </div>
       <noscript>
         <a href="https://clustrmaps.com/site/1c4l5" title="ClustrMaps visitor map">
           <img src="https://clustrmaps.com/map_v2.png?d={{ site.clustrmaps.widget_id }}&cl=ffffff&w={{ site.clustrmaps.width | default: 200 }}&t=n" alt="ClustrMaps visitor map">
