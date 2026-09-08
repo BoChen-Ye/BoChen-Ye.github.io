@@ -33,7 +33,8 @@ redirect_from:
 <div class="news-feed news-feed__scroll">
   <p></p>
   <ul>
-    <li>[2025.07] <span class="news-pill news-pill--paper">[Paper]</span> Our work "BenDi: An Energy-Efficient Quasi-Stochastic Systolic Architecture for Edge Bioelectronics" was accepted by <strong>ASAP 2026</strong> and selected for an <strong>oral presentation</strong>.</li>
+    <li>[2026.09] <span class="news-pill news-pill--conference">[Conference]</span> I presented my work "BenDi: An Energy-Efficient Quasi-Stochastic Systolic Architecture for Edge Bioelectronics" at <strong>ASAP 2026</strong> in London, UK.</li>
+    <li>[2026.07] <span class="news-pill news-pill--paper">[Paper]</span> Our work "BenDi: An Energy-Efficient Quasi-Stochastic Systolic Architecture for Edge Bioelectronics" was accepted by <strong>ASAP 2026</strong> and selected for an <strong>oral presentation</strong>.</li>
     <li>[2026.04] I finished my first-year annual review.</li>
     <li>[2026.04] I presented a poster and gave a two-minute talk on <strong>Towards Scalable GenAI Hardware Architectures with a Design Space Exploration Framework</strong> at the <strong>School of Engineering Research Conference 2026</strong>.</li>
     <li>[2026.03] I served as a teaching assistant for the <strong>Mini ASIC-BASIC Workshop</strong> and delivered a tutorial on <strong>Digital ASIC Flow in GF-22nm</strong>.</li>
@@ -70,7 +71,7 @@ redirect_from:
     <p class="paper-box-text__authors"><strong>Bochen Ye</strong>, Yihan Pan, Shady Agwa, Themis Prodromakis (UoE)</p>
     <p class="paper-box-text__venue">IEEE International International Conference on Application-specific Systems, Architectures and Processors (<strong>ASAP</strong>), 2026</p>
     <p class="paper-box-text__note"><span class="publication-highlight">Accepted as Oral Presentation</span> and short paper</p>
-    <p class="paper-box-text__links"><a href="">Paper</a> / <a href="https://arxiv.org/abs/2606.12235">ArXiv</a> </p>
+    <p class="paper-box-text__links"><a href="">Paper</a> / <a href="https://BoChen-Ye.github.io/files/ASAP_BenDi.pdf">Slides</a> / <a href="https://BoChen-Ye.github.io/files/BenDi_poster.pdf">Poster</a> / <a href="https://arxiv.org/abs/2606.12235">ArXiv</a> </p>
     <p class="paper-box-text__summary">In this work, we present BenDi, an energy-efficient quasi-stochastic systolic architecture for bioelectronic systems on the edge. BenDi leverages multiple levels of energy and power optimization, ranging from circuits to software quantization, including low supply voltage, the Bent-Pyramid data format for quasi-stochastic multiplication, the DiP systolic dataflow, and hardware-aware quantization, to handle CNNs with high accuracy on the edge within limited hardware budgets.</p>
   </div>
 </div>
