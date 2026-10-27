@@ -1,7 +1,7 @@
 ---
-title: "Systolic Array 里的 Accumulator 归约，到底有几类？"
-date: 2026-05-24 20:00:00 +0800
-excerpt: "从时域归约、阵列内波前归约、树形归约到 3D 分层归约，结合 MAERI、SIGMA、STONNE 和 3D Mapping 几篇论文梳理 systolic array 的 partial sum 组织方式。"
+title: "Accumulator Reduction in Systolic Arrays: A Practical Taxonomy"
+date: 2026-10-28 00:30:38 +0800
+excerpt: "A guide to partial-sum organization, from temporal and in-array wavefront reduction to tree networks and 3D hierarchical reduction, drawing on MAERI, SIGMA, STONNE, and 3D systolic-array mapping."
 categories:
   - blog
 tags:
@@ -10,209 +10,216 @@ tags:
   - dataflow
   - dnn-accelerator
   - reduction-network
-published: false
+published: true
 ---
 
-在看 systolic array 相关内容的时候，大家通常先讨论 dataflow: output-stationary、weight-stationary、input-stationary。  
-但如果再往下追一层，会发现真正决定时延、利用率和可扩展性的，往往不是乘法本身，而是 **partial sum 到底在哪里归约、以什么路径归约、以及归约完之后还要不要再回写**。
+Discussions of systolic arrays usually begin with dataflow: output-stationary, weight-stationary, or input-stationary. Looking one level deeper, however, latency, utilization, and scalability often depend on **where partial sums are reduced, which paths they follow, and whether they must be written back along the way**.
 
-这篇文章想专门梳理这个问题。结论先放前面：
+This article focuses on that question. The main idea is:
 
-> 如果把 systolic array 的 accumulator 设计按“归约发生的位置”来分类，大致可以分成四类：`PE 内时域归约`、`阵列内波前归约`、`独立空间归约网络`、`分层/跨子阵列归约`。  
-> 其中 `MAERI` 和 `SIGMA` 代表的是把归约从刚性的阵列传播里“拿出来”，做成可重构的独立网络；`Mapping Systolic Arrays Onto 3D Circuit Structures` 则进一步把分层归约延伸到第三维；`STONNE` 则说明了一个很重要的工程事实：**归约网络如果不为 folding 设计好，理论吞吐和实际吞吐会差很多。**
+> Accumulator designs can be grouped by where reduction takes place: `temporal reduction within a PE`, `in-array wavefront reduction`, `independent spatial reduction networks`, and `hierarchical or cross-subarray reduction`.
+>
+> `MAERI` and `SIGMA` separate reduction from rigid array forwarding through reconfigurable networks. `Mapping Systolic Arrays Onto 3D Circuit Structures` extends hierarchical reduction into the third dimension. `STONNE` highlights an engineering constraint: **when a reduction network handles folding poorly, measured throughput can fall far short of theoretical throughput.**
 
-## 为什么“归约”是 systolic array 的核心问题
+These four categories are a comparison framework for this article, rather than a standard set of mutually exclusive classes. Hierarchical reduction can combine local accumulation, wavefronts, and trees. MAERI and SIGMA provide comparisons with flexible spatial accelerators; they should not be treated as conventional two-dimensional systolic arrays.
 
-对一个输出元素来说，乘法只是第一步，后面一定跟着加法归并：
+## Why Reduction Is Central to Systolic Arrays
+
+For each output element, multiplication is only the first step. The products must then be added together:
 
 ```text
 out(i, j) = sum_k[A(i, k) * B(k, j)]
 ```
-加法的归约方式不同会导致不同的 memory access， 从而导致energy的增加。
 
-当 `k` 很大时，问题就变成了：
+The reduction scheme changes where partial sums reside and how often memory is accessed, affecting energy consumption. Additional interconnects and adders also have costs, so topology alone does not establish which design is more energy-efficient.
 
-- 这些乘积是在同一个 PE 里累加，还是边流动边累加？
-- 如果一个子阵列装不下完整 dot-product，partial sum 要不要写回 buffer 再回来？
-- 如果 workload 是稀疏的、形状不规则的，固定拓扑的 adder tree 还能不能高利用率地工作？
-- 当阵列被切成多个 subarray 之后，跨 subarray 的归约是在二维平面上走长线，还是在更高层次上做？
+When `k` is large, several questions arise:
 
-所以，“accumulator 归约方式”其实决定了 accelerator 的三个基本性质：
+- Are the products accumulated in one PE, or accumulated as they move?
+- If a subarray cannot hold a complete dot product, must partial sums be written to a buffer and read back?
+- Can a fixed adder-tree topology maintain high utilization for sparse or irregular workloads?
+- When an array is divided into subarrays, are their partial sums combined over long wires in a two-dimensional plane, or through a higher-level structure?
 
-- 延迟复杂度是线性的还是对数级的
-- 对规则/不规则 workload 的适应能力
-- psum 是否会频繁离开计算阵列，造成额外带宽和利用率损失
+The accumulator reduction scheme therefore affects three basic accelerator properties:
 
-## 一个更实用的分类框架
+- Reduction-path depth and the cycles needed for a complete dot product under resource constraints.
+- Adaptability to regular and irregular workloads.
+- Whether partial sums frequently leave the compute array, consuming bandwidth and reducing utilization.
 
-### 1. PE 内时域归约
+## A Practical Classification Framework
 
-第一类最直观：一个 PE 或一个小 cluster 反复接收属于同一输出的乘积，然后在本地 accumulator 里逐拍累加。这也是Output Stationary的累加方式。
+### 1. Temporal Reduction Within a PE
 
-它的特点是：
+The simplest approach is for a PE or small cluster to receive products belonging to the same output repeatedly and accumulate them locally over successive cycles. This is a typical output-stationary implementation. A dataflow name describes operand residency, however, and does not uniquely specify a reduction circuit.
 
-- 归约位置在本地寄存器或本地 buffer
-- 不需要复杂的全局加法网络
-- 延迟通常随 dot-product 长度线性增长
-- 当一个输出需要很多轮折叠计算时，容易出现 psum 存回再读回的问题
+Its main characteristics are:
 
-这类方式的优点是控制简单、局部性好；缺点是当 `k` 很大、或者一个输出必须分多轮完成时，归约路径虽然短，但总时间并不短。
+- Reduction takes place in local registers or a local buffer.
+- No complex global adder network is required.
+- Latency usually grows linearly with dot-product length.
+- Across multiple folds, partial sums can remain local as long as their state is retained. Writeback and reload may be needed when local state capacity is insufficient or output contexts are switched.
 
-`SIGMA` 对这类方式有一个很清楚的描述：它把这种方式称为 **Temporal Reduction**，即在时间维度上就地累加，并指出其复杂度与 dot-product 长度线性相关。  
-论文链接：[SIGMA: A Sparse and Irregular GEMM Accelerator with Flexible Interconnects for DNN Training](https://anands09.github.io/papers/sigma_hpca2020.pdf)
+This approach offers simple control and good locality. Its limitation is that a short local path does not necessarily mean a short execution time when `k` is large or an output requires several folds.
 
-### 2. 阵列内波前归约
+`SIGMA` calls this **Temporal Reduction**: in-place accumulation over time, with complexity proportional to dot-product length.
 
-这是大家最熟悉的 Weight Stationary 的 systolic 风格。Partial sum 不停在一个 PE 里，而是沿着行、列或者对角线传播，在传播过程中逐步累加。
+Paper: [SIGMA: A Sparse and Irregular GEMM Accelerator with Flexible Interconnects for DNN Training](https://anands09.github.io/papers/sigma_hpca2020.pdf)
 
-它的特点是：
+### 2. In-Array Wavefront Reduction
 
-- 归约和数据移动绑定在一起
-- psum 的路径天然嵌入阵列拓扑
-- 很适合规则 dense GEMM / CONV
-- 一旦矩阵形状不规则，或者有效乘法分布不均，利用率会明显下降
+This is common in weight-stationary systolic arrays. Partial sums travel along rows, columns, or diagonals and accumulate as they propagate; the direction depends on the mapping.
 
-`SIGMA` 把这一类称为 **Spatio-Temporal Reduction**。它特别指出，像 TPU 这类 weight-stationary systolic array，本质上就是通过列方向的 forwarding 来完成归约。这类方式很优雅，但归约延迟仍然会跟阵列尺度绑定。
+Its main characteristics are:
 
-这类方案最大的优点是“乘法阵列就是归约阵列”，不需要额外的独立 adder fabric；但代价是 **归约拓扑太刚性**。一旦 workload 不是标准、饱满、规则的方阵映射，wavefront 就会出现空泡、偏斜和利用率损失。
+- Reduction is coupled to data movement.
+- Partial-sum paths are embedded in the array topology.
+- It suits regular, dense GEMM and convolution workloads.
+- Irregular matrix shapes or uneven distributions of useful multiplications can reduce utilization.
 
-### 3. 独立空间归约网络
+`SIGMA` calls this **Spatio-Temporal Reduction**. In particular, it describes reduction through column-wise forwarding in TPU-style weight-stationary systolic arrays. Reduction latency remains tied to array dimensions.
 
-第三类是我认为这几篇论文里最值得单独拎出来的一类：**把归约从固定的 systolic wavefront 里解耦，交给独立的空间归约网络**。
+The main advantage is that the multiplication array also serves as the reduction array, avoiding a separate adder fabric. The tradeoff is a **rigid reduction topology**: mappings that do not fill the array regularly can introduce wavefront bubbles, skew, and utilization losses.
 
-这类设计的关键思想是：
+### 3. Independent Spatial Reduction Networks
 
-- 乘法阵列负责生成乘积
-- 归约交给一个独立 adder tree 或其变体
-- 归约在空间上并行展开，而不是完全依赖时序传播
-- 目标是把归约延迟从线性压到对数级，并且支持不规则规模的 dot-product
+The third approach **decouples reduction from a fixed systolic wavefront and assigns it to an independent spatial network**.
 
-`SIGMA` 直接把它称为 **Spatial Reduction**，并明确指出树形空间归约的复杂度是 `O(log2 m)`，明显优于前两类线性归约。  
-对应论文中，为了解决“非 2 的幂大小归约”和“多个不规则 dot-product 同时映射”这两个问题，作者提出了 **FAN (Forwarding Adder Network)**。FAN 的核心不是简单的 binary tree，而是在不同层级之间加入 forwarding link，让不规则归约也能高效地映射。
+The main ideas are:
 
-论文链接：[SIGMA: A Sparse and Irregular GEMM Accelerator with Flexible Interconnects for DNN Training](https://anands09.github.io/papers/sigma_hpca2020.pdf)
+- A multiplier array generates products.
+- A separate adder tree or related structure reduces them.
+- Reduction is spatially parallel rather than relying entirely on sequential propagation.
+- The goal is logarithmic rather than linear reduction latency, with support for irregular dot-product sizes.
 
-## MAERI 为什么重要：它把“可重构归约网络”做成了方法论
+`SIGMA` calls this **Spatial Reduction** and discusses `O(log2 m)` latency for reducing `m` inputs through a tree. This comparison concerns the spatially expanded reduction path and assumes sufficient multipliers, adders, and input bandwidth. It is not the total cycle count for an arbitrary-length dot product.
 
-如果说 `SIGMA` 更强调 sparse / irregular GEMM 下为什么需要灵活归约，那么 `MAERI` 更像是在回答一个更底层的问题：
+To support reductions whose sizes are not powers of two and multiple irregular dot products mapped simultaneously, the authors introduce **FAN (Forwarding Adder Network)**. FAN augments a binary tree with forwarding links between different levels, allowing irregular reductions to map more efficiently.
 
-> 能不能把 DNN accelerator 的乘法和归约都抽象成一套可重构互连，让同一块硬件支持多种 dataflow 和多种归约形状？
+Paper: [SIGMA: A Sparse and Irregular GEMM Accelerator with Flexible Interconnects for DNN Training](https://anands09.github.io/papers/sigma_hpca2020.pdf)
 
-`MAERI` 的答案是 **ART (Augmented Reduction Tree)**。
+## MAERI: Making Reduction Networks Reconfigurable
 
-根据论文描述，ART 的核心并不是仅仅用一棵 binary tree 做 reduction，而是在同层节点之间增加 forwarding links，并在靠近根部的地方引入更高带宽的 “chubby links”，从而支持：
+While `SIGMA` emphasizes flexible reduction for sparse and irregular GEMM, `MAERI` addresses a broader question:
 
-- 任意大小的 adder tree 映射
-- 多个彼此不重叠的 reduction 同时进行
-- 不同 virtual neuron 在同一物理树上并行归约
+> Can multiplication and reduction in a DNN accelerator be organized through reconfigurable interconnects, so that the same hardware supports multiple dataflows and reduction shapes?
 
-这很关键，因为传统固定 adder tree 的问题不在于“不能做归约”，而在于：
+Its answer is **ART (Augmented Reduction Tree)**.
 
-- 当一个 neuron 的输入数小于树宽度时，树会浪费
-- 当多个 neuron 同时归约时，链路容易冲突
-- 当映射尺度不规则时，tree 的固定父子关系会限制利用率
+ART adds forwarding links between nodes at the same level and higher-bandwidth "chubby links" near the root of a binary reduction tree. These additions support:
 
-`MAERI` 的贡献，就是把这些问题从“编译时尽量绕开”变成“硬件互连本身允许灵活映射”。
+- Mapping adder trees of different sizes.
+- Multiple non-overlapping reductions at the same time.
+- Parallel reduction for different virtual neurons on the same physical tree.
 
-论文链接：[MAERI: Enabling Flexible Dataflow Mapping over DNN Accelerators via Reconfigurable Interconnects](https://anands09.github.io/papers/maeri_asplos2018.pdf)
+There are conditions on this flexibility. The paper describes ART configurability in terms of reductions over consecutive leaves and gives a non-blocking property for multiple reductions with disjoint leaf sets. This does not imply that arbitrarily scattered products can be connected without cost. See MAERI Section 3.2.2.
 
-## 第四类：分层归约和跨子阵列归约
+The difficulty with a conventional fixed adder tree is not its ability to add values, but its resource use:
 
-前三类都可以理解成“一个阵列内部怎么把乘积加起来”。但当阵列变大、或者因为版图/工艺原因必须切成多个子阵列时，还会出现第四类问题：
+- A neuron with fewer inputs than the tree width leaves resources idle.
+- Multiple simultaneous reductions may contend for links.
+- Fixed parent-child connections can limit utilization for irregular mappings.
 
-> 不同 subarray 先各自算出 partial sum，最后这些 partial sum 在哪里合并？
+MAERI makes flexible mapping a capability of the hardware interconnect, rather than leaving the compiler to work around a fixed topology.
 
-这就进入了 **分层归约** 或 **跨子阵列归约**。
+Paper: [MAERI: Enabling Flexible Dataflow Mapping over DNN Accelerators via Reconfigurable Interconnects](https://anands09.github.io/papers/maeri_asplos2018.pdf)
 
-在 [Mapping Systolic Arrays Onto 3D Circuit Structures](https://www.eecs.harvard.edu/~htk/publication/2018-sips-kung-mcdanel-zhang.pdf) 里，作者考虑的是一个“宽 systolic array 被切成多个窄 subarray”的场景。每个 subarray 只处理一部分输入通道，因此会先得到自己的局部 partial sum；后续 subarray 再把前一个 subarray 的结果作为初始 accumulation value 接着算。
+## 4. Hierarchical and Cross-Subarray Reduction
 
-这篇论文最有意思的地方在于，它没有把跨 subarray 的归约继续放在二维平面里走长线，而是提出：
+The first three approaches describe how products can be combined within an array. Larger designs, or designs partitioned for layout and fabrication, introduce another question:
 
-- 把 subarray 映射到 3D 结构的不同物理层
-- 沿第三维传递和累加 intermediate results
-- 用更短的跨层互连来做 partition-accumulation
+> After subarrays produce their local partial sums, where are those partial sums combined?
 
-这样做的意义有两层：
+This is **hierarchical reduction**, or **cross-subarray reduction**.
 
-- 从逻辑上看，它属于一种 **hierarchical reduction**：先局部算，再跨层合并
-- 从物理实现上看，它把“全局归约”从长距离二维布线，变成了短距离垂直互连
+[Mapping Systolic Arrays Onto 3D Circuit Structures](https://www.eecs.harvard.edu/~htk/publication/2018-sips-kung-mcdanel-zhang.pdf) considers a wide systolic array divided into narrower subarrays, each processing part of the input channels. The paper distinguishes two schemes:
 
-论文还强调，这种 **partition-accumulation** 可以减少数据 skew，从而降低延迟。这个点很值得注意，因为它说明归约拓扑不仅影响加法本身，也影响前端数据进入阵列时的同步成本。
+- **Partition (P):** a subsequent subarray uses the previous subarray's partial result to initialize its accumulation.
+- **Partition-Accumulating (PA):** each subarray computes a local result. One additional adder per row at each layer's edge combines that result with the result from the previous layer. The previous result no longer initializes accumulation inside the current subarray.
 
-论文链接：[Mapping Systolic Arrays Onto 3D Circuit Structures: Accelerating Convolutional Neural Network Inference](https://www.eecs.harvard.edu/~htk/publication/2018-sips-kung-mcdanel-zhang.pdf)
+The proposed 3D mapping places subarrays on different physical layers, passes intermediate results along the third dimension, and uses shorter interlayer connections for partition accumulation.
 
-## STONNE 提醒我们：分类之外，还要看 folding 怎么实现
+This has two implications:
 
-如果只看论文结构图，很多归约网络都很漂亮；但 `STONNE` 做了一件很有价值的事：它把 `MAERI` 风格的灵活 accelerator 拉进 cycle-level simulator 里，去看这些归约策略在真实 execution 中到底会怎样。
+- Logically, reduction is hierarchical: local computation followed by combination across layers.
+- Physically, long planar interconnects are replaced with short vertical connections.
 
-`STONNE` 的一个核心结论是：
+The PA scheme reduces data skew through its additional edge accumulators, lowering latency. This benefit comes from changing the computation organization and should not be attributed entirely to 3D interconnects. Vertical connections primarily improve physical connectivity between subarrays. Reduction topology affects both addition and the synchronization of incoming data.
 
-- `MAERI` 风格架构在理论上很灵活
-- 但当一个 virtual neuron 装不下完整计算、必须启用 **folding** 时
-- partial sum 需要暂存、再分发、再继续归约
-- 这会把 reduction network 变成实际瓶颈
+Paper: [Mapping Systolic Arrays Onto 3D Circuit Structures: Accelerating Convolutional Neural Network Inference](https://www.eecs.harvard.edu/~htk/publication/2018-sips-kung-mcdanel-zhang.pdf)
 
-论文给出的结果很扎实：作者指出，当前 folding 策略会让 compute unit utilization 在 5 个 DNN 模型上平均只有 **25%** 左右，并且问题根源主要在 reduction network 对 folding 的支持不够高效。  
-这说明一个非常现实的设计原则：
+## STONNE: Folding Matters as Much as Topology
 
-> 归约方式不能只按“拓扑是否优雅”来评价，还必须看它是否让 partial sum 频繁离阵列、回 buffer、再返场。
+A reduction network can look attractive in an architecture diagram. `STONNE` examines how such networks behave during execution by modeling a MAERI-style flexible accelerator in a cycle-level simulator.
 
-换句话说，**folding 友好性** 应该被视为归约分类之外的第二维评价标准。
+One of its central observations concerns **folding**, where a virtual neuron's computation is too large to fit in the available resources at once:
 
-论文链接：
+- MAERI-style architectures offer substantial mapping flexibility.
+- Folding requires partial sums to be retained, redistributed, and reduced further.
+- The reduction network can become a practical bottleneck.
+
+For the MAERI configuration, folding strategy, and five DNN models evaluated in that paper, average compute-unit utilization was approximately **25%**. This is an experimental result for that setup, rather than a general utilization figure for all MAERI implementations or flexible reduction networks.
+
+The resulting design principle is:
+
+> Evaluate a reduction scheme by how it handles partial-sum writeback and reinjection, as well as by its topology.
+
+**Support for folding** is therefore a second evaluation dimension alongside reduction type.
+
+Sources:
 
 - [STONNE: A Detailed Architectural Simulator for Flexible Neural Network Accelerators](https://arxiv.org/abs/2006.07137)
 - [STONNE project page](https://stonne-simulator.github.io/)
 
-## 把四类方案放在一起看
+## Comparing the Four Approaches
 
-| 归约类型 | 归约发生位置 | 延迟趋势 | 规则 workload | 不规则/稀疏 workload | 代表论文 |
+| Reduction type | Location | Latency trend | Regular workloads | Irregular or sparse workloads | Representative source |
 | --- | --- | --- | --- | --- | --- |
-| PE 内时域归约 | 本地寄存器或本地 buffer | 线性 | 好 | 一般 | SIGMA 中对 temporal reduction 的讨论 |
-| 阵列内波前归约 | 行/列/对角传播路径 | 线性，且依赖阵列推进 | 很好 | 较差 | SIGMA 中对 spatio-temporal reduction 的讨论 |
-| 独立空间归约网络 | 外挂 adder tree / 可重构树 | 对数级为主 | 好 | 很好 | MAERI, SIGMA |
-| 分层/跨子阵列归约 | subarray 之间、层间或 3D 垂直方向 | 分层决定 | 好 | 取决于映射策略 | 3D Mapping |
+| Temporal within a PE | Local registers or buffer | A single accumulation chain usually scales linearly with term count | Good locality | Depends on scheduling and load balance | SIGMA's temporal-reduction discussion |
+| In-array wavefront | Row, column, or diagonal paths | Depends on propagation distance and number of folds | High utilization when the mapping fills the array | Fixed paths may introduce bubbles | SIGMA's spatio-temporal-reduction discussion |
+| Independent spatial network | Separate adder tree or reconfigurable tree | Tree depth per batch is usually logarithmic | Supports spatial parallelism | Reconfiguration improves mapping, subject to bandwidth limits | MAERI, SIGMA |
+| Hierarchical or cross-subarray | Between subarrays or physical layers | Combines local reduction and higher-level merging | Depends on partitioning | Depends on mapping | 3D Mapping |
 
-如果再把 `STONNE` 的观察加进去，我觉得还可以补充一列“folding 代价”：
+STONNE's observations add a further comparison: folding cost.
 
-- 本地时域归约：通常最容易出现多轮回写
-- 波前归约：当单次映射装不下完整输出时，也可能退化成多轮分块
-- 树形归约：性能上更强，但如果 psum 需要回到全局 buffer 再进入树，收益会被侵蚀
-- 分层归约：最好把“局部归约”和“全局归约”边界定义清楚，避免每一层都频繁落地
+- **Local temporal reduction:** retaining accumulator state avoids intermediate writeback; check the number of output contexts and available local capacity.
+- **Wavefront reduction:** a computation that does not fit in one mapping may require multiple tiled passes.
+- **Tree reduction:** each batch has a short path, but routing partial sums through a global buffer can erode that benefit.
+- **Hierarchical reduction:** define local and global reduction boundaries clearly to avoid repeated writeback at every level.
 
-## 我自己的理解：最值得记住的不是四个名字，而是两个判断问题
+### Example: Tree Depth, Throughput, and Folding Are Different Quantities
 
-看一篇 accelerator 论文时，我现在更愿意先问两个问题：
+Consider a dot product of length `K=256`, with hardware generating at most `P=16` products for that output per cycle:
 
-### 问题 1：partial sum 有没有离开“生产它的那片空间”？
+- Generating all products alone takes at least `ceil(K/P)=16` cycles.
+- A 16-input binary adder tree has `ceil(log2 P)=4` levels. If each level takes one cycle and the tree is fully pipelined, the first batch emerges after four cycles, followed by one batch sum per cycle.
+- The 16 batch sums must still be combined into one output, using a local accumulator or another reduction pass. A four-level tree therefore does not complete the entire 256-term dot product in four cycles.
 
-如果乘积一生成就能在邻近 PE、同一个树、或者同一个垂直 stack 中完成归约，通常说明这个设计在带宽和延迟上比较健康。  
-如果 partial sum 必须频繁写回全局 buffer，再重新分发回来，那大概率吞吐会受伤。
+This is an idealized resource model, excluding multiplier latency, loading, stalls, and final draining. It illustrates why first-result latency, initiation interval, and total task cycles should be reported separately. If the feedback adder has a latency of `L` cycles, updates to the same output cannot automatically occur every cycle: the design must interleave independent outputs, maintain multiple partial sums, or stall on the feedback dependency.
 
-### 问题 2：归约拓扑是否和 workload 形状强绑定？
+Folding traffic also depends on residency. Suppose an output takes `F` folds and each partial sum occupies `b` bytes. Writing and reloading at every fold boundary produces `2(F-1)b` bytes of intermediate-state traffic. Keeping the state local avoids those buffer transfers. This excludes the final output write and does not imply that register accesses consume no energy.
 
-固定 wavefront 对规则 dense workload 很强，但一遇到：
+## Two Questions to Ask When Reading an Accelerator Paper
 
-- 稀疏
-- 非方阵
-- 小 batch
-- irregular tile
+### 1. Does a Partial Sum Leave the Region That Produced It?
 
-它的刚性就会暴露出来。  
-这也是为什么 `MAERI` 和 `SIGMA` 都不满足于传统 systolic forwarding，而要引入可重构归约网络。
+Completing reduction in neighboring PEs, within one tree, or within one vertical stack generally helps bandwidth and latency. Frequent writes to a global buffer followed by redistribution can hurt throughput.
 
-## 结语
+### 2. Is the Reduction Topology Tightly Coupled to Workload Shape?
 
-所以，如果要给 “systolic array 的 accumulator 归约方式” 做一个简洁分类，我会这样总结：
+A fixed wavefront works well for regular dense workloads. Its constraints become more visible with sparsity, non-square matrices, small batches, and irregular tiles. This motivates the reconfigurable reduction networks in MAERI and SIGMA.
 
-1. **Local temporal accumulation**：在 PE 内慢慢加，简单但常常线性。
-2. **In-array spatio-temporal accumulation**：边流边加，是经典 systolic 的灵魂，也是它刚性的来源。
-3. **Spatial tree-based accumulation**：把归约独立出来，用 adder tree/ART/FAN 做高并行合并。
-4. **Hierarchical accumulation**：先子阵列内归约，再跨子阵列、跨层甚至跨 3D die 归约。
+## Closing Remarks
 
-而 `STONNE` 给我的补充是第五句提醒：
+A concise classification of accumulator reduction in systolic-array designs is:
 
-> **任何归约分类，如果不讨论 folding 和 psum 回流路径，都还不算完整。**
+1. **Local temporal accumulation:** accumulate within a PE over time, with simple control and often linear latency.
+2. **In-array spatio-temporal accumulation:** accumulate while forwarding through the array, coupling reduction to systolic movement.
+3. **Spatial tree-based accumulation:** use an adder tree, ART, or FAN to combine products in parallel.
+4. **Hierarchical accumulation:** reduce locally, then combine results across subarrays, layers, or stacked dies.
+
+STONNE adds one further reminder:
+
+> **A reduction taxonomy is incomplete without discussing folding and partial-sum feedback paths.**
 
 ## References
 
