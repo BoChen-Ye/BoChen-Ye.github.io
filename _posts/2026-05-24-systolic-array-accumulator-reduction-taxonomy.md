@@ -91,7 +91,7 @@ The main ideas are:
 - Reduction is spatially parallel rather than relying entirely on sequential propagation.
 - The goal is logarithmic rather than linear reduction latency, with support for irregular dot-product sizes.
 
-`SIGMA` calls this **Spatial Reduction** and discusses `O(log2 m)` latency for reducing `m` inputs through a tree. This comparison concerns the spatially expanded reduction path and assumes sufficient multipliers, adders, and input bandwidth. It is not the total cycle count for an arbitrary-length dot product.
+`SIGMA` calls this **Spatial Reduction** and discusses $O(\log_2 m)$ latency for reducing `m` inputs through a tree. This comparison concerns the spatially expanded reduction path and assumes sufficient multipliers, adders, and input bandwidth. It is not the total cycle count for an arbitrary-length dot product.
 
 To support reductions whose sizes are not powers of two and multiple irregular dot products mapped simultaneously, the authors introduce **FAN (Forwarding Adder Network)**. FAN augments a binary tree with forwarding links between different levels, allowing irregular reductions to map more efficiently.
 
@@ -188,15 +188,21 @@ STONNE's observations add a further comparison: folding cost.
 
 ### Example: Tree Depth, Throughput, and Folding Are Different Quantities
 
-Consider a dot product of length `K=256`, with hardware generating at most `P=16` products for that output per cycle:
+Consider a dot product of length $K=256$, with hardware generating at most $P=16$ products for that output per cycle:
 
-- Generating all products alone takes at least `ceil(K/P)=16` cycles.
-- A 16-input binary adder tree has `ceil(log2 P)=4` levels. If each level takes one cycle and the tree is fully pipelined, the first batch emerges after four cycles, followed by one batch sum per cycle.
+- Generating all products alone takes at least $\lceil K/P \rceil = 16$ cycles.
+- A 16-input binary adder tree has $\lceil \log_2 P \rceil = 4$ levels. If each level takes one cycle and the tree is fully pipelined, the first batch emerges after four cycles, followed by one batch sum per cycle.
 - The 16 batch sums must still be combined into one output, using a local accumulator or another reduction pass. A four-level tree therefore does not complete the entire 256-term dot product in four cycles.
 
 This is an idealized resource model, excluding multiplier latency, loading, stalls, and final draining. It illustrates why first-result latency, initiation interval, and total task cycles should be reported separately. If the feedback adder has a latency of `L` cycles, updates to the same output cannot automatically occur every cycle: the design must interleave independent outputs, maintain multiple partial sums, or stall on the feedback dependency.
 
-Folding traffic also depends on residency. Suppose an output takes `F` folds and each partial sum occupies `b` bytes. Writing and reloading at every fold boundary produces `2(F-1)b` bytes of intermediate-state traffic. Keeping the state local avoids those buffer transfers. This excludes the final output write and does not imply that register accesses consume no energy.
+Folding traffic also depends on residency. Suppose an output takes `F` folds and each partial sum occupies `b` bytes. Writing and reloading at every fold boundary produces the following intermediate-state traffic, in bytes:
+
+$$
+T_{\mathrm{psum}} = 2(F-1)b
+$$
+
+Keeping the state local avoids those buffer transfers. This excludes the final output write and does not imply that register accesses consume no energy.
 
 ## Two Questions to Ask When Reading an Accelerator Paper
 

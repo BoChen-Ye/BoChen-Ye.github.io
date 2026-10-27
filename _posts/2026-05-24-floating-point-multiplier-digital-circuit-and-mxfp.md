@@ -36,9 +36,9 @@ The article has two parts:
 
 A normal IEEE 754 binary floating-point number can be written as:
 
-```text
-value = (-1)^sign × 2^(E-bias) × (1.fraction)
-```
+$$
+\mathrm{value} = (-1)^{\mathrm{sign}} \times 2^{E-\mathrm{bias}} \times (1.\mathrm{fraction})_2
+$$
 
 It contains three fields:
 
@@ -62,16 +62,18 @@ Source: [IEEE 754-2019 standard page](https://standards.ieee.org/ieee/754/6210/)
 
 For two normal floating-point inputs:
 
-```text
-a = (-1)^sa × 2^(Ea-bias) × Ma
-b = (-1)^sb × 2^(Eb-bias) × Mb
-```
+$$
+\begin{aligned}
+a &= (-1)^{s_a} \times 2^{E_a-\mathrm{bias}} \times M_a \\
+b &= (-1)^{s_b} \times 2^{E_b-\mathrm{bias}} \times M_b
+\end{aligned}
+$$
 
 Their product is:
 
-```text
-a × b = (-1)^(sa xor sb) × 2^((Ea+Eb)-2*bias) × (Ma × Mb)
-```
+$$
+a \times b = (-1)^{s_a \oplus s_b} \times 2^{E_a+E_b-2\,\mathrm{bias}} \times (M_a M_b)
+$$
 
 To encode this product as a floating-point result, the hardware must:
 
@@ -116,9 +118,9 @@ Many inputs can therefore bypass the normal significand-multiplication path thro
 
 The basic computation is:
 
-```text
-sign_out = sign_a xor sign_b
-```
+$$
+\mathrm{sign}_{\mathrm{out}} = \mathrm{sign}_a \oplus \mathrm{sign}_b
+$$
 
 This typically requires an XOR gate plus overrides for special cases. The more subtle question is how the final sign is handled when a special value is selected.
 
@@ -126,9 +128,9 @@ This typically requires an XOR gate plus overrides for special cases. The more s
 
 For normal inputs, the starting point is:
 
-```text
-exp_tmp = exp_a + exp_b - bias
-```
+$$
+\mathrm{exp}_{\mathrm{tmp}} = \mathrm{exp}_a + \mathrm{exp}_b - \mathrm{bias}
+$$
 
 A complete implementation also accounts for:
 
@@ -143,15 +145,15 @@ This path is essentially a moderate-width integer addition chain. It is usually 
 
 For two normal single-precision inputs, significand multiplication is:
 
-```text
-24-bit × 24-bit -> 48-bit
-```
+$$
+24\text{-bit} \times 24\text{-bit} \longrightarrow 48\text{-bit}
+$$
 
 For double precision, it becomes:
 
-```text
-53-bit × 53-bit -> 106-bit
-```
+$$
+53\text{-bit} \times 53\text{-bit} \longrightarrow 106\text{-bit}
+$$
 
 This wide multiplication is a major contributor to area and delay.
 
@@ -173,9 +175,9 @@ Sources: [FPnew](https://arxiv.org/abs/2007.01530) and [Berkeley HardFloat docum
 
 Each normalized input significand lies in `[1, 2)`, so their product lies in:
 
-```text
-[1, 4)
-```
+$$
+M_a M_b \in [1,4)
+$$
 
 There are two cases:
 
@@ -198,9 +200,9 @@ Two qualifications matter:
 
 Subnormals complicate hardware because they have no implicit leading `1`. Their value is:
 
-```text
-value = (-1)^sign × 2^(1-bias) × (0.fraction)
-```
+$$
+\mathrm{value} = (-1)^{\mathrm{sign}} \times 2^{1-\mathrm{bias}} \times (0.\mathrm{fraction})_2
+$$
 
 Operating directly on this representation introduces several questions into the main datapath:
 
@@ -252,9 +254,9 @@ The rounding unit uses the least significant retained bit, G/R/S, and the roundi
 
 For round-to-nearest-even, let `L` be the least significant retained bit:
 
-```text
-increment = G & (R | S | L)
-```
+$$
+\mathrm{increment} = G \land (R \lor S \lor L)
+$$
 
 When `G=1, R=0, S=0`, the discarded portion is exactly half an ulp. Incrementing only when `L=1` makes the rounded result even. `S` excludes G and R; all three bits are needed to determine whether the discarded portion is zero.
 
@@ -307,7 +309,7 @@ Tininess may be detected before or after rounding, and the design should specify
 
 Source: [HardFloat control and rounding documentation](https://www.jhauser.us/arithmetic/HardFloat-1/doc/HardFloat-Verilog.html)
 
-For example, binary32 can represent `2^-126 × 0.5 = 2^-127` exactly as a subnormal, so it does not raise underflow. In contrast, `2^-149 × 0.5 = 2^-150` rounds to zero under ties-to-even, raising both underflow and inexact. Overflow also cannot always return infinity: the sign and rounding mode determine whether the result is infinity or the largest finite value.
+For example, binary32 can represent $2^{-126} \times 0.5 = 2^{-127}$ exactly as a subnormal, so it does not raise underflow. In contrast, $2^{-149} \times 0.5 = 2^{-150}$ rounds to zero under ties-to-even, raising both underflow and inexact. Overflow also cannot always return infinity: the sign and rounding mode determine whether the result is infinity or the largest finite value.
 
 An educational prototype may initially focus on numerical results. For IEEE compatibility or integration with a software ecosystem, exception flags should be part of the microarchitecture from the start.
 
@@ -351,9 +353,9 @@ This organization concentrates the wide multiplication in Stage 1, places postpr
 
 In many CPUs, GPUs, and AI accelerators, multiplication is part of a fused multiply-add operation:
 
-```text
-rn(a × b + c)
-```
+$$
+\operatorname{rn}(a \times b + c)
+$$
 
 IEEE 754 introduced FMA in its 2008 revision. NVIDIA's documentation emphasizes that FMA rounds only once and is therefore generally more accurate than a separately rounded multiplication followed by a separately rounded addition. Hardware retains a wider intermediate product before the final rounding.
 
@@ -385,7 +387,7 @@ The Open Compute Project MX specification defines an MX-compliant format through
 - Per-element values `Pi`.
 - A block size `k`.
 
-All `k` elements share the scale, with represented values given by `vi = X * Pi`.
+All `k` elements share the scale, with represented values given by $v_i = X P_i$.
 
 Source: [OCP Microscaling Formats (MX) Specification](https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf)
 
@@ -416,7 +418,7 @@ The OCP MX specification defines:
 - No infinity encoding.
 - One NaN encoding: all bits set to one.
 
-For finite encodings `S ∈ [0, 254]`, the scale is `X = 2^(S-127)`. Encoding `0x00` represents `2^-127`, not zero; E8M0 has no zero encoding.
+For finite encodings $S \in [0,254]$, the scale is $X = 2^{S-127}$. Encoding `0x00` represents $2^{-127}$, not zero; E8M0 has no zero encoding.
 
 Source: [OCP MX specification](https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf)
 
@@ -446,31 +448,35 @@ An MXFP8 multiplier's special-value logic must therefore follow the element enco
 
 Write an MXFP element value as:
 
-```text
-v = X × P
-```
+$$
+v = X \times P
+$$
 
 Then:
 
-```text
-v1 × v2 = (X1 × P1) × (X2 × P2)
-        = (X1 × X2) × (P1 × P2)
-```
+$$
+\begin{aligned}
+v_1 v_2 &= (X_1 P_1)(X_2 P_2) \\
+        &= (X_1 X_2)(P_1 P_2)
+\end{aligned}
+$$
 
 For finite E8M0 scales, the scale product:
 
-```text
-X1 × X2
-```
+$$
+X_1 \times X_2
+$$
 
 requires extracting and adding their exponents. It needs no additional significand multiplication.
 
 However, adding two 8-bit scale encodings and truncating the result to eight bits is incorrect. For finite scales:
 
-```text
-e_scale = (S1 - 127) + (S2 - 127)
-        = S1 + S2 - 254
-```
+$$
+\begin{aligned}
+e_{\mathrm{scale}} &= (S_1 - 127) + (S_2 - 127) \\
+                 &= S_1 + S_2 - 254
+\end{aligned}
+$$
 
 The range of `e_scale` is `[-254, 254]`, requiring at least nine signed bits when stored on its own. Combining it with element exponents and normalization adjustments requires a width chosen for the full resulting range. An input scale encoding of `0xFF` must first take the NaN classification path. These width requirements are derived from the E8M0 range in [OCP MX Section 5.4.1](https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf).
 
@@ -490,17 +496,17 @@ The additional challenge is **generating, propagating, and writing back scales a
 
 The OCP MX specification gives the following minimum semantics for the dot product of two MX blocks:
 
-```text
-Dot(A, B) = X(A) × X(B) × Σ(Pi(A) × Pi(B))
-```
+$$
+\operatorname{Dot}(A,B) = X(A)\,X(B) \sum_{i=0}^{k-1} P_i(A)\,P_i(B)
+$$
 
 Source: [OCP MX specification](https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf)
 
 This suggests a natural hardware organization:
 
-- Compute `Pi(A) × Pi(B)` in individual lanes.
+- Compute $P_i(A) \times P_i(B)$ in individual lanes.
 - Reduce the products through a summation structure.
-- Handle the shared scale product `X(A) × X(B)` separately.
+- Handle the shared scale product $X(A) \times X(B)$ separately.
 
 Many MXFP matrix-multiplication and dot-product units therefore fit an organization with low-precision element multiplication, wider accumulation, and separate exponent compensation for the shared scales:
 
@@ -508,7 +514,7 @@ Many MXFP matrix-multiplication and dot-product units therefore fit an organizat
 low-precision multiply + wider accumulation
 ```
 
-The dot-product formula expresses a mathematical relationship. It does not guarantee exact internal summation or bitwise agreement with a sequence of FP32 FMAs. OCP MX v1.0 leaves internal dot-product precision and operation order implementation-defined. When summing across multiple blocks, each block also has its own `X(A) × X(B)`, so their scale differences must be handled.
+The dot-product formula expresses a mathematical relationship. It does not guarantee exact internal summation or bitwise agreement with a sequence of FP32 FMAs. OCP MX v1.0 leaves internal dot-product precision and operation order implementation-defined. When summing across multiple blocks, each block also has its own $X(A) \times X(B)$, so their scale differences must be handled.
 
 Source: [OCP MX Sections 6.1–6.2](https://www.opencompute.org/documents/ocp-microscaling-formats-mx-v1-0-spec-final-pdf)
 
@@ -539,7 +545,7 @@ For an MXFP datapath, the system-level question also includes:
 
 NVIDIA's Transformer Engine documentation describes MXFP8 using:
 
-- `x = x_fp8 * s_block`
+- $x = x_{\mathrm{fp8}}\,s_{\mathrm{block}}$
 - E4M3 as the default `x_fp8` format.
 - An E8M0 `s_block` shared by 32 consecutive elements.
 

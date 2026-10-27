@@ -203,18 +203,30 @@ PEStats records more than multiplication counts:
 | psum_wr | Acc-width write events for accumulation-related state, completed-result buffering, and psum output |
 | pipe_wr | Valid-entry writes across the product pipeline stages |
 
-With one eval/commit per cycle, each PE satisfies `mac + idle = cycles`. However, an idle cycle can still advance an older product, update an accumulated sum, or forward a result.
+With one eval/commit per cycle, each PE satisfies $\mathrm{mac} + \mathrm{idle} = \mathrm{cycles}$. However, an idle cycle can still advance an older product, update an accumulated sum, or forward a result.
 
 psum_wr may increase more than once in a cycle. So may pipe_wr when several stages contain valid products. Invalid inputs still update validity state, but the counters do not attempt to capture every physical bit transition. They represent the event costs defined by the model.
 
 The energy_pj function applies a linear estimate:
 
-```text
-register_bits = (reg_a_wr + reg_b_wr + w_load) × input_bits
-              + (psum_wr + pipe_wr) × accumulator_bits
+$$
+\begin{aligned}
+\mathrm{register\_bits}
+  &= (\mathrm{reg\_a\_wr} + \mathrm{reg\_b\_wr} + \mathrm{w\_load}) \\
+  &\quad \times \mathrm{input\_bits} \\
+  &\quad + (\mathrm{psum\_wr} + \mathrm{pipe\_wr}) \\
+  &\quad \times \mathrm{accumulator\_bits}
+\end{aligned}
+$$
 
-energy_pJ = mac × E_mac + register_bits × E_reg_bit + idle × E_idle
-```
+$$
+\begin{aligned}
+\mathrm{energy\_pJ}
+  &= \mathrm{mac} \times E_{\mathrm{mac}} \\
+  &\quad + \mathrm{register\_bits} \times E_{\mathrm{reg\_bit}} \\
+  &\quad + \mathrm{idle} \times E_{\mathrm{idle}}
+\end{aligned}
+$$
 
 BitWidth<T> supplies the modelled width: SInt<48> counts as 48 bits and BF16 as 16 bits, regardless of their host-language object sizes.
 
@@ -222,7 +234,7 @@ This estimate is useful for comparing PE event costs under consistent coefficien
 
 ## 7. A three-cycle example
 
-Consider an OS PE computing `2×3 + 4×5 = 26`, with a MAC latency of 1 and no incoming result occupying its output chain:
+Consider an OS PE computing $2\times 3 + 4\times 5 = 26$, with a MAC latency of 1 and no incoming result occupying its output chain:
 
 | Cycle | Input | acc after commit | drain after commit | psum after commit |
 | --- | --- | --- | --- | --- |
