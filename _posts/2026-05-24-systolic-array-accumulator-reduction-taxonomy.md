@@ -27,9 +27,9 @@ These four categories are a comparison framework for this article, rather than a
 
 For each output element, multiplication is only the first step. The products must then be added together:
 
-```text
-out(i, j) = sum_k[A(i, k) * B(k, j)]
-```
+$$
+\operatorname{out}(i,j) = \sum_k A(i,k)\,B(k,j)
+$$
 
 The reduction scheme changes where partial sums reside and how often memory is accessed, affecting energy consumption. Additional interconnects and adders also have costs, so topology alone does not establish which design is more energy-efficient.
 
