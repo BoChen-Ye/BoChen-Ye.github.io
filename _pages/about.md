@@ -199,13 +199,13 @@ redirect_from:
 
 <h3>Peer Review</h3>
 <ul>
-  <li>Reviewer — IEEE ISCAS 2027</li>
+  <li>Reviewer — IEEE International Symposium on Circuits and Systems (ISCAS) 2027</li>
 </ul>
 
 <h3>Conference Service</h3>
 <ul>
-  <li>Volunteer — UKAIR 2026</li>
-  <li>Volunteer — MEMRISYS 2025</li>
+  <li>Volunteer — UK AI Research Symposium (UKAIRS) 2026</li>
+  <li>Volunteer — International Conference on Memristive Materials, Devices & Systems (MEMRISYS) 2025</li>
 </ul>
 
 <span class="anchor" id="teaching-mentoring"></span>
