@@ -33,6 +33,8 @@ redirect_from:
 <div class="news-feed news-feed__scroll">
   <p></p>
   <ul>
+    <li>[2026.11] I am honored to serve as a <strong>Mentor</strong> for <strong>UK Electronics Skills Foundation (UKESF)</strong>.</li>
+    <li>[2026.11] I am honored to serve as a <strong>reviewer</strong> for IEEE <strong>ISCAS 2027</strong>.</li>
     <li>[2026.09] <span class="news-pill news-pill--conference">[Conference]</span> I presented my work "BenDi: An Energy-Efficient Quasi-Stochastic Systolic Architecture for Edge Bioelectronics" at <strong>ASAP 2026</strong> in London, UK.</li>
     <li>[2026.07] <span class="news-pill news-pill--paper">[Paper]</span> Our work "BenDi: An Energy-Efficient Quasi-Stochastic Systolic Architecture for Edge Bioelectronics" was accepted by <strong>ASAP 2026</strong> and selected for an <strong>oral presentation</strong>.</li>
     <li>[2026.04] I finished my first-year annual review.</li>
