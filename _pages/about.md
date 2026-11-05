@@ -192,9 +192,48 @@ redirect_from:
   </div>
 </div>
 
+<span class="anchor" id="academic-service"></span>
+<h1>Academic Service</h1>
+
+<h3>Peer Review</h3>
+<ul>
+  <li>Reviewer — IEEE ISCAS 2027</li>
+</ul>
+
+<h3>Conference Service</h3>
+<ul>
+  <li>Volunteer — UKAIR 2026</li>
+  <li>Volunteer — MEMRISYS 2025</li>
+</ul>
+
+<span class="anchor" id="teaching-mentoring"></span>
+<h1>Teaching & Mentoring</h1>
+
+<h3>Teaching Experience</h3>
+<ul>
+  <li>Teaching Assistant — Digital System Lab 4 (MSc), University of Edinburgh, 2026</li>
+  <li>Teaching Assistant — Digital System Lab 3, University of Edinburgh, 2025</li>
+</ul>
+
+<h3>Mentoring</h3>
+<ul>
+  <li>Mentor — UK Electronics Skills Foundation (UKESF), 2026–Present</li>
+</ul>
+
+
+<span class="anchor" id="professional-development"></span>
+<h1>Professional Development</h1>
+
+<h3>Training</h3>
+<ul>
+  <li>Advanced Node Digital IC Implementation — Europractice, 2025</li>
+</ul>
+
+
 <span class="anchor" id="-honors-and-awards"></span>
 <h1>Honors and Awards</h1>
 <ul>
+  <li>PhD Fellowship - The University of Edinburgh 2025</li>
   <li>IEEE CAS Student Travel Grant, SOCC 2025</li>
   <li>Undergraduate Scholarship, 2021/2022</li>
 </ul>
