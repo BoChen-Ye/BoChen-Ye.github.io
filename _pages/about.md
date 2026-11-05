@@ -221,7 +221,7 @@ redirect_from:
 
 <h3>Mentoring</h3>
 <ul>
-  <li>Mentor — UK Electronics Skills Foundation (UKESF), 2026–Present</li>
+  <li>Mentor — UK Electronics Skills Foundation (UKESF), 2026-2027</li>
 </ul>
 
 
